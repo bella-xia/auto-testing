@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "miniprogram-automator": "^0.5.1"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

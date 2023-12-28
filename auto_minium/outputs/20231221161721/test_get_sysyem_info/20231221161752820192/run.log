@@ -1,0 +1,31 @@
+[I 2023-12-21 16:17:52,822 minium minitest#370 _miniSetUp] =========Current case: test_get_sysyem_info=========
+[I 2023-12-21 16:17:52,826 minium minitest#373 _miniSetUp] package info: C:.Users.zhiha.OneDrive.Desktop.auto_minium.test2.first_test, case info: FirstTest.test_get_sysyem_info
+[I 2023-12-21 16:17:52,830 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2023-12-21 16:17:52,836 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2023-12-21 16:17:52,838 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2023-12-21 16:17:52,840 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2023-12-21 16:17:52,840 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2023-12-21 16:17:52,854 minium.Conn5504 connection#417 _safely_send] ASYNC_SEND > {"id":"d4461e0b-47da-49b6-9144-cc2900a3442b","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/display/display"}]}}
+[D 2023-12-21 16:17:52,950 minium.Conn5504 connection#653 __on_message] RECV < {"id":"d4461e0b-47da-49b6-9144-cc2900a3442b","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2023-12-21 16:17:52,954 minium.Conn5504 connection#697 _handle_async_msg] received async msg: d4461e0b-47da-49b6-9144-cc2900a3442b
+[I 2023-12-21 16:17:52,958 minium minitest#717 capture] capture setup.png
+[I 2023-12-21 16:17:52,962 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:17:52,963 minium.Conn5504 connection#417 _safely_send] SEND > {"id":"647ca5cc-a7a6-4eea-af0f-e24076f2b955","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:17:53,160 minium.Conn5504 connection#651 __on_message] RECV < {"id":"647ca5cc-a7a6-4eea-af0f-e24076f2b955","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAQQCAIAAAD9GX0NAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:17:53,164 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2023-12-21 16:17:53,164 minium minitest#424 _miniSetUp] =========case: test_get_sysyem_info start=========
+[D 2023-12-21 16:17:53,164 minium.Conn5504 connection#417 _safely_send] SEND > {"id":"312a2068-7226-49f3-9d9c-4668e7423dc1","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+[D 2023-12-21 16:17:53,172 minium.Conn5504 connection#651 __on_message] RECV < {"id":"312a2068-7226-49f3-9d9c-4668e7423dc1","result":{"result":{"model":"iPhone 5","pixelRatio":2,"windowWidth":320,"windowHeight":520,"system":"iOS 10.0.1","language":"en","version":"8.0.5","deviceOrientation":"portrait","screenWidth":320,"screenHeight":568,"SDKVersion":"2.32.3","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":37,"statusBarHeight":20,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":true,"microphoneAu...
+[I 2023-12-21 16:17:53,274 minium minitest#717 capture] capture assertIn-success.png
+[I 2023-12-21 16:17:53,281 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:17:53,283 minium.Conn5504 connection#417 _safely_send] SEND > {"id":"57e9c9c8-8c3b-4694-8985-85608f599641","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:17:53,466 minium.Conn5504 connection#651 __on_message] RECV < {"id":"57e9c9c8-8c3b-4694-8985-85608f599641","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAQQCAIAAAD9GX0NAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:17:53,470 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[D 2023-12-21 16:17:53,470 minium minitest#620 _miniTearDown] =========Current case Down: test_get_sysyem_info=========
+[I 2023-12-21 16:17:53,473 minium minitest#717 capture] capture teardown.png
+[I 2023-12-21 16:17:53,473 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:17:53,473 minium.Conn5504 connection#417 _safely_send] SEND > {"id":"2f5885bd-42b6-4211-9986-43d9d1d696e6","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:17:53,638 minium.Conn5504 connection#651 __on_message] RECV < {"id":"2f5885bd-42b6-4211-9986-43d9d1d696e6","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAQQCAIAAAD9GX0NAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:17:53,642 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2023-12-21 16:17:53,642 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2023-12-21 16:17:53,642 minium basenative#29 wrapper] call BaseNative.get_start_up end

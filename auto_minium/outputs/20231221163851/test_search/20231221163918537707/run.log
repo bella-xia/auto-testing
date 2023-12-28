@@ -1,0 +1,56 @@
+[I 2023-12-21 16:39:18,550 minium minitest#370 _miniSetUp] =========Current case: test_search=========
+[I 2023-12-21 16:39:18,556 minium minitest#373 _miniSetUp] package info: C:.Users.zhiha.OneDrive.Desktop.auto_minium.test3.search_test, case info: FirstTest.test_search
+[I 2023-12-21 16:39:18,560 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2023-12-21 16:39:18,560 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2023-12-21 16:39:18,563 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2023-12-21 16:39:18,573 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2023-12-21 16:39:18,576 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2023-12-21 16:39:18,591 minium.Conn4880 connection#417 _safely_send] ASYNC_SEND > {"id":"2e964848-06e3-4969-b655-2d80db978e71","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/home/home"}]}}
+[D 2023-12-21 16:39:18,663 minium.Conn4880 connection#653 __on_message] RECV < {"id":"2e964848-06e3-4969-b655-2d80db978e71","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2023-12-21 16:39:18,668 minium.Conn4880 connection#697 _handle_async_msg] received async msg: 2e964848-06e3-4969-b655-2d80db978e71
+[I 2023-12-21 16:39:18,676 minium minitest#717 capture] capture setup.png
+[I 2023-12-21 16:39:18,677 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:39:18,679 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"220817e5-1ad6-4c87-9cc6-31be1837e7e1","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:39:18,882 minium.Conn4880 connection#651 __on_message] RECV < {"id":"220817e5-1ad6-4c87-9cc6-31be1837e7e1","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAPwCAIAAAAu+lgBAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:39:18,890 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2023-12-21 16:39:18,890 minium minitest#424 _miniSetUp] =========case: test_search start=========
+[I 2023-12-21 16:39:18,894 minium page#557 _get_elements_by_css] try to get elements: input[placeholder='iphone 13 火热发售中']
+[D 2023-12-21 16:39:18,898 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"efa7a0dc-bb2a-431f-939b-e79a68cdf656","method":"Page.getElements","params":{"selector":"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']","pageId":2}}
+[D 2023-12-21 16:39:19,150 minium.Conn4880 connection#653 __on_message] RECV < {"id":"efa7a0dc-bb2a-431f-939b-e79a68cdf656","result":{"elements":[{"elementId":"da8d1566-df97-4479-a97a-ccb9902a4f0b","tagName":"input"}]}}
+[I 2023-12-21 16:39:19,154 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000002518479EA10>]
+[I 2023-12-21 16:39:19,358 minium minitest#717 capture] capture assertTrue-success.png
+[I 2023-12-21 16:39:19,362 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:39:19,362 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"1313f62f-7a12-455e-ae22-7f834c61030a","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:39:19,954 minium.Conn4880 connection#651 __on_message] RECV < {"id":"1313f62f-7a12-455e-ae22-7f834c61030a","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAPwCAIAAAAu+lgBAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:39:19,958 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2023-12-21 16:39:19,964 minium page#557 _get_elements_by_css] try to get elements: input[placeholder='iphone 13 火热发售中']
+[D 2023-12-21 16:39:19,965 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"1beb2f22-aedb-4caa-bc1d-0f67c65d1739","method":"Page.getElements","params":{"selector":"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']","pageId":2}}
+[D 2023-12-21 16:39:19,991 minium.Conn4880 connection#653 __on_message] RECV < {"id":"1beb2f22-aedb-4caa-bc1d-0f67c65d1739","result":{"elements":[{"elementId":"da8d1566-df97-4479-a97a-ccb9902a4f0b","tagName":"input"}]}}
+[I 2023-12-21 16:39:19,994 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000002518479F610>]
+[D 2023-12-21 16:39:24,998 minium page#321 wait_for] waitFor: 5.002386569976807 s
+[I 2023-12-21 16:39:24,998 minium page#557 _get_elements_by_css] try to get elements: view[data-index='1']
+[D 2023-12-21 16:39:25,005 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"3eca3051-e749-4ac3-9adf-28ce3fc2cf81","method":"Page.getElements","params":{"selector":"view[data-index='1']","pageId":2}}
+[D 2023-12-21 16:39:25,042 minium.Conn4880 connection#653 __on_message] RECV < {"id":"3eca3051-e749-4ac3-9adf-28ce3fc2cf81","result":{"elements":[{"elementId":"e122c650-97fd-46cb-ba56-097290ebd395","tagName":"view"}]}}
+[I 2023-12-21 16:39:25,047 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000025183742D10>]
+[I 2023-12-21 16:39:25,055 minium minitest#717 capture] capture assertTrue-success_163925055170.png
+[I 2023-12-21 16:39:25,056 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:39:25,059 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"92bca61f-1141-4589-9fee-a9505ae10111","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:39:25,446 minium.Conn4880 connection#651 __on_message] RECV < {"id":"92bca61f-1141-4589-9fee-a9505ae10111","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAPwCAIAAAAu+lgBAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:39:25,457 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2023-12-21 16:39:25,459 minium page#557 _get_elements_by_css] try to get elements: view[data-index='1']
+[D 2023-12-21 16:39:25,463 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"9dd0de06-5a76-48de-9c4f-f305edddaff1","method":"Page.getElements","params":{"selector":"view[data-index='1']","pageId":2}}
+[D 2023-12-21 16:39:25,491 minium.Conn4880 connection#653 __on_message] RECV < {"id":"9dd0de06-5a76-48de-9c4f-f305edddaff1","result":{"elements":[{"elementId":"e122c650-97fd-46cb-ba56-097290ebd395","tagName":"view"}]}}
+[I 2023-12-21 16:39:25,495 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002518479EB50>]
+[D 2023-12-21 16:39:25,496 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"6c5038c6-38c7-46d8-8f99-3cc97bc1be02","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"e122c650-97fd-46cb-ba56-097290ebd395","pageId":2}}
+[D 2023-12-21 16:39:25,509 minium.Conn4880 connection#653 __on_message] RECV < {"id":"6c5038c6-38c7-46d8-8f99-3cc97bc1be02","result":{"styles":["auto"]}}
+[D 2023-12-21 16:39:25,509 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"333d9ba4-f33b-4cbc-8820-d6d276cc41e7","method":"Element.tap","params":{"elementId":"e122c650-97fd-46cb-ba56-097290ebd395","pageId":2}}
+[D 2023-12-21 16:39:25,570 minium.Conn4880 connection#653 __on_message] RECV < {"id":"333d9ba4-f33b-4cbc-8820-d6d276cc41e7","result":{}}
+[D 2023-12-21 16:39:31,582 minium page#321 wait_for] waitFor: 5.001085996627808 s
+[D 2023-12-21 16:39:31,582 minium minitest#620 _miniTearDown] =========Current case Down: test_search=========
+[I 2023-12-21 16:39:31,589 minium minitest#717 capture] capture teardown.png
+[I 2023-12-21 16:39:31,594 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2023-12-21 16:39:31,598 minium.Conn4880 connection#417 _safely_send] SEND > {"id":"85d04d58-06d3-4490-932b-0c23d3cb4b15","method":"App.captureScreenshot","params":{}}
+[D 2023-12-21 16:39:32,129 minium.Conn4880 connection#651 __on_message] RECV < {"id":"85d04d58-06d3-4490-932b-0c23d3cb4b15","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAPwCAIAAAAu+lgBAAABJ2lDQ1BTa2lhAAAokX3Ru0rDUBzH8a9VBEXBooODSAYHHbwF7QVcbFqqi0Or0NYpTdOg9hLSiD6ED+HmG/gCLm4KQicfQhyc/cUiKUj8H845H/78T3IukFpGkVqAbi8MKuWCUas3DMbCdgY+yTEBX8NohLfNf+qSYqblDhzNH+phoJ/rky15yRv5NnJz5LvIwWnFku/ldW/MzTHfhH4oP0f1jh9EfpcPup1rJ943c27vrKq5pr5Cmb6aRweXbapccYEtZdinpNFkT62ERZa8cqack4uyJRfYlbJynkPVW+o5ivF9Di4hl4bJYZxrrMHji7YyHec2jiC9Ck8nvh3YP6mp6JHabfh8gPk6LL7C7PnvJcZr47dIOKvx56wGx/Rw2JJMdnSKzDeXxk...
+[I 2023-12-21 16:39:32,150 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2023-12-21 16:39:32,152 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2023-12-21 16:39:32,152 minium basenative#29 wrapper] call BaseNative.get_start_up end

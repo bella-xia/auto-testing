@@ -3,7 +3,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "miniprogram-automator": "^0.5.1"
+    "miniprogram-automator": "^0.12.1"
   },
   "dependencies": {
     "jest": "^29.7.0"

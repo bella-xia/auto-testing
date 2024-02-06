@@ -5,6 +5,1763 @@
             "case_datas": [
                 {
                     "case_name": "test_search",
+                    "run_time": "20240123 15:00:52",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1706040053.0589285,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 52,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1706040053,
+                            "datetime": "2024-01-23 15:00:53"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1706040055,
+                            "datetime": "2024-01-23 15:00:55"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_150102720932.png",
+                            "ts": 1706040062,
+                            "datetime": "2024-01-23 15:01:02"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_150102987769.png",
+                            "ts": 1706040063,
+                            "datetime": "2024-01-23 15:01:03"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/result/index",
+                            "path": "images\\assertTrue-success_150108775405.png",
+                            "ts": 1706040069,
+                            "datetime": "2024-01-23 15:01:09"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/result/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1706040070,
+                            "datetime": "2024-01-23 15:01:10"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1706040070.115967,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        # searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        # self.page.wait_for(10)\n",
+                            "        # value = searchInput.attribute(\"value\")[0]\n",
+                            "        # self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20240123150006\\test_search\\20240123150052715693",
+                    "costs": "17.057\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 1,
+                "failed": 0,
+                "error": 0,
+                "costs": "17.057\u79d2",
+                "start_time": "2024/01/23 15:00:53",
+                "end_time": "2024/01/23 15:01:10",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 1,
+                        "failed": 0,
+                        "error": 0,
+                        "start_time": "2024/01/23 15:00:53",
+                        "end_time": "2024/01/23 15:01:10",
+                        "costs": "17.057\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20240123 14:58:39",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 42, in testPartExecutor\n    yield\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 124, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\n",
+                    "errors": "",
+                    "start_timestamp": 1706039920.2133305,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 53,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1706039920,
+                            "datetime": "2024-01-23 14:58:40"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1706039922,
+                            "datetime": "2024-01-23 14:58:42"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_145849575455.png",
+                            "ts": 1706039929,
+                            "datetime": "2024-01-23 14:58:49"
+                        },
+                        {
+                            "name": "assertEqual-failed",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertEqual-failed.png",
+                            "ts": 1706039940,
+                            "datetime": "2024-01-23 14:59:00"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1706039940,
+                            "datetime": "2024-01-23 14:59:00"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertEqual",
+                            "ret": false,
+                            "msg": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                            "img": "assertEqual-failed",
+                            "wxml": "23145900.wxml"
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1706039940.4467158,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        self.page.wait_for(10)\n",
+                            "        value = searchInput.attribute(\"value\")[0]\n",
+                            "        self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20240123145754\\test_search\\20240123145839376631",
+                    "costs": "20.233\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 1,
+                "error": 0,
+                "costs": "20.233\u79d2",
+                "start_time": "2024/01/23 14:58:40",
+                "end_time": "2024/01/23 14:59:00",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2024/01/23 14:58:40",
+                        "end_time": "2024/01/23 14:59:00",
+                        "costs": "20.233\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20231228 23:29:46",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 42, in testPartExecutor\n    yield\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 124, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\n",
+                    "errors": "",
+                    "start_timestamp": 1703824187.237105,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 28,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1703824187,
+                            "datetime": "2023-12-28 23:29:47"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1703824187,
+                            "datetime": "2023-12-28 23:29:47"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_232952947251.png",
+                            "ts": 1703824193,
+                            "datetime": "2023-12-28 23:29:53"
+                        },
+                        {
+                            "name": "assertEqual-failed",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertEqual-failed.png",
+                            "ts": 1703824203,
+                            "datetime": "2023-12-28 23:30:03"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1703824203,
+                            "datetime": "2023-12-28 23:30:03"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertEqual",
+                            "ret": false,
+                            "msg": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                            "img": "assertEqual-failed",
+                            "wxml": "28233003.wxml"
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1703824203.380445,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        self.page.wait_for(10)\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        value = searchInput.attribute(\"value\")[0]\n",
+                            "        self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20231228232900\\test_search\\20231228232946936741",
+                    "costs": "16.143\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 1,
+                "error": 0,
+                "costs": "16.143\u79d2",
+                "start_time": "2023/12/28 23:29:47",
+                "end_time": "2023/12/28 23:30:03",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2023/12/28 23:29:47",
+                        "end_time": "2023/12/28 23:30:03",
+                        "costs": "16.143\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20231228 23:26:25",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 42, in testPartExecutor\n    yield\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 124, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\n",
+                    "errors": "",
+                    "start_timestamp": 1703823985.864017,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 25,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1703823985,
+                            "datetime": "2023-12-28 23:26:25"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1703823986,
+                            "datetime": "2023-12-28 23:26:26"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_232631794370.png",
+                            "ts": 1703823991,
+                            "datetime": "2023-12-28 23:26:31"
+                        },
+                        {
+                            "name": "assertEqual-failed",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertEqual-failed.png",
+                            "ts": 1703824002,
+                            "datetime": "2023-12-28 23:26:42"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1703824002,
+                            "datetime": "2023-12-28 23:26:42"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertEqual",
+                            "ret": false,
+                            "msg": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                            "img": "assertEqual-failed",
+                            "wxml": "28232642.wxml"
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1703824002.2740564,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        self.page.wait_for(10)\n",
+                            "        value = searchInput.attribute(\"value\")[0]\n",
+                            "        self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20231228232604\\test_search\\20231228232625604109",
+                    "costs": "16.410\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 1,
+                "error": 0,
+                "costs": "16.410\u79d2",
+                "start_time": "2023/12/28 23:26:25",
+                "end_time": "2023/12/28 23:26:42",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2023/12/28 23:26:25",
+                        "end_time": "2023/12/28 23:26:42",
+                        "costs": "16.410\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20231228 23:25:24",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 42, in testPartExecutor\n    yield\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 124, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\n",
+                    "errors": "",
+                    "start_timestamp": 1703823925.2957423,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 24,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1703823925,
+                            "datetime": "2023-12-28 23:25:25"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1703823925,
+                            "datetime": "2023-12-28 23:25:25"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_232530894069.png",
+                            "ts": 1703823931,
+                            "datetime": "2023-12-28 23:25:31"
+                        },
+                        {
+                            "name": "assertEqual-failed",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertEqual-failed.png",
+                            "ts": 1703823936,
+                            "datetime": "2023-12-28 23:25:36"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1703823936,
+                            "datetime": "2023-12-28 23:25:36"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertEqual",
+                            "ret": false,
+                            "msg": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                            "img": "assertEqual-failed",
+                            "wxml": "28232536.wxml"
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1703823936.3885472,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        time.sleep(5)\n",
+                            "        value = searchInput.attribute(\"value\")[0]\n",
+                            "        self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20231228232501\\test_search\\20231228232524984620",
+                    "costs": "11.093\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 1,
+                "error": 0,
+                "costs": "11.093\u79d2",
+                "start_time": "2023/12/28 23:25:25",
+                "end_time": "2023/12/28 23:25:36",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2023/12/28 23:25:25",
+                        "end_time": "2023/12/28 23:25:36",
+                        "costs": "11.093\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20231228 23:23:46",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 42, in testPartExecutor\n    yield\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 124, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7535\u8111' != [''] : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\n",
+                    "errors": "",
+                    "start_timestamp": 1703823826.588246,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 22,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "'\u7535\u8111' != [''] : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1703823826,
+                            "datetime": "2023-12-28 23:23:46"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1703823827,
+                            "datetime": "2023-12-28 23:23:47"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_232352389674.png",
+                            "ts": 1703823832,
+                            "datetime": "2023-12-28 23:23:52"
+                        },
+                        {
+                            "name": "assertEqual-failed",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertEqual-failed.png",
+                            "ts": 1703823833,
+                            "datetime": "2023-12-28 23:23:53"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1703823833,
+                            "datetime": "2023-12-28 23:23:53"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertEqual",
+                            "ret": false,
+                            "msg": "'\u7535\u8111' != [''] : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                            "img": "assertEqual-failed",
+                            "wxml": "28232353.wxml"
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1703823833.8056617,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        time.sleep(1)\n",
+                            "        value = searchInput.attribute(\"value\")\n",
+                            "        self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20231228232322\\test_search\\20231228232346352673",
+                    "costs": "7.217\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 1,
+                "error": 0,
+                "costs": "7.217\u79d2",
+                "start_time": "2023/12/28 23:23:46",
+                "end_time": "2023/12/28 23:23:53",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2023/12/28 23:23:46",
+                        "end_time": "2023/12/28 23:23:53",
+                        "costs": "7.217\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20231228 23:22:39",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 42, in testPartExecutor\n    yield\n  File \"C:\\Users\\zhiha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 124, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\n",
+                    "errors": "",
+                    "start_timestamp": 1703823759.9831004,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 20,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1703823759,
+                            "datetime": "2023-12-28 23:22:39"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1703823760,
+                            "datetime": "2023-12-28 23:22:40"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_232245846537.png",
+                            "ts": 1703823765,
+                            "datetime": "2023-12-28 23:22:45"
+                        },
+                        {
+                            "name": "assertEqual-failed",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertEqual-failed.png",
+                            "ts": 1703823767,
+                            "datetime": "2023-12-28 23:22:47"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1703823767,
+                            "datetime": "2023-12-28 23:22:47"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertEqual",
+                            "ret": false,
+                            "msg": "'\u7535\u8111' != ''\n- \u7535\u8111\n+ \n : \u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c",
+                            "img": "assertEqual-failed",
+                            "wxml": "28232247.wxml"
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1703823767.2322023,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iPhone12pro']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u641c\u7d22\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iPhone12pro']\")\n",
+                            "        searchInput.trigger(\"change\", {\"value\": \"\u7535\u8111\"})\n",
+                            "        time.sleep(1)\n",
+                            "        value = searchInput.attribute(\"value\")[0]\n",
+                            "        self.assertEqual(\"\u7535\u8111\", value, \"\u662f\u5426\u6210\u529f\u4fee\u6539\u8f93\u5165\u6846\u6570\u503c\")\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20231228232216\\test_search\\20231228232239795366",
+                    "costs": "7.249\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 1,
+                "error": 0,
+                "costs": "7.249\u79d2",
+                "start_time": "2023/12/28 23:22:39",
+                "end_time": "2023/12/28 23:22:47",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2023/12/28 23:22:39",
+                        "end_time": "2023/12/28 23:22:47",
+                        "costs": "7.249\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
+                    "run_time": "20231228 22:59:03",
+                    "test_type": "FirstTest",
+                    "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1703822343.9576542,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.Users.zhiha.OneDrive.Desktop.auto-testing.auto_minium.test3.search_test",
+                    "package": "test3",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "model": "iPhone 5",
+                            "pixelRatio": 2,
+                            "windowWidth": 320,
+                            "windowHeight": 504,
+                            "system": "iOS 10.0.1",
+                            "language": "en",
+                            "version": "8.0.5",
+                            "deviceOrientation": "portrait",
+                            "screenWidth": 320,
+                            "screenHeight": 568,
+                            "SDKVersion": "2.23.1",
+                            "brand": "devtools",
+                            "fontSizeSetting": 16,
+                            "benchmarkLevel": 1,
+                            "batteryLevel": 22,
+                            "statusBarHeight": 20,
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "safeArea": {
+                                "top": 20,
+                                "left": 0,
+                                "right": 320,
+                                "bottom": 568,
+                                "width": 320,
+                                "height": 548
+                            },
+                            "platform": "devtools",
+                            "enableDebug": false,
+                            "devicePixelRatio": 2,
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "mode": "default"
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/home/home",
+                            "path": "images\\setup.png",
+                            "ts": 1703822343,
+                            "datetime": "2023-12-28 22:59:03"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/home/home",
+                            "path": "images\\assertTrue-success.png",
+                            "ts": 1703822344,
+                            "datetime": "2023-12-28 22:59:04"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/search/index",
+                            "path": "images\\assertTrue-success_225910541950.png",
+                            "ts": 1703822350,
+                            "datetime": "2023-12-28 22:59:10"
+                        },
+                        {
+                            "name": "assertTrue-success",
+                            "url": "/pages/goods/result/index",
+                            "path": "images\\assertTrue-success_225916017889.png",
+                            "ts": 1703822356,
+                            "datetime": "2023-12-28 22:59:16"
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/goods/result/index",
+                            "path": "images\\teardown.png",
+                            "ts": 1703822356,
+                            "datetime": "2023-12-28 22:59:16"
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        },
+                        {
+                            "name": "assertTrue",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertTrue-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1703822356.969058,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_search(self):\n",
+                            "        '''\n",
+                            "        turn human operation to auto-operation\n",
+                            "\n",
+                            "        1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n",
+                            "        2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n",
+                            "\n",
+                            "        \u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n",
+                            "        1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n",
+                            "        2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n",
+                            "        3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",
+                            "        '''\n",
+                            "\n",
+                            "        # 1. \u5b58\u5728\u8f93\u5165\u6846 [\u81ea\u52a8\u5316\u5b9a\u4f4d]\n",
+                            "        searchInputExists = self.page.element_is_exists(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        self.assertTrue(searchInputExists, \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846\")\n",
+                            "\n",
+                            "        # 2. \u8fdb\u884c\u641c\u7d22\n",
+                            "        searchInput = self.page.get_element(\"input[placeholder='iphone 13 \u706b\u70ed\u53d1\u552e\u4e2d']\")\n",
+                            "        \n",
+                            "\n",
+                            "        #searchInputBoundingBoxExists = self.page.element_is_exists(\"view[class='t-class-input-container']\")\n",
+                            "        #self.assertTrue(searchInputBoundingBoxExists , \"\u9996\u9875\u662f\u5426\u5b58\u5728\u8f93\u5165\u6846 view\")\n",
+                            "        # \u70b9\u51fb\u8f93\u5165\u6846\n",
+                            "        searchInput.tap(force=True)\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # \u8f93\u5165\uff0c\u8fdb\u884c\u641c\u7d22 \u3010\u8f93\u5165 + \u641c\u7d22\u3011\n",
+                            "        itemListExists = self.page.element_is_exists(\"view[data-index='1']\")\n",
+                            "        self.assertTrue(itemListExists, \"\u70b9\u51fb\u662f\u5426\u5b58\u5728\u5386\u53f2\u8bb0\u5f55\")\n",
+                            "\n",
+                            "        itemList = self.page.get_element(\"view[data-index='1']\")\n",
+                            "        itemList.tap()\n",
+                            "\n",
+                            "        # \u7b49\u5f85\u641c\u7d22\u7ed3\u679c\n",
+                            "        self.page.wait_for(5)\n",
+                            "\n",
+                            "        # 3. \u5199\u65ad\u8a00\uff1a\u7528\u4ee3\u7801\u68c0\u67e5\u662f\u5426\u5b58\u5728\u641c\u7d22\u7ed3\u679c\n",
+                            "        searchResultExists = self.page.element_is_exists(\"view['.goods-card__body']\")\n",
+                            "        self.assertTrue(searchResultExists, \"\u7528\u6237\u641c\u7d22\u540e\u662f\u5426\u5f39\u51fa\u641c\u7d22\u7ed3\u679c\")\n",
+                            "\n",
+                            "        # 4. \u70b9\u51fb\u53d6\u6d88\n",
+                            "\n",
+                            "        # 5. \u5199\u65ad\u8a00\uff1a\u662f\u5426\u6062\u590d\u539f\u6837\n"
+                        ],
+                        "start": 5
+                    },
+                    "filename": "result.json",
+                    "relative": "20231228225819\\test_search\\20231228225903633582",
+                    "costs": "13.011\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 1,
+                "failed": 0,
+                "error": 0,
+                "costs": "13.011\u79d2",
+                "start_time": "2023/12/28 22:59:03",
+                "end_time": "2023/12/28 22:59:16",
+                "detail": [
+                    {
+                        "name": "test3",
+                        "case_num": 1,
+                        "success": 1,
+                        "failed": 0,
+                        "error": 0,
+                        "start_time": "2023/12/28 22:59:03",
+                        "end_time": "2023/12/28 22:59:16",
+                        "costs": "13.011\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_search",
                     "run_time": "20231221 17:00:11",
                     "test_type": "FirstTest",
                     "case_doc": "turn human operation to auto-operation\n1. \u68b3\u7406\u4e1a\u52a1\u6d41\u7a0b\n2. \u4e1a\u52a1\u6d41\u7a0b\u62bd\u8c61 - \u4f2a\u4ee3\u7801\n\u6d4b\u8bd5\u641c\u7d22\u529f\u80fd\uff1a\n1. \u5224\u65ad\u9875\u9762\u662f\u5426\u6709\u641c\u7d22\u8f93\u5165\u6846\n2. \u641c\u7d22\u662f\u5426\u5c55\u793a\u641c\u7d22\u7ed3\u679c\n3. \u70b9\u51fb\u53d6\u6d88\u662f\u5426\u6062\u590d\u539f\u6837\n",

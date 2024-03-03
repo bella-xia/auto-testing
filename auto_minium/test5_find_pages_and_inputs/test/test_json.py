@@ -4,7 +4,7 @@ import os
 class page_query():
     def __init__(self, project_name):
         self.JSON_PATH = os.path.join(
-            "C:\\Users\\zhiha\\OneDrive\\Desktop\\auto-testing\\auto_minium\\data",
+            "C:/Users/zhiha/OneDrive/Desktop/auto-testing/auto_minium/data",
             project_name,
             "app.json")
         self.pages = []

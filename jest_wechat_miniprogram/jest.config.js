@@ -8,9 +8,10 @@ const baseTestDir = "<rootDir>/miniprogram-demo-test2";
 const config = {
   testEnvironment: "node",
   verbose: true,
-  // setupFiles: [`${baseTestDir}/jest.setup.js`],
-  setupFilesAfterEnv: [`${baseTestDir}/jest.setup.js`],
   testMatch: [`${baseTestDir}/home.spec.js`],
+  transform: {
+    "^.+\\.js$": "babel-jest",
+  },
 };
 
 module.exports = config;

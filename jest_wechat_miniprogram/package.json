@@ -3,6 +3,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.0",
     "miniprogram-automator": "^0.12.1"
   },
   "dependencies": {

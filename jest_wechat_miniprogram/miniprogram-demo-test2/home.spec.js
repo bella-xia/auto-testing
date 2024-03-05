@@ -53,19 +53,22 @@ describe("test all pages", () => {
           } catch (err) {
             page = await miniProgram.switchTab("/" + page_name);
           }
-          await page.waitFor(500);
+          // await page.waitFor(500);
           const inputElements = await page.$$("input");
           for (const inputElement of inputElements) {
             if (inputElement !== null) {
               try {
                 await inputElement.input(str_exp);
-                console.log("saving screenshot to", ss_file + ele.id + ".png");
-                await miniProgram.screenshot({
-                  path: ss_file + ele.id + ".png",
-                });
               } catch (error) {
                 console.log("An error occurred:", error.message);
               }
+              console.log(
+                "saving screenshot to",
+                ss_file + inputElement.id + ".png"
+              );
+              await miniProgram.screenshot({
+                path: ss_file + inputElement.id + ".png",
+              });
             }
           }
           page = await miniProgram.navigateBack();

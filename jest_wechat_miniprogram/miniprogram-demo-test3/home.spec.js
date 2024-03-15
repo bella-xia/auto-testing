@@ -17,6 +17,8 @@ describe("test all pages", () => {
         cliPath: cliPath,
         projectPath: projectPath,
       });
+      const systemInfo = await miniProgram.systemInfo();
+      console.log(systemInfo);
     } catch (err) {
       console.error(
         `Error reading JSON file or launching automator for program:`,
@@ -45,9 +47,9 @@ describe("test all pages", () => {
       if (inputElement !== null) {
         try {
           console.log(await inputElement.outerWxml());
-          console.log(await inputElement);
+          //await inputElement.tap();
           // await inputElement.input(str_exp);
-          await inputElement.trigger("change", { textContent: str_exp });
+          await inputElement.trigger("change", { value: str_exp });
           await page.waitFor(1000);
         } catch (error) {
           console.log("An error occurred:", error.message);

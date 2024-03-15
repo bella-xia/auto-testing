@@ -1,6 +1,10 @@
+import base64
 import os
+from pathlib import Path
 from time import sleep
 import minium
+import requests
+from minium import Callback
 
 class BaseDef(minium.MiniTest):
     

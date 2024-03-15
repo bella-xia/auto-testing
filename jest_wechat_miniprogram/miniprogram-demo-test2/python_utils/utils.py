@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/get_array')
 def get_array():
-    project_path = "C:/Users/zhiha/OneDrive/Desktop/auto-testing/data"
+    project_path = "/home/bella-xia/auto-testing/data"
     all_project_lists = os.listdir(project_path)
     project_and_pages = []
     page_query = PageQuery(project_path)

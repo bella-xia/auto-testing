@@ -1,50 +1,29 @@
 {
-  "description": "项目配置文件",
+  "compileType": "miniprogram",
   "setting": {
-    "urlCheck": true,
-    "es6": true,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
-    "autoAudits": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
     "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
+    "packNpmRelationList": [],
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
-    "bundle": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true,
     "ignoreUploadUnusedFiles": true
   },
-  "compileType": "miniprogram",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
-  "libVersion": "2.15.0",
+  "libVersion": "2.25.3",
   "packOptions": {
     "ignore": [],
     "include": []
   },
-  "appid": "wx23e8a0c12a919bca"
+  "appid": "wx02da6f6037f28c99"
 }

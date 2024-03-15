@@ -2,14 +2,15 @@ import { project_and_pages } from "./data";
 
 const automator = require("miniprogram-automator");
 
-const cliPath = "C:/Program Files (x86)/Tencent/微信web开发者工具/cli.bat";
-const projectPath = "C:/Users/zhiha/OneDrive/Desktop/auto-testing/data/";
+const cliPath =
+  "/home/bella-xia/wechat-web-devtools-linux/bin/wechat-devtools-cli";
+const projectPath = "/home/bella-xia/auto-testing/data/";
 const str_exp = "string_example";
 
 describe("test all pages", () => {
   let page;
   let screen_shot_file =
-    "C:/Users/zhiha/OneDrive/Desktop/auto-testing/jest_wechat_miniprogram/miniprogram-demo-test2/screenshots/";
+    "/home/bella-xia/auto-testing/jest_wechat_miniprogram/miniprogram-demo-test2/screenshots/";
 
   project_and_pages.forEach(async (project_info) => {
     const projectFullPath = projectPath + project_info["app_name"] + "/";
@@ -59,16 +60,16 @@ describe("test all pages", () => {
             if (inputElement !== null) {
               try {
                 await inputElement.input(str_exp);
+                console.log(
+                  "saving screenshot to",
+                  ss_file + inputElement.id + ".png"
+                );
+                await miniProgram.screenshot({
+                  path: ss_file + inputElement.id + ".png",
+                });
               } catch (error) {
                 console.log("An error occurred:", error.message);
               }
-              console.log(
-                "saving screenshot to",
-                ss_file + inputElement.id + ".png"
-              );
-              await miniProgram.screenshot({
-                path: ss_file + inputElement.id + ".png",
-              });
             }
           }
           page = await miniProgram.navigateBack();
@@ -82,7 +83,7 @@ describe("test all pages", () => {
       for (const page_name of pages_info) {
         console.log(page_name);
         page = await miniProgram.navigateTo("/" + page_name);
-        await page.waitFor(500);
+        // await page.waitFor(500);
         const inputElements = await page.$$("input");
         console.log(inputElements.length);
         for (const ele of inputElements) {

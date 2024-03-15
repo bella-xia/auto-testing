@@ -1,9 +1,7 @@
 const { Config } = require("@jest/types");
 
-//const baseDir = "<rootDir>/src/app/server_app";
-//const baseTestDir = "<rootDir>/src/test/server_app";
-
-const baseTestDir = "<rootDir>/miniprogram-demo-test2";
+const baseTestDir =
+  "/home/bella-xia/auto-testing/jest_wechat_miniprogram/miniprogram-demo-test3";
 
 const config = {
   testEnvironment: "node",

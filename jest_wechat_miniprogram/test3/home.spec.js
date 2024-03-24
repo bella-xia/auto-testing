@@ -35,7 +35,7 @@ describe("test all pages", () => {
     page = null;
   }, 300000);
 
-  it("testing input result", async () => {
+  it.skip("testing input result", async () => {
     const page_name = "/pages/editPersonInfo/editPersonInfo";
     try {
       page = await miniProgram.navigateTo(page_name);
@@ -65,6 +65,72 @@ describe("test all pages", () => {
     const textElements = await page.$$(".cell-ft");
     for (const textEle of textElements) {
       console.log(await textEle.outerWxml());
+    }
+  }, 300000);
+
+  it.skip("testing form submission", async () => {
+    const page_name = "/pages/editPersonInfo/editPersonInfo";
+    try {
+      page = await miniProgram.navigateTo(page_name);
+    } catch (err) {
+      page = await miniProgram.switchTab(page_name);
+    }
+    const formElement = await page.$("form");
+    console.log(await formElement.outerWxml());
+    formElement.trigger("submit", {
+      value: {
+        name: "str",
+        nickName: "string",
+        gender: "g",
+        age: 11,
+        birthday: "str",
+        constellation: "str",
+        company: "string",
+        school: "string",
+        tel: "string",
+        email: "string",
+        intro: "string",
+      },
+    });
+
+    //const form_btn = await page.$(".edit-btn");
+    //await form_btn.tap();
+    await page.waitFor(5000);
+
+    page = await miniProgram.currentPage();
+
+    const textElements = await page.$$(".cell-ft");
+    for (const textEle of textElements) {
+      console.log(await textEle.outerWxml());
+    }
+  }, 300000);
+
+  it("testing automatic form submission", async () => {
+    const page_name = "/pages/editPersonInfo/editPersonInfo";
+    try {
+      page = await miniProgram.navigateTo(page_name);
+    } catch (err) {
+      page = await miniProgram.switchTab(page_name);
+    }
+    const formElement = await page.$("form");
+    const inputElements = await formElement.$$("input");
+    const inputArrays = {};
+    for (const inputElement of inputElements) {
+      inputArrays[await inputElement.property("name")] = str_exp;
+    }
+    formElement.trigger("submit", {
+      value: inputArrays,
+    });
+
+    //const form_btn = await page.$(".edit-btn");
+    //await form_btn.tap();
+    await page.waitFor(5000);
+
+    page = await miniProgram.currentPage();
+
+    const textElements = await page.$$(".cell-ft");
+    for (const textEle of textElements) {
+      expect(await textEle.text()).toBe(str_exp);
     }
   }, 300000);
 });

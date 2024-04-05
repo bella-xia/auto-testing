@@ -1,0 +1,3363 @@
+
+> test
+> jest
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"4f2d8814-5015-4ebd-b24a-ad9ce1ace18a","method":"Tool.getInfo","params":{}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"e681c5e1-d94d-4a5e-8e05-32db7a7af21c","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    {
+      model: 'iPhone 5',
+      pixelRatio: 2,
+      windowWidth: 320,
+      windowHeight: 456,
+      system: 'iOS 10.0.1',
+      language: 'zh_CN',
+      version: '8.0.5',
+      deviceOrientation: 'portrait',
+      screenWidth: 320,
+      screenHeight: 568,
+      SDKVersion: '2.25.3',
+      brand: 'devtools',
+      fontSizeSetting: 16,
+      benchmarkLevel: 1,
+      batteryLevel: 22,
+      statusBarHeight: 20,
+      bluetoothEnabled: true,
+      locationEnabled: true,
+      wifiEnabled: true,
+      cameraAuthorized: true,
+      locationAuthorized: true,
+      microphoneAuthorized: true,
+      notificationAuthorized: true,
+      safeArea: {
+        top: 20,
+        left: 0,
+        right: 320,
+        bottom: 568,
+        width: 320,
+        height: 548
+      },
+      platform: 'devtools',
+      enableDebug: true,
+      devicePixelRatio: 2,
+      host: { env: 'WeChat' },
+      mode: 'default'
+    }
+
+      at Object.log (test3/home.spec.js:21:15)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"d07fe8e8-3a1f-42a1-94e6-2d130170af66","method":"App.getCurrentPage","params":{}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"21dce4eb-6cf9-46b3-b7e5-9402977c8485","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/editPersonInfo/editPersonInfo"}]}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"57f9ec22-bc26-4688-8d92-ae90d10b3050","method":"App.getCurrentPage","params":{}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"7c0ec8cf-681f-4c5e-a002-dd3a2e695ad4","method":"Page.getElements","params":{"selector":"input","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"525ab88b-46f7-4ba2-8d25-bdaee0902c6e","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"34cc58cc-a6b2-45c4-8f72-4a42d8486e94","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"b7632c23-a428-47a6-b75b-b1f67ff6c616","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"57264208-6aa9-4fdf-bff6-a665bce42b00","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"19bca930-0263-41fc-abb0-8ca3aed6deee","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"f9d2c648-0ee9-44bf-8b54-162dc6f9d304","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"d82f23ee-2c04-4bf7-a81a-abedf7aff368","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"c48c591a-cd31-4c9a-bd3c-420ec3cf7637","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"e8c6c02e-5978-42a8-9317-4b8090791031","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"056156ef-f28c-4dc9-84b0-2f3379321903","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"c0c398b5-cf61-4060-8dfd-e49722024503","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"ff6210f6-88a8-40fa-87ee-a4ab534a193f","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"9a9b6b5a-bcee-4142-9ce8-e2aee348d33a","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"260771f3-5081-47cd-ba54-2814537991f8","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"007b0010-8c63-4829-be43-b0b8e244bebb","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"aa4e1c9e-b321-41f6-8305-5a3c8241a3f6","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"9fb3a0be-8ecd-4c3a-a771-8ccb8c505e03","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"094361fd-750c-40c5-a398-2e797a1b4dd5","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"6443eb98-c4a1-4d1d-a32d-c46c10c26691","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"0b2ac3a9-ebd4-472b-abe8-825b8b8f4f37","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"aaa665f7-187f-493f-9602-528caa001231","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"b626a334-8e46-49d2-ba7c-1b739eea1779","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"7141f740-f06e-4aeb-9190-1b409dbb8765","method":"Page.getElement","params":{"selector":".edit-btn","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"82dab307-a42e-4c26-b069-f683d5ca9429","method":"Element.tap","params":{"elementId":"1333f1f3-85c0-40dd-b091-67cdf2cc6e45","pageId":3}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"472bd0c6-01e6-470f-ad6f-685ce03ca6e0","method":"App.getCurrentPage","params":{}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"8693470c-6502-4a7c-88d9-26f10e589ae6","method":"Page.getElement","params":{"selector":".cell-ft","pageId":5}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"dd5430dc-03b9-4c42-9488-35e1245bcc2c","method":"Element.getWXML","params":{"type":"outer","elementId":"f086e4cf-0614-4925-a4a8-a33038a58f2a","pageId":5}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    <view class="cell-ft">未填写</view>
+
+      at Object.log (test3/home.spec.js:63:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"084497a6-736d-4c46-9796-352c0b7bb319","method":"App.exit","params":{}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+
+  console.log
+    web socket data:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:323:13)
+
+  console.log
+    {"id":"f07c5779-8c96-44b8-845e-ad72aa863c27","method":"Tool.close","params":{}}
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:324:13)
+
+  console.log
+    web socket options:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:325:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:326:13)
+
+  console.log
+    web socket cb:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:327:13)
+
+  console.log
+    undefined
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:328:13)
+
+  console.log
+    web socket sender:
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:360:13)
+
+  console.log
+    <ref *2> Sender {
+      _extensions: {},
+      _socket: <ref *1> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194521348
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 200,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Circular *2],
+          _socket: [Circular *1],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        }
+      },
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    }
+
+      at WebSocket.send (node_modules/ws/lib/websocket.js:361:13)
+

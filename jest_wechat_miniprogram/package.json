@@ -4,9 +4,14 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.0",
+    "eslint-config-wxapp": "^1.0.0",
     "miniprogram-automator": "^0.12.1"
   },
   "dependencies": {
-    "jest": "^29.7.0"
+    "@jimp/jpeg": "^0.22.12",
+    "jest": "^29.7.0",
+    "jpeg-js": "^0.4.4",
+    "minimist": "^1.2.8",
+    "mkdirp": "^3.0.1"
   }
 }

@@ -1,0 +1,1148 @@
+
+> test
+> jest
+
+The resource 
+http://127.0.0.1:32521/appservice/__dev__/WAServiceMainContext.js?t=wechat&s=1712279618972&v=2.25.3 
+was preloaded using link preload but not used within a few seconds from the window's load event. 
+Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+
+  console.log
+    <ref *1> WebSocket {
+      _events: [Object: null prototype] {
+        open: [Function: onOpen] { _listener: [Function (anonymous)] },
+        error: [Function: onError] { _listener: [Function (anonymous)] },
+        message: [Function: onMessage] { _listener: [Function (anonymous)] },
+        close: [Function: onClose] { _listener: [Function (anonymous)] }
+      },
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      readyState: 1,
+      protocol: '',
+      _binaryType: 'nodebuffer',
+      _closeFrameReceived: false,
+      _closeFrameSent: false,
+      _closeMessage: '',
+      _closeTimer: null,
+      _closeCode: 1006,
+      _extensions: {},
+      _receiver: Receiver {
+        _events: {
+          close: undefined,
+          error: [Function: receiverOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: [Function: receiverOnDrain],
+          conclude: [Function: receiverOnConclude],
+          message: [Function: receiverOnMessage],
+          ping: [Function: receiverOnPing],
+          pong: [Function: receiverOnPong]
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17580812,
+          [Symbol(kBufferedValue)]: null
+        },
+        _maxListeners: undefined,
+        _binaryType: 'nodebuffer',
+        _extensions: {},
+        _maxPayload: 104857600,
+        _bufferedBytes: 0,
+        _buffers: [],
+        _compressed: false,
+        _payloadLength: 0,
+        _mask: undefined,
+        _fragmented: 0,
+        _masked: false,
+        _fin: false,
+        _opcode: 0,
+        _totalPayloadLength: 0,
+        _messageLength: 0,
+        _fragments: [],
+        _state: 0,
+        _loop: false,
+        _eventsCount: 6,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(websocket)]: [Circular *1]
+      },
+      _sender: Sender {
+        _extensions: {},
+        _socket: Socket {
+          connecting: false,
+          _hadError: false,
+          _parent: null,
+          _host: null,
+          _closeAfterHandlingError: false,
+          _events: [Object],
+          _readableState: [ReadableState],
+          _writableState: [WritableState],
+          allowHalfOpen: false,
+          _maxListeners: undefined,
+          _eventsCount: 4,
+          _sockname: null,
+          _pendingData: null,
+          _pendingEncoding: '',
+          server: null,
+          _server: null,
+          parser: null,
+          _httpMessage: null,
+          timeout: 0,
+          [Symbol(async_id_symbol)]: 188,
+          [Symbol(kHandle)]: [TCP],
+          [Symbol(lastWriteQueueSize)]: 0,
+          [Symbol(timeout)]: null,
+          [Symbol(kBuffer)]: null,
+          [Symbol(kBufferCb)]: null,
+          [Symbol(kBufferGen)]: null,
+          [Symbol(shapeMode)]: true,
+          [Symbol(kCapture)]: false,
+          [Symbol(kSetNoDelay)]: true,
+          [Symbol(kSetKeepAlive)]: false,
+          [Symbol(kSetKeepAliveInitialDelay)]: 0,
+          [Symbol(kBytesRead)]: 0,
+          [Symbol(kBytesWritten)]: 0,
+          [Symbol(websocket)]: [Circular *1]
+        },
+        _firstFragment: true,
+        _compress: false,
+        _bufferedBytes: 0,
+        _deflating: false,
+        _queue: []
+      },
+      _socket: <ref *2> Socket {
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: null,
+        _closeAfterHandlingError: false,
+        _events: {
+          close: [Function: socketOnClose],
+          error: [Function: socketOnError],
+          prefinish: undefined,
+          finish: undefined,
+          drain: undefined,
+          data: [Function: socketOnData],
+          end: [Array],
+          readable: undefined,
+          connect: undefined
+        },
+        _readableState: ReadableState {
+          highWaterMark: 16384,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 194584836
+        },
+        _writableState: WritableState {
+          highWaterMark: 16384,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function: bound onFinish]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _eventsCount: 4,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(async_id_symbol)]: 188,
+        [Symbol(kHandle)]: TCP {
+          reading: true,
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *2]
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: true,
+        [Symbol(kSetKeepAlive)]: false,
+        [Symbol(kSetKeepAliveInitialDelay)]: 0,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(websocket)]: [Circular *1]
+      },
+      _isServer: false,
+      _redirects: 0,
+      url: 'ws://127.0.0.1:9420',
+      _req: null,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Transport (node_modules/miniprogram-automator/out/Transport.js:13:17)
+
+  console.log
+    Transport {
+      _events: [Object: null prototype] {
+        message: [Function (anonymous)],
+        close: [Function (anonymous)]
+      },
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      ws: <ref *1> WebSocket {
+        _events: [Object: null prototype] {
+          open: [Function],
+          error: [Function],
+          message: [Function],
+          close: [Function]
+        },
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        readyState: 1,
+        protocol: '',
+        _binaryType: 'nodebuffer',
+        _closeFrameReceived: false,
+        _closeFrameSent: false,
+        _closeMessage: '',
+        _closeTimer: null,
+        _closeCode: 1006,
+        _extensions: {},
+        _receiver: Receiver {
+          _events: [Object],
+          _writableState: [WritableState],
+          _maxListeners: undefined,
+          _binaryType: 'nodebuffer',
+          _extensions: {},
+          _maxPayload: 104857600,
+          _bufferedBytes: 0,
+          _buffers: [],
+          _compressed: false,
+          _payloadLength: 0,
+          _mask: undefined,
+          _fragmented: 0,
+          _masked: false,
+          _fin: false,
+          _opcode: 0,
+          _totalPayloadLength: 0,
+          _messageLength: 0,
+          _fragments: [],
+          _state: 0,
+          _loop: false,
+          _eventsCount: 6,
+          [Symbol(shapeMode)]: true,
+          [Symbol(kCapture)]: false,
+          [Symbol(websocket)]: [Circular *1]
+        },
+        _sender: Sender {
+          _extensions: {},
+          _socket: [Socket],
+          _firstFragment: true,
+          _compress: false,
+          _bufferedBytes: 0,
+          _deflating: false,
+          _queue: []
+        },
+        _socket: Socket {
+          connecting: false,
+          _hadError: false,
+          _parent: null,
+          _host: null,
+          _closeAfterHandlingError: false,
+          _events: [Object],
+          _readableState: [ReadableState],
+          _writableState: [WritableState],
+          allowHalfOpen: false,
+          _maxListeners: undefined,
+          _eventsCount: 4,
+          _sockname: null,
+          _pendingData: null,
+          _pendingEncoding: '',
+          server: null,
+          _server: null,
+          parser: null,
+          _httpMessage: null,
+          timeout: 0,
+          [Symbol(async_id_symbol)]: 188,
+          [Symbol(kHandle)]: [TCP],
+          [Symbol(lastWriteQueueSize)]: 0,
+          [Symbol(timeout)]: null,
+          [Symbol(kBuffer)]: null,
+          [Symbol(kBufferCb)]: null,
+          [Symbol(kBufferGen)]: null,
+          [Symbol(shapeMode)]: true,
+          [Symbol(kCapture)]: false,
+          [Symbol(kSetNoDelay)]: true,
+          [Symbol(kSetKeepAlive)]: false,
+          [Symbol(kSetKeepAliveInitialDelay)]: 0,
+          [Symbol(kBytesRead)]: 0,
+          [Symbol(kBytesWritten)]: 0,
+          [Symbol(websocket)]: [Circular *1]
+        },
+        _isServer: false,
+        _redirects: 0,
+        url: 'ws://127.0.0.1:9420',
+        _req: null,
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Connection (node_modules/miniprogram-automator/out/Connection.js:36:21)
+
+  console.log
+    {"id":"d50a612c-ebd7-4faa-ba9c-6713454f3b65","method":"Tool.getInfo","params":{}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"3e70cfb0-c5e3-420c-ad52-5a52a261fefe","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {
+      model: 'iPhone 5',
+      pixelRatio: 2,
+      windowWidth: 320,
+      windowHeight: 456,
+      system: 'iOS 10.0.1',
+      language: 'zh_CN',
+      version: '8.0.5',
+      deviceOrientation: 'portrait',
+      screenWidth: 320,
+      screenHeight: 568,
+      SDKVersion: '2.25.3',
+      brand: 'devtools',
+      fontSizeSetting: 16,
+      benchmarkLevel: 1,
+      batteryLevel: 40,
+      statusBarHeight: 20,
+      bluetoothEnabled: true,
+      locationEnabled: true,
+      wifiEnabled: true,
+      cameraAuthorized: true,
+      locationAuthorized: true,
+      microphoneAuthorized: true,
+      notificationAuthorized: true,
+      safeArea: {
+        top: 20,
+        left: 0,
+        right: 320,
+        bottom: 568,
+        width: 320,
+        height: 548
+      },
+      platform: 'devtools',
+      enableDebug: true,
+      devicePixelRatio: 2,
+      host: { env: 'WeChat' },
+      mode: 'default'
+    }
+
+      at Object.log (test3/home.spec.js:21:15)
+
+  console.log
+    {"id":"375be221-ee91-4a94-a35e-7a3ef89d7dad","method":"App.getCurrentPage","params":{}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"fd69db6f-8ab5-4158-8df8-5d4974af5898","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/editPersonInfo/editPersonInfo"}]}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"9f7f7cb8-ccdb-4ceb-b5f8-d694e7f04a9a","method":"App.getCurrentPage","params":{}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"8475ab2d-9bd8-4a34-ad53-8a100c49557f","method":"Page.getElements","params":{"selector":"input","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+          at Array.map (<anonymous>)
+
+  console.log
+    {"id":"da498a96-7ad3-4bd1-825f-9197865c37d6","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"046c7ec4-ef80-4ab4-900e-b2f7439eafe0","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"d67d00f8-52f1-4b17-896b-1b6b33e76215","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"da2c8b31-8c51-4445-8de1-ff9ef12efbdf","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"5e0a09c7-1ce8-4846-8109-eb29fdeda32e","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"b35a7ac5-c5ca-461a-a1fb-2383436c5afa","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"d1ce3f36-fb2e-465d-9592-1261567434a6","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"9812266e-7e5c-4e91-8148-75b57b3038a1","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"86a24d3c-cf38-40ab-8afb-6dda0a64c0e5","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"a5e166f3-fd23-4df5-9270-ed827259fddd","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"5dec7a97-554a-4395-b56b-6485178cd386","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"2550dca3-79a9-4a61-be99-2e672d54fa9a","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"43c41e30-c6d1-4fd0-abeb-5f3c1aca0e0b","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"9f7f1f7a-a10e-41d7-9fac-99458bedfc41","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"740d0652-a57e-45a5-b437-dc08e4664e10","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"275fe129-440c-4151-bde7-6a666bbf5a4b","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"cffd8320-ba63-41ac-97fc-f9375d5b5c94","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"a9d8c12b-77a9-42e8-8186-c38296c45efd","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"07186a75-540e-475c-a04e-f6b7ae00632a","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"144d2ca0-b543-40c8-b6f0-0dfa2e8b0c9f","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"64037eef-13c3-404a-9b0d-4f12340d5d82","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"d07987fe-1e94-4326-9cc2-9173ee568761","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"1323ca37-e274-406a-a927-e0db15ef4f81","method":"Page.getElement","params":{"selector":".edit-btn","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+
+  console.log
+    {"id":"fe66ff6f-47d0-41e0-8d71-456a7f2b81f7","method":"Element.tap","params":{"elementId":"72cb8d7a-b8d3-4ef9-92d9-7fa91384e21a","pageId":2}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"3e36b791-7bdf-4f8f-866b-eeeaa1e78ea4","method":"App.getCurrentPage","params":{}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"bd000ce2-ea03-47b5-aa9e-4e0a0850d25a","method":"Page.getElement","params":{"selector":".cell-ft","pageId":4}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    Connection {
+      _events: [Object: null prototype] {
+        'App.logAdded': [Function (anonymous)],
+        'App.bindingCalled': [Function (anonymous)],
+        'App.exceptionThrown': [Function (anonymous)]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      callbacks: Map(0) {},
+      onMessage: [Function (anonymous)],
+      onClose: [Function (anonymous)],
+      transport: Transport {
+        _events: [Object: null prototype] {
+          message: [Function (anonymous)],
+          close: [Function (anonymous)]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        ws: WebSocket {
+          _events: [Object: null prototype],
+          _eventsCount: 4,
+          _maxListeners: undefined,
+          readyState: 1,
+          protocol: '',
+          _binaryType: 'nodebuffer',
+          _closeFrameReceived: false,
+          _closeFrameSent: false,
+          _closeMessage: '',
+          _closeTimer: null,
+          _closeCode: 1006,
+          _extensions: {},
+          _receiver: [Receiver],
+          _sender: [Sender],
+          _socket: [Socket],
+          _isServer: false,
+          _redirects: 0,
+          url: 'ws://127.0.0.1:9420',
+          _req: null,
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    }
+
+      at new Element (node_modules/miniprogram-automator/out/Element.js:26:17)
+
+  console.log
+    {"id":"0fc6aac1-0e5d-4ab0-8d7a-780820169ed0","method":"Element.getWXML","params":{"type":"outer","elementId":"84c921b0-a7d1-49c1-8d3d-8516315aa4fd","pageId":4}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    <view class="cell-ft">未填写</view>
+
+      at Object.log (test3/home.spec.js:63:13)
+
+  console.log
+    {"id":"fce4bd3f-000e-455e-91fb-94937e247d81","method":"App.exit","params":{}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+
+  console.log
+    {"id":"9f1fa01f-282f-4e8a-84f6-a2571387baa8","method":"Tool.close","params":{}}
+
+      at Transport.send (node_modules/miniprogram-automator/out/Transport.js:17:17)
+

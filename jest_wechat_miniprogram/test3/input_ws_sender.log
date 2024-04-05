@@ -1,0 +1,363 @@
+
+> test
+> jest
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 d1 3e 84 7a d4>,
+      <Buffer 45 a6 13 b0 1c be 58 b1 5c b4 4c b5 08 e7 4d f9 06 bd 4c e4 13 b0 49 ec 06 a9 18 e4 58 e0 57 ec 09 e2 49 ed 5a e5 1c e6 06 bd 1e f6 12 a6 17 b1 4a ec ... 31 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fb 5d 39 68 e7>,
+      <Buffer 26 1b 01 83 7f 03 4a d2 38 08 5f 84 6c 08 0d ca 38 01 5c d6 70 0d 5f d3 3c 14 0a 84 6c 0a 45 d3 39 5d 5d d0 6d 5b 5d d4 6e 00 5c c5 71 1b 05 82 29 51 ... 73 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    {
+      model: 'iPhone 5',
+      pixelRatio: 2,
+      windowWidth: 320,
+      windowHeight: 456,
+      system: 'iOS 10.0.1',
+      language: 'zh_CN',
+      version: '8.0.5',
+      deviceOrientation: 'portrait',
+      screenWidth: 320,
+      screenHeight: 568,
+      SDKVersion: '2.25.3',
+      brand: 'devtools',
+      fontSizeSetting: 16,
+      benchmarkLevel: 1,
+      batteryLevel: 82,
+      statusBarHeight: 20,
+      bluetoothEnabled: true,
+      locationEnabled: true,
+      wifiEnabled: true,
+      cameraAuthorized: true,
+      locationAuthorized: true,
+      microphoneAuthorized: true,
+      notificationAuthorized: true,
+      safeArea: {
+        top: 20,
+        left: 0,
+        right: 320,
+        bottom: 568,
+        width: 320,
+        height: 548
+      },
+      platform: 'devtools',
+      enableDebug: true,
+      devicePixelRatio: 2,
+      host: { env: 'WeChat' },
+      mode: 'default'
+    }
+
+      at Object.log (test3/home.spec.js:21:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 d7 7b a6 55 0a>,
+      <Buffer 00 84 3c 6e 59 9c 77 3d 1f 95 62 68 48 c5 36 27 4c c3 62 3f 56 92 37 6b 49 8b 6d 3f 1e c5 78 3f 49 93 33 3b 4b 95 62 32 48 9f 66 28 57 84 38 6f 0f ce ... 37 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 a2 39 33 0c b5>,
+      <Buffer 42 11 65 d1 1b 09 2e d7 0b 52 35 d0 5c 06 3a 98 0f 00 3d 8c 14 07 3b d4 01 1e 34 84 0f 0b 21 81 5d 05 3d d3 0f 05 69 86 5c 00 6e 97 15 11 61 d0 4d 5b ... 112 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 d7 74 12 c8 1b>,
+      <Buffer 0f 30 a1 7f 56 28 ea 22 40 2a f9 2c 17 21 f0 36 42 73 ad 78 59 26 fe 7e 40 3f f0 23 12 2a e5 7e 4d 22 f0 23 4c 2b ff 78 16 24 aa 39 58 30 a5 7e 00 7a ... 37 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 f2 78 8c 0a 67>,
+      <Buffer 03 ae 63 03 5a b6 28 02 4f bc 39 57 1d ed 6c 4a 19 be 33 51 55 b8 68 55 1e a1 32 5e 1a b4 27 06 1d ba 3e 55 49 ef 3e 5f 1c b9 32 45 54 ae 67 02 0c e4 ... 64 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 b9 06 94 a1>,
+      <Buffer c2 24 fd c5 9b 3c b6 c2 8f 37 f0 99 db 34 a0 8c df 63 f2 93 94 32 ac c0 8f 2b f5 c7 8c 37 b9 c2 8f 65 f7 91 db 33 a3 98 da 65 a3 83 95 24 f9 c4 cd 6e ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 5e ff a8 7d>,
+      <Buffer 25 dd c1 19 7c c5 8a 1f 3a cc cd 44 6c cc 99 50 6a c9 99 4a 73 cb cd 1e 6f d2 ca 19 6f cb 85 4a 6e cf ca 4c 6f cf cc 49 6a c6 cd 5f 72 dd c5 18 2a 97 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 9a 3d bd 1f>,
+      <Buffer e1 1f d4 7b b8 07 9f 2b a3 09 d8 2e fe 58 84 32 a8 0a 8f 2d b7 09 db 27 ad 10 84 2e aa 08 90 29 a3 5f 8c 7e a2 0c 89 2a ff 0e df 3d b6 1f d0 7a ee 55 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 77 1b 38 a9>,
+      <Buffer 0c 39 51 cd 55 21 1a 90 46 7a 0e cf 42 29 5e 84 41 7f 0e 98 5a 2f 0d 90 47 36 01 9d 40 7f 15 90 47 2a 09 cb 45 78 0c ca 16 29 01 8b 5b 39 55 cc 03 73 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 66 50 58 01>,
+      <Buffer 1d 72 31 65 44 6a 7a 34 52 62 69 36 07 67 3a 2c 04 33 6b 67 4b 64 6e 39 5e 7d 39 60 03 32 75 30 56 65 6b 37 07 61 61 37 5f 35 6e 23 4a 72 35 64 12 38 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 02 77 de 7a>,
+      <Buffer 79 55 b7 1e 20 4d fc 1c 61 42 ba 4a 33 11 e9 57 64 4f e8 1c 2f 43 e8 48 66 5a bc 1b 67 46 f3 19 35 14 b8 4b 33 15 ea 1b 34 11 bc 58 2e 55 b3 1f 76 1f ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 3e 3a 74 b8>,
+      <Buffer 45 18 1d dc 1c 00 56 de 5d 0f 4c db 58 58 10 95 09 59 42 80 13 0e 16 8c 5f 17 4d de 09 0e 59 88 5c 58 47 8e 5a 59 16 8c 0b 0f 15 9a 12 18 19 dd 4a 52 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 9c 6b 4a 65>,
+      <Buffer e7 49 23 01 be 51 68 50 f9 5b 79 5c aa 5f 2c 48 fd 58 7e 06 b1 5f 7e 00 fd 46 2b 52 ff 0e 67 5c ff 5a 7d 57 ac 0d 7e 55 ae 08 7a 47 b0 49 27 00 e8 03 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 77 c9 d8 e9>,
+      <Buffer 0c eb b1 8d 55 f3 fa 8b 46 f8 ec d0 11 fc b9 c4 4f f1 bb 88 5a fd ba 88 14 e4 e1 d0 12 ad f5 d0 42 aa e8 dc 45 ff ef d8 4e ac b9 cb 5b eb b5 8c 03 a1 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 40 10 6e d0>,
+      <Buffer 3b 32 07 b4 62 2a 4c e1 24 25 5d e2 77 26 58 fd 76 25 0a b4 6d 24 5a b2 78 3d 56 e6 77 71 43 b4 21 23 56 b5 22 25 0c e4 21 76 58 f2 6c 32 03 b5 34 78 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 c2 67 c9 cf 13>,
+      <Buffer 1c eb a6 77 45 f3 ed 23 51 fb fe 71 52 fd f9 3e 06 fa fd 77 4a fd f8 24 56 e4 f6 75 55 f0 e2 21 56 ac f8 24 05 a8 fb 76 04 f9 f6 31 4b eb a2 76 13 a1 ... 144 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 f5 38 82 33 3c>,
+      <Buffer 43 a0 5a 58 1a b8 11 59 00 b7 06 0f 00 b4 05 11 5b ba 51 0f 15 b6 05 5e 0a af 0b 5d 5c b2 1e 5f 59 b3 55 0c 0f e1 01 09 0d bb 06 1e 14 a0 5e 59 4c ea ... 67 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 8d 11 d0 26 1a>,
+      <Buffer 6a f2 4f 7e 33 ea 04 28 27 e3 40 2b 22 e6 1f 37 23 b3 10 2e 3c e4 44 2e 24 fd 1f 22 27 e2 0b 7e 23 b1 42 23 22 e8 13 2a 21 b2 1e 38 3d f2 4b 7f 65 b8 ... 91 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 d7 fa 3f d6 e6>,
+      <Buffer 81 1d bf 82 d8 05 f4 df ca 0d e4 80 cd 0c b5 cb 99 0b e2 d4 d7 0b e7 83 cb 12 ef d4 c2 5e fb d0 cf 06 e2 d4 cd 5b ee d3 c9 09 e2 c4 d6 1d bb 83 8e 57 ... 37 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 f4 0f 51 8d 57>,
+      <Buffer 74 73 e4 33 2d 6b af 61 6e 69 b5 64 6a 33 ec 7a 39 67 bc 32 22 65 e9 60 69 7c ef 34 6b 68 a0 61 3f 64 eb 36 37 65 ee 67 37 66 be 75 23 73 e0 32 7b 39 ... 66 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 fe 00 a0 ff 95 1f 27>,
+      <Buffer 84 b7 76 43 dd af 3d 1e 99 f7 2a 1f ce a6 27 0a cd a3 29 16 d2 a1 79 46 ca b8 26 14 9a f6 32 44 ca ad 29 1e 9d a6 7a 10 c9 a3 79 05 d3 b7 72 42 8b fd ... 110 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    <view class="cell-ft">未填写</view>
+
+      at Object.log (test3/home.spec.js:63:13)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 cd dc d0 ac 5c>,
+      <Buffer a7 f2 c5 38 fe ea 8e 65 bf e8 cf 64 e5 b3 9a 71 ea e4 cf 64 f1 e4 94 6c b9 fd 94 3e ed e3 81 6f be e5 ce 69 ef e7 cd 3a e9 b3 9d 7e f0 f2 c1 39 a8 b8 ... 27 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+
+  console.log
+    sending frame
+
+      at Sender.send (node_modules/ws/lib/sender.js:277:15)
+
+  console.log
+    [
+      <Buffer 81 cf 57 20 c0 99>,
+      <Buffer 2c 02 a9 fd 75 1a e2 fa 36 10 f5 fd 6e 17 a2 b4 6e 13 f4 af 7a 14 a1 a1 63 0d a2 ae 31 44 ed a0 35 45 a2 a0 33 43 f7 fd 6f 44 a1 bb 7b 02 ad fc 23 48 ... 29 more bytes>
+    ]
+
+      at Sender.send (node_modules/ws/lib/sender.js:278:15)
+

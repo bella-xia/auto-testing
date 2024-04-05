@@ -35,7 +35,7 @@ describe("test all pages", () => {
     page = null;
   }, 300000);
 
-  it.skip("testing input result", async () => {
+  it("testing input result", async () => {
     const page_name = "/pages/editPersonInfo/editPersonInfo";
     try {
       page = await miniProgram.navigateTo(page_name);
@@ -46,10 +46,8 @@ describe("test all pages", () => {
     for (const inputElement of inputElements) {
       if (inputElement !== null) {
         try {
-          console.log(await inputElement.outerWxml());
-          //await inputElement.tap();
-          // await inputElement.input(str_exp);
-          await inputElement.trigger("change", { value: str_exp });
+          await inputElement.input(str_exp);
+          // await inputElement.trigger("change", { value: str_exp });
           await page.waitFor(1000);
         } catch (error) {
           console.log("An error occurred:", error.message);
@@ -62,10 +60,8 @@ describe("test all pages", () => {
 
     page = await miniProgram.currentPage();
 
-    const textElements = await page.$$(".cell-ft");
-    for (const textEle of textElements) {
-      console.log(await textEle.outerWxml());
-    }
+    const textEle = await page.$(".cell-ft");
+    console.log(await textEle.outerWxml());
   }, 300000);
 
   it.skip("testing form submission", async () => {
@@ -105,7 +101,7 @@ describe("test all pages", () => {
     }
   }, 300000);
 
-  it("testing automatic form submission", async () => {
+  it.skip("testing automatic form submission", async () => {
     const page_name = "/pages/editPersonInfo/editPersonInfo";
     try {
       page = await miniProgram.navigateTo(page_name);

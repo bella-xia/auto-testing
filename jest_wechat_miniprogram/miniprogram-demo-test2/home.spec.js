@@ -62,13 +62,13 @@ describe("test all pages", () => {
               } catch (error) {
                 console.log("An error occurred:", error.message);
               }
-              console.log(
-                "saving screenshot to",
-                ss_file + inputElement.id + ".png"
-              );
-              await miniProgram.screenshot({
-                path: ss_file + inputElement.id + ".png",
-              });
+              // console.log(
+              //   "saving screenshot to",
+              //   ss_file + inputElement.id + ".png"
+              // );
+              // await miniProgram.screenshot({
+              //   path: ss_file + inputElement.id + ".png",
+              // });
             }
           }
           page = await miniProgram.navigateBack();

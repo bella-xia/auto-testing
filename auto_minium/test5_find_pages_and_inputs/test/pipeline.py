@@ -1,6 +1,7 @@
 import json
 import os
 import subprocess
+import tracemalloc
 from utils import write_to_file
 
 def generate_config(input_data):
@@ -13,8 +14,11 @@ def generate_config(input_data):
 def run_python_script(script_path):
     subprocess.run(['python', script_path, 'config.json'])
 
+
 if __name__ == "__main__":
-    project_path = "C:/Users/zhiha/OneDrive/Desktop/auto-testing/data"
+    tracemalloc.start()
+    # project_path = "C:/Users/zhiha/OneDrive/Desktop/auto-testing/data"
+    project_path = "C:/Users/zhiha/OneDrive/Desktop/miniapp_data/modified_miniapp"
     dev_tool_path = "C:/Program Files (x86)/Tencent/微信web开发者工具/cli.bat"
     script_path = 'C:/Users/zhiha/OneDrive/Desktop/auto-testing/auto_minium/test5_find_pages_and_inputs/test/main.py' 
     all_project_lists = os.listdir(project_path)
@@ -26,4 +30,7 @@ if __name__ == "__main__":
         write_to_file(str(project + "\n"), 'test_result_log.txt')
         generate_config(input_data)
         run_python_script(script_path)
-
+    snapshot = tracemalloc.take_snapshot()
+    top_stats = snapshot.statistics('lineno')
+    write_to_file("\n Memory Allocation: \n", 'test_result_log.txt')
+    write_to_file(top_stats[:10], 'test_result_log.txt')

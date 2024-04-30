@@ -1,6 +1,6 @@
 const { Config } = require("@jest/types");
 
-const baseTestDir = "<rootDir>/miniprogram-demo-test3";
+const baseTestDir = "<rootDir>/miniprogram-demo-test2";
 
 const config = {
   testEnvironment: "node",

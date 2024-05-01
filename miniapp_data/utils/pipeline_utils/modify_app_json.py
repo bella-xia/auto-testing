@@ -48,12 +48,24 @@ def process_page_info(pages_data, root_dir):
             all_pages_dir.append(page_data)
     return check_dirs(root_dir, all_pages_dir), check_dirs(root_dir, all_plugins_dir)
 
+def check_borderStyle(json_data):
+    if json_data.get('tabBar') is not None:
+        if json_data['tabBar'].get("borderStyle") is not None:
+            color_str = json_data['tabBar']['borderStyle']
+            if color_str != "black" and color_str != "white":
+                return False
+    return True
+
 def check_all_paths(root_path, miniprogram_name, app_json_path=None):
     MINIRPOGRAM_PATH = os.path.join(root_path, miniprogram_name)
     APP_JSON_PATH = app_json_path if app_json_path else os.path.join(MINIRPOGRAM_PATH, 'app.json')
     
     json_data = read_json_file(APP_JSON_PATH)
-    all_subpackage_pages = process_subpackage_info(json_data['subPackages'], MINIRPOGRAM_PATH )
+
+    if check_borderStyle(json_data) is False:
+        json_data['tabBar']['borderStyle'] = 'white'
+
+    all_subpackage_pages = process_subpackage_info(json_data['subPackages'], MINIRPOGRAM_PATH ) if json_data.get('subPackages') is not None else {'exist': [], 'miss': []}
     all_pages, all_plugins= process_page_info(json_data['pages'], MINIRPOGRAM_PATH )
 
     print(f"In total, there are {len(all_pages['exist'])} complete pages and {len(all_pages['miss'])} missing pages")

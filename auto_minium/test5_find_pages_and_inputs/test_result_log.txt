@@ -1,0 +1,29 @@
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:34.864660
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:28.771666
+
+weapp-artand
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:00:43.158272
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:00:37.255749
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:02:47.428891
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:02:34.943403
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:41.717850
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:00:40.918129
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:31.523321
+

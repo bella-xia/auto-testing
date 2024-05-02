@@ -1,0 +1,68 @@
+[I 2024-04-12 11:03:23,479 minium minitest#370 _miniSetUp] =========Current case: test_make_and_check_form=========
+[I 2024-04-12 11:03:23,479 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test6_test_input.minium_test, case info: TestInput.test_make_and_check_form
+[I 2024-04-12 11:03:23,479 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-04-12 11:03:23,480 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-04-12 11:03:23,480 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-04-12 11:03:23,480 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-04-12 11:03:23,481 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-04-12 11:03:23,481 minium.Conn3040 connection#417 _safely_send] ASYNC_SEND > {"id":"93c8408a-965b-4d01-b41c-a11f583f8a0e","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/popular/popular"}]}}
+[D 2024-04-12 11:03:23,536 minium.Conn3040 connection#653 __on_message] RECV < {"id":"93c8408a-965b-4d01-b41c-a11f583f8a0e","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-04-12 11:03:23,537 minium.Conn3040 connection#697 _handle_async_msg] received async msg: 93c8408a-965b-4d01-b41c-a11f583f8a0e
+[I 2024-04-12 11:03:23,538 minium minitest#717 capture] capture setup.png
+[I 2024-04-12 11:03:23,538 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-04-12 11:03:23,539 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"a3d88c5e-8180-41ee-9584-2faf8c120e93","method":"App.captureScreenshot","params":{}}
+[D 2024-04-12 11:03:23,647 minium.Conn3040 connection#651 __on_message] RECV < {"id":"a3d88c5e-8180-41ee-9584-2faf8c120e93","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAHICAIAAACwEaRIAAAAAXNSR0IArs4c6QAAENNJREFUeJzt3X9MVfUfx/EPeL1cLgoSCzHIq15/JCKuaVpKLIdk2pzkkIblZKlLW5tr2jLSWZqZU7O0GqZr1ZZtOJpYgk2pXKlzy5xmgj9S0VARcYKA/Ob7x9kY075+sa/nXl7X5+MPd72ec31f3NNzf53PDWprazMANAX7ewAA/x4BA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQ...
+[I 2024-04-12 11:03:23,648 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-04-12 11:03:23,649 minium minitest#424 _miniSetUp] =========case: test_make_and_check_form start=========
+[I 2024-04-12 11:03:23,649 minium app#689 navigate_to] NavigateTo: /pages/editPersonInfo/editPersonInfo
+[D 2024-04-12 11:03:23,650 minium.Conn3040 connection#417 _safely_send] ASYNC_SEND > {"id":"444aeb01-b6a1-4832-85ff-1347036a1ac2","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/editPersonInfo/editPersonInfo"}]}}
+[D 2024-04-12 11:03:23,720 minium.Conn3040 connection#653 __on_message] RECV < {"id":"444aeb01-b6a1-4832-85ff-1347036a1ac2","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-04-12 11:03:23,721 minium.Conn3040 connection#697 _handle_async_msg] received async msg: 444aeb01-b6a1-4832-85ff-1347036a1ac2
+[D 2024-04-12 11:03:24,167 minium.Conn3040 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/editPersonInfo/editPersonInfo","query":{},"openType":"navigateTo","__ts__":1712934204148},1712934204149]}}
+[I 2024-04-12 11:03:24,168 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/editPersonInfo/editPersonInfo', 'query': {}, 'openType': 'navigateTo', '__ts__': 1712934204148}, 1712934204149]}
+[I 2024-04-12 11:03:24,169 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-04-12 11:03:24,171 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"8b8b0dcb-f3a2-44f4-ae00-2e525f4ffc66","method":"Page.getElements","params":{"selector":"form","pageId":4}}
+[D 2024-04-12 11:03:24,206 minium.Conn3040 connection#653 __on_message] RECV < {"id":"8b8b0dcb-f3a2-44f4-ae00-2e525f4ffc66","result":{"elements":[{"elementId":"d22fe692-50da-4a67-bd30-13e3afc6c31e","tagName":"form"}]}}
+[I 2024-04-12 11:03:24,208 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x7fa04c5143a0>]
+[I 2024-04-12 11:03:24,209 minium element#480 _get_elements_by_css] try to get elements: input
+[D 2024-04-12 11:03:24,209 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"d345156e-9002-4123-9f7a-3bd9a8729e50","method":"Element.getElements","params":{"selector":"input","elementId":"d22fe692-50da-4a67-bd30-13e3afc6c31e","pageId":4}}
+[D 2024-04-12 11:03:24,224 minium.Conn3040 connection#651 __on_message] RECV < {"id":"d345156e-9002-4123-9f7a-3bd9a8729e50","result":{"elements":[{"elementId":"a7e9832f-4bd9-4bad-8fb9-26b0d8ce71bc","tagName":"input"},{"elementId":"09e4ce76-00b4-45d4-9d3a-8c75a779c4ad","tagName":"input"},{"elementId":"082e1afc-2f17-4333-95ce-4b751de6bbea","tagName":"input"},{"elementId":"ea95e4f1-29d5-4834-babe-04b472b8a06d","tagName":"input"},{"elementId":"947c1fdc-2459-48a0-aa8e-27a5b0208dbd","tagName":"input"},{"elementId":"72f44968-f507-4ced-bc69-04843afeaf45","tagName":"input"},{"elementId":"b9...
+[D 2024-04-12 11:03:24,225 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"70da227f-d1e7-40f3-908c-ade47146ff5c","method":"Element.getProperties","params":{"names":["node_id"],"elementId":"d22fe692-50da-4a67-bd30-13e3afc6c31e","pageId":4}}
+[D 2024-04-12 11:03:24,236 minium.Conn3040 connection#653 __on_message] RECV < {"id":"70da227f-d1e7-40f3-908c-ade47146ff5c","result":{"properties":[null]}}
+[D 2024-04-12 11:03:24,237 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"89d75dac-c0dd-4434-b982-bc24f8630e82","method":"Element.getAttributes","params":{"names":["node_id"],"elementId":"d22fe692-50da-4a67-bd30-13e3afc6c31e","pageId":4}}
+[D 2024-04-12 11:03:24,249 minium.Conn3040 connection#653 __on_message] RECV < {"id":"89d75dac-c0dd-4434-b982-bc24f8630e82","result":{"attributes":[null]}}
+[I 2024-04-12 11:03:24,250 minium element#487 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c514400>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c514670>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c5144c0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c514520>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c5143d0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c5145e0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c5146d0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c5146a0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c5142b0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c514700>, <minium.miniprogram.base_driver.element.FormElement object at 0x7fa04c514370>]
+[D 2024-04-12 11:03:24,251 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"665b6743-0dd5-4a25-945b-4b6cb3aaaca2","method":"Element.getProperties","params":{"names":["property"],"elementId":"a7e9832f-4bd9-4bad-8fb9-26b0d8ce71bc","pageId":4}}
+[D 2024-04-12 11:03:24,265 minium.Conn3040 connection#653 __on_message] RECV < {"id":"665b6743-0dd5-4a25-945b-4b6cb3aaaca2","result":{"properties":[null]}}
+[D 2024-04-12 11:03:24,266 minium.Conn3040 connection#417 _safely_send] SEND > {"id":"76e9a1ab-1687-4f5f-8421-9a7ac70c770c","method":"Element.getAttributes","params":{"names":["property"],"elementId":"a7e9832f-4bd9-4bad-8fb9-26b0d8ce71bc","pageId":4}}
+[D 2024-04-12 11:03:24,295 minium.Conn3040 connection#653 __on_message] RECV < {"id":"76e9a1ab-1687-4f5f-8421-9a7ac70c770c","result":{"attributes":[null]}}
+[D 2024-04-12 11:03:24,297 minium.Conn3040 connection#417 _safely_send] ASYNC_SEND > {"id":"f947da6e-5d15-4cc0-86e8-7c6ebd70baab","method":"Tool.close","params":{}}
+[D 2024-04-12 11:03:24,300 minium.Conn3040 connection#653 __on_message] RECV < {"id":"f947da6e-5d15-4cc0-86e8-7c6ebd70baab","result":{}}
+[I 2024-04-12 11:03:24,301 minium.Conn3040 connection#697 _handle_async_msg] received async msg: f947da6e-5d15-4cc0-86e8-7c6ebd70baab, maybe command ignore response
+[E 2024-04-12 11:03:24,322 minium.Conn3040 connection#632 _on_error] Connection to remote host was lost.
+[I 2024-04-12 11:03:24,323 minium.Conn3040 connection#367 _ws_run_forever] websocket run forever shutdown
+[D 2024-04-12 11:03:25,299 minium minitest#620 _miniTearDown] =========Current case Down: test_make_and_check_form=========
+[I 2024-04-12 11:03:25,300 minium minitest#717 capture] capture teardown.png
+[I 2024-04-12 11:03:25,300 minium basenative#25 wrapper] call IdeNative.screen_shot
+[I 2024-04-12 11:03:25,300 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[W 2024-04-12 11:03:25,301 minium minitest#728 capture] /home/bella-xia/auto-testing/auto_minium/test6_test_input/outputs/20240412110301/test_make_and_check_form/20240412110323478239/images/teardown.png not exists
+[I 2024-04-12 11:03:25,301 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-04-12 11:03:25,301 minium basenative#29 wrapper] call BaseNative.get_start_up end
+[E 2024-04-12 11:03:25,306 minium assertbase#349 _get_stack_info] <bound method TestInput.test_make_and_check_form of <minium_test.TestInput testMethod=test_make_and_check_form>>
+Traceback (most recent call last):
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 265, in testPartExecutor
+    yield
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/home/bella-xia/auto-testing/auto_minium/test6_test_input/minium_test.py", line 89, in test_make_and_check_form
+    self.try_form_through_trigger(form, "string")
+  File "/home/bella-xia/auto-testing/auto_minium/test6_test_input/minium_test.py", line 41, in try_form_through_trigger
+    inputArrays[inputElement.property("name")] = text;
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/miniprogram/base_driver/element.py", line 92, in __getattribute__
+    return super(BaseElement, self).__getattribute__(item)
+AttributeError: 'FormElement' object has no attribute 'property'
+[W 2024-04-12 11:03:25,306 minium assertbase#331 _log_info_when_error] config: {'debug': False, 'base_dir': '/home/bella-xia/auto-testing/auto_minium/test6_test_input', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': '/home/bella-xia/auto-testing/auto_minium/test6_test_input/outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': '/home/bella-xia/auto-testing/data/wechat-weapp-movie', 'dev_tool_path': '/home/bella-xia/wechat-web-devtools-linux/bin/wechat-devtools-cli', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20240412110301', 'case_output': '/home/bella-xia/auto-testing/auto_minium/test6_test_input/outputs/20240412110301/test_make_and_check_form/20240412110323478239'}
+[W 2024-04-12 11:03:25,306 minium assertbase#332 _log_info_when_error] build info: {'version': '1.4.6', 'revision': 'b389ff4b1d94cc73bb5363fc602f5823512df292', 'branch': 'master', 'update_at': '2023-08-28 17:46:51'}
+[W 2024-04-12 11:03:25,307 minium minitest#828 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x7fa04c6df850>

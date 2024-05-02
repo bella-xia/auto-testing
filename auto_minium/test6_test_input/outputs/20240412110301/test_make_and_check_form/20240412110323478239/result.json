@@ -1,0 +1,107 @@
+{
+    "case_name": "test_make_and_check_form",
+    "run_time": "20240412 11:03:23",
+    "test_type": "TestInput",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 265, in testPartExecutor\n    yield\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 350, in run\n    self._callTestMethod(testMethod)\n  File \"/usr/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/home/bella-xia/auto-testing/auto_minium/test6_test_input/minium_test.py\", line 89, in test_make_and_check_form\n    self.try_form_through_trigger(form, \"string\")\n  File \"/home/bella-xia/auto-testing/auto_minium/test6_test_input/minium_test.py\", line 41, in try_form_through_trigger\n    inputArrays[inputElement.property(\"name\")] = text;\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/miniprogram/base_driver/element.py\", line 92, in __getattribute__\n    return super(BaseElement, self).__getattribute__(item)\nAttributeError: 'FormElement' object has no attribute 'property'\n",
+    "start_timestamp": 1712934203.6492763,
+    "is_failure": false,
+    "is_error": true,
+    "module": ".home.bella-xia.auto-testing.auto_minium.test6_test_input.minium_test",
+    "package": "minium_test",
+    "failed_line_num": 89,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 456,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "2.25.3",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 56,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": true,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AttributeError",
+    "error_value": "'FormElement' object has no attribute 'property'",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/popular/popular",
+            "path": "images/setup.png",
+            "ts": 1712934203,
+            "datetime": "2024-04-12 11:03:23"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1712934205.30153,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_make_and_check_form(self):\n",
+            "        edit_page_name = \"/pages/editPersonInfo/editPersonInfo\"\n",
+            "        storage_page_name = \"pages/personInfo/personInfo\"\n",
+            "\n",
+            "        self.open_route(edit_page_name)\n",
+            "        forms = self.find_all_forms()\n",
+            "        for form in forms:\n",
+            "            self.try_form_through_trigger(form, \"string\")\n",
+            "            # self.try_input_through_trigger(input_box, \"string\")\n",
+            "        btn_ele = self.find_class(\".edit-btn\")\n",
+            "        btn_ele.click()\n",
+            "        self.page.wait_for(10)\n",
+            "        cur_page = self.app.get_current_page()\n",
+            "        self.assertEqual(cur_page, storage_page_name, \"check if the miniprogram navigates back to the page\")\n",
+            "        all_textboxes = self.find_class(\".cell-ft\", duplicates=True)\n",
+            "        for textbox in all_textboxes:\n",
+            "            self.check_input(textbox.text, \"string\")\n",
+            "            self.page.wait_for(10)\n",
+            "            cur_page = self.app.get_current_page()\n",
+            "            self.assertEqual(cur_page, storage_page_name, \"check if the miniprogram navigates back to the page\")\n"
+        ],
+        "start": 82
+    },
+    "filename": "result.json"
+}

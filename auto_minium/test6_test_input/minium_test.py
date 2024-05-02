@@ -25,6 +25,21 @@ class TestInput(minium.MiniTest):
     def find_all_inputs(self):
         all_inputs = self.page.get_elements("input")
         return all_inputs
+
+    def find_all_forms(self):
+        all_forms = self.page.get_elements("form")
+        return all_forms
+
+    def find_all_inputs_from_component(self, component):
+        all_inputs = component.get_elements("input")
+        return all_inputs
+
+    def try_form_through_trigger(self, form_ele, text):
+        inputElements = self.find_all_inputs_from_component(form_ele)
+        inputArrays = {}
+        for inputElement in inputElements:
+             inputArrays[inputElement.property("name")] = text;
+        form_ele.trigger("submit", {"value" : inputArrays})
     
     def find_class(self, class_name, duplicates=False):
         if duplicates:
@@ -47,7 +62,7 @@ class TestInput(minium.MiniTest):
         except AssertionError:
             print(f"failed assertion, expected input {expected_input}, but gets {input_text}")
     
-    def test_make_and_check_input(self):
+    def not_test_make_and_check_input(self):
         edit_page_name = "/pages/editPersonInfo/editPersonInfo"
         storage_page_name = "pages/personInfo/personInfo"
 
@@ -63,6 +78,27 @@ class TestInput(minium.MiniTest):
         all_textboxes = self.find_class(".cell-ft", duplicates=True)
         for textbox in all_textboxes:
             self.check_input(textbox.text, "string")
+    
+    def test_make_and_check_form(self):
+        edit_page_name = "/pages/editPersonInfo/editPersonInfo"
+        storage_page_name = "pages/personInfo/personInfo"
+
+        self.open_route(edit_page_name)
+        forms = self.find_all_forms()
+        for form in forms:
+            self.try_form_through_trigger(form, "string")
+            # self.try_input_through_trigger(input_box, "string")
+        btn_ele = self.find_class(".edit-btn")
+        btn_ele.click()
+        self.page.wait_for(10)
+        cur_page = self.app.get_current_page()
+        self.assertEqual(cur_page, storage_page_name, "check if the miniprogram navigates back to the page")
+        all_textboxes = self.find_class(".cell-ft", duplicates=True)
+        for textbox in all_textboxes:
+            self.check_input(textbox.text, "string")
+            self.page.wait_for(10)
+            cur_page = self.app.get_current_page()
+            self.assertEqual(cur_page, storage_page_name, "check if the miniprogram navigates back to the page")
 
     def tearDown(self):
         self.mini.shutdown()

@@ -1,22 +1,22 @@
-import { project_and_pages } from "./data";
+import { project_and_pages } from "./new_data";
 
 const automator = require("miniprogram-automator");
 
 const cliPath =
   "/home/bella-xia/wechat-web-devtools-linux/bin/wechat-devtools-cli";
-const projectPath = "/home/bella-xia/auto-testing/data/";
+const projectPath = "/home/bella-xia/auto-testing/new_data/";
 const str_exp = "string_example";
 
 describe("test all pages", () => {
   let page;
   let screen_shot_file =
-    "/home/bella-xia/auto-testing/jest_wechat_miniprogram/miniprogram-demo-test2/screenshots/";
+    "/home/bella-xia/auto-testing/jest_wechat_miniprogram/test2/screenshots/";
 
   project_and_pages.forEach(async (project_info) => {
     const projectFullPath = projectPath + project_info["app_name"] + "/";
     const pages_info = project_info["page_list"];
     const input_elements = [];
-    const ss_file = screen_shot_file + project_info["app_name"];
+    const ss_file = screen_shot_file + project_info["app_name"] + "-";
     let miniProgram;
     beforeAll(async () => {
       try {
@@ -45,7 +45,7 @@ describe("test all pages", () => {
       console.log(pages_info);
     }, 300000);
 
-    it.each(pages_info)(
+    it.skip.each(pages_info)(
       `check if the input elements are present on program ${project_info["app_name"]} page %s`,
       async (page_name) => {
         if (page_name !== null) {
@@ -54,19 +54,58 @@ describe("test all pages", () => {
           } catch (err) {
             page = await miniProgram.switchTab("/" + page_name);
           }
-          // await page.waitFor(500);
           const inputElements = await page.$$("input");
           for (const inputElement of inputElements) {
             if (inputElement !== null) {
               try {
-                await inputElement.input(str_exp);
-                console.log(
-                  "saving screenshot to",
-                  ss_file + inputElement.id + ".png"
-                );
-                await miniProgram.screenshot({
-                  path: ss_file + inputElement.id + ".png",
+                await inputElement.trigger("change", { value: str_exp });
+                // console.log(
+                //   "saving screenshot to",
+                //   ss_file + inputElement.id + ".png"
+                // );
+                // await miniProgram.screenshot({
+                //   path: ss_file + "-input-" + inputElement.id + ".png",
+                // });
+              } catch (error) {
+                console.log("An error occurred:", error.message);
+              }
+            }
+          }
+          page = await miniProgram.navigateBack();
+        }
+      },
+      300000
+    );
+
+    it.each(pages_info)(
+      `check if the form elements are present on program ${project_info["app_name"]} page %s`,
+      async (page_name) => {
+        if (page_name !== null) {
+          try {
+            page = await miniProgram.navigateTo("/" + page_name);
+          } catch (err) {
+            page = await miniProgram.switchTab("/" + page_name);
+          }
+          const formElements = await page.$$("form");
+          for (const formElement of formElements) {
+            if (formElement !== null) {
+              try {
+                const inputElements = await formElement.$$("input");
+                const inputArrays = {};
+                for (const inputElement of inputElements) {
+                  inputArrays[await inputElement.property("name")] = str_exp;
+                }
+                await formElement.trigger("submit", {
+                  value: inputArrays,
                 });
+                await page.waitFor(2000);
+                // console.log(
+                //   "saving screenshot to",
+                //   ss_file + formElement.id + ".png"
+                // );
+                // await miniProgram.screenshot({
+                //   path: ss_file + "-form-" + formElement.id + ".png",
+                // });
               } catch (error) {
                 console.log("An error occurred:", error.message);
               }

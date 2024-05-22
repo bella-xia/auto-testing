@@ -3,7 +3,7 @@ import os
 
 class Minium_Query(BaseDef):
     
-    def test_inputs(self):
+    def try_test_inputs(self):
         text_input = "string"
         pages = self.find_all_pages()
 
@@ -14,7 +14,6 @@ class Minium_Query(BaseDef):
             print(f"there are {len(inputs)} elements on page {page}")
             for input_block in inputs:
                 try:
-                    # input_block.input(text_input)
                     input_block.trigger("change", {value : text_input})
                 except Exception as e:
                     print(f'encountering error during query: {e}')
@@ -40,7 +39,7 @@ class Minium_Query(BaseDef):
                     inputElements = self.find_all_inputs_from_component(form_block)
                     inputArrays = {};
                     for inputElement in inputElements:
-                        inputArrays[inputElement.property("name")] = text_input;
+                        inputArrays[inputElement.attribute("name")[0]] = text_input;
                     form_block.trigger("submit", {"value" : inputArrays})
                 except Exception as e:
                     print(f'encountering error during query: {e}')

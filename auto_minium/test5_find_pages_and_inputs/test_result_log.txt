@@ -27,3 +27,21 @@ elapse time: 0:00:40.918129
 <unittest.runner.TextTestResult run=3 errors=2 failures=0>
 elapse time: 0:01:31.523321
 
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:36.073715
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:32.463701
+
+<unittest.runner.TextTestResult run=1 errors=0 failures=0>
+elapse time: 0:01:32.873955
+
+<unittest.runner.TextTestResult run=1 errors=0 failures=0>
+elapse time: 0:01:32.832005
+
+<unittest.runner.TextTestResult run=3 errors=2 failures=0>
+elapse time: 0:01:33.781728
+
+<unittest.runner.TextTestResult run=1 errors=0 failures=0>
+elapse time: 0:01:24.856238
+

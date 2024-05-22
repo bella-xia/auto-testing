@@ -47,7 +47,7 @@ class BaseDef(minium.MiniTest):
         return all_forms
 
     def find_all_inputs_from_component(self, component):
-        all_inputs = component.get_elements(input)
+        all_inputs = component.get_elements("input")
         return all_inputs
     
     def element_is_exists(self, element):

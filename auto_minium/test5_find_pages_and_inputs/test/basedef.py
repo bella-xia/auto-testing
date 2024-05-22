@@ -1,6 +1,10 @@
+import base64
 import os
+from pathlib import Path
 from time import sleep
 import minium
+import requests
+from minium import Callback
 
 class BaseDef(minium.MiniTest):
     
@@ -14,7 +18,7 @@ class BaseDef(minium.MiniTest):
             else:
                 print(f'having exception {exception_message} on navigating to page {route}')
     
-    def screen_shot_save(self, route):
+    def INVALID_screen_shot_save(self, route):
         output_path = os.path.join(os.path.dirname(__file__), "images")
         if not os.path.isdir(os.path.dirname(output_path)):
             os.mkdir(os.path.dirname(output_path))
@@ -36,6 +40,14 @@ class BaseDef(minium.MiniTest):
 
     def find_all_inputs(self):
         all_inputs = self.page.get_elements("input")
+        return all_inputs
+    
+    def find_all_forms(self):
+        all_forms = self.page.get_elements("form")
+        return all_forms
+
+    def find_all_inputs_from_component(self, component):
+        all_inputs = component.get_elements("input")
         return all_inputs
     
     def element_is_exists(self, element):

@@ -1,0 +1,31 @@
+[I 2024-05-22 17:08:50,611 minium minitest#370 _miniSetUp] =========Current case: test_work=========
+[I 2024-05-22 17:08:50,612 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests, case info: baseTest.test_work
+[I 2024-05-22 17:08:50,612 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 17:08:50,612 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 17:08:50,613 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 17:08:50,613 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 17:08:50,613 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[I 2024-05-22 17:08:50,613 minium app#731 relaunch] ReLaunch: /pages/index/index
+[D 2024-05-22 17:08:50,614 minium.Conn9296 connection#417 _safely_send] ASYNC_SEND > {"id":"5163ee80-7cab-4110-9593-28c1ec27a44b","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 17:08:50,701 minium.Conn9296 connection#653 __on_message] RECV < {"id":"5163ee80-7cab-4110-9593-28c1ec27a44b","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2024-05-22 17:08:50,702 minium.Conn9296 connection#697 _handle_async_msg] received async msg: 5163ee80-7cab-4110-9593-28c1ec27a44b
+[D 2024-05-22 17:08:51,137 minium.Conn9296 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/index/index","query":{},"openType":"reLaunch","__ts__":1716412131125},1716412131127]}}
+[I 2024-05-22 17:08:51,139 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/index/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1716412131125}, 1716412131127]}
+[I 2024-05-22 17:08:51,140 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 17:08:51,142 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 17:08:51,143 minium.Conn9296 connection#417 _safely_send] SEND > {"id":"737a8451-3868-4554-bc9f-512f28ed7315","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 17:08:51,337 minium.Conn9296 connection#651 __on_message] RECV < {"id":"737a8451-3868-4554-bc9f-512f28ed7315","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAI4CAIAAACUa6fMAAAAAXNSR0IArs4c6QAAIABJREFUeJzMfXecG8X1+JuZLeq63s/n3m2MK9hgUxyIKQFCJ6GGhEAgCYEAoYQASWihJvReQ3PoHQIGG/eCbdzb+Wxf7zq13Z35/bHSarVNq7tzft/3kc/S1Lez8+aVefMGvV/PAIEl2CQ7Qb5V2KCUZ05NGdOtCluWsUtgdhnmNO0bAsZA0aUYEdD9ZoYvVlX0WQxAxJl0Q5ZFs/osll1LV1ihQHW/nUeMMadcc3WMLLIYADI/vk0XdmWYlu74Ep2y7Mvp3icQbMxiDGi+E1oHdrST9SJMwKU6t6ptk+wEA8B/QM26pV6rxIHgjNxURwAAyFVRW3BfFeUqn4VI+oczdoP7Wu0mFcrCCHQ0noWBA6pM93dA+OVqApmeYW...
+[I 2024-05-22 17:08:51,346 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 17:08:51,346 minium minitest#424 _miniSetUp] =========case: test_work start=========
+[D 2024-05-22 17:08:51,346 minium.Conn9296 connection#417 _safely_send] SEND > {"id":"95064764-9fd6-4c61-9271-b3d5d3555470","method":"App.getCurrentPage","params":{}}
+[D 2024-05-22 17:08:51,349 minium.Conn9296 connection#653 __on_message] RECV < {"id":"95064764-9fd6-4c61-9271-b3d5d3555470","result":{"pageId":4,"path":"pages/index/index","query":{}}}
+[I 2024-05-22 17:08:51,350 minium app#689 navigate_to] NavigateTo: Page(id=4, path=/pages/index/index, query={})
+[D 2024-05-22 17:08:51,396 minium.Conn9296 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'openid' of null","stack":"TypeError: Cannot read property 'openid' of null\n    at success (http://127.0.0.1:38056/appservice/pages/index/index.js?t=wechat&s=1716412118199&v=3b9a30d6e17b8cd9caa896ec483c8c66:44:53)\n    at Object.success (http://127.0.0.1:38056/appservice/__dev__/WASubContext.js?t=wechat&s=1716412118199&v=3.4.3:1:140098)\n    at Object.success (http://127.0.0.1:38056/appservice/__dev__/WASubContext.js?t=wechat&s=17...
+[D 2024-05-22 17:08:51,398 minium minitest#620 _miniTearDown] =========Current case Down: test_work=========
+[I 2024-05-22 17:08:51,398 minium minitest#717 capture] capture teardown.png
+[I 2024-05-22 17:08:51,398 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 17:08:51,399 minium.Conn9296 connection#417 _safely_send] SEND > {"id":"e069f096-8936-4934-b7f3-2a112f609bed","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 17:08:51,567 minium.Conn9296 connection#651 __on_message] RECV < {"id":"e069f096-8936-4934-b7f3-2a112f609bed","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAI4CAIAAACUa6fMAAAAAXNSR0IArs4c6QAAIABJREFUeJzMfXecG8X1+JuZLeq63s/n3m2MK9hgUxyIKQFCJ6GGhEAgCYEAoYQASWihJvReQ3PoHQIGG/eCbdzb+Wxf7zq13Z35/bHSarVNq7tzft/3kc/S1Lez8+aVefMGvV/PAIEl2CQ7Qb5V2KCUZ05NGdOtCluWsUtgdhnmNO0bAsZA0aUYEdD9ZoYvVlX0WQxAxJl0Q5ZFs/osll1LV1ihQHW/nUeMMadcc3WMLLIYADI/vk0XdmWYlu74Ep2y7Mvp3icQbMxiDGi+E1oHdrST9SJMwKU6t6ptk+wEA8B/QM26pV6rxIHgjNxURwAAyFVRW3BfFeUqn4VI+oczdoP7Wu0mFcrCCHQ0noWBA6pM93dA+OVqApmeYW...
+[I 2024-05-22 17:08:51,569 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 17:08:51,569 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-22 17:08:51,569 minium basenative#29 wrapper] call BaseNative.get_start_up end

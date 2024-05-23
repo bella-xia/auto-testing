@@ -1,0 +1,27 @@
+[I 2024-05-22 14:31:33,559 minium minitest#370 _miniSetUp] =========Current case: test_work=========
+[I 2024-05-22 14:31:33,560 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests, case info: baseTest.test_work
+[I 2024-05-22 14:31:33,563 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 14:31:33,564 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 14:31:33,564 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 14:31:33,565 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 14:31:33,565 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-05-22 14:31:33,566 minium.Conn7584 connection#417 _safely_send] ASYNC_SEND > {"id":"b920c414-71c2-4ebe-bc9a-d45c58629bfb","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 14:31:33,631 minium.Conn7584 connection#653 __on_message] RECV < {"id":"b920c414-71c2-4ebe-bc9a-d45c58629bfb","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-22 14:31:33,632 minium.Conn7584 connection#697 _handle_async_msg] received async msg: b920c414-71c2-4ebe-bc9a-d45c58629bfb
+[I 2024-05-22 14:31:33,634 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 14:31:33,635 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 14:31:33,636 minium.Conn7584 connection#417 _safely_send] SEND > {"id":"09b62495-7f99-4c64-983d-fb50327167b2","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 14:31:33,822 minium.Conn7584 connection#651 __on_message] RECV < {"id":"09b62495-7f99-4c64-983d-fb50327167b2","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAI4CAIAAACUa6fMAAAAAXNSR0IArs4c6QAABoJJREFUeJzt07ENwCAAwLDS/8+FgY0fWFAk+4IsGWvuD2j6XwcA9wwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYA...
+[I 2024-05-22 14:31:33,824 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 14:31:33,825 minium minitest#424 _miniSetUp] =========case: test_work start=========
+[D 2024-05-22 14:31:33,826 minium.Conn7584 connection#417 _safely_send] SEND > {"id":"4e9e954b-de1d-452b-bf3a-4eb2aaf38b81","method":"App.getCurrentPage","params":{}}
+[D 2024-05-22 14:31:33,830 minium.Conn7584 connection#653 __on_message] RECV < {"id":"4e9e954b-de1d-452b-bf3a-4eb2aaf38b81","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+[I 2024-05-22 14:31:33,832 minium app#689 navigate_to] NavigateTo: Page(id=2, path=/pages/index/index, query={})
+[D 2024-05-22 14:31:43,836 minium minitest#620 _miniTearDown] =========Current case Down: test_work=========
+[I 2024-05-22 14:31:43,837 minium minitest#717 capture] capture teardown.png
+[I 2024-05-22 14:31:43,838 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 14:31:43,839 minium.Conn7584 connection#417 _safely_send] SEND > {"id":"38fd301c-6ba7-4288-92d2-8bca4488b2ed","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 14:31:43,954 minium.Conn7584 connection#651 __on_message] RECV < {"id":"38fd301c-6ba7-4288-92d2-8bca4488b2ed","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAI4CAIAAACUa6fMAAAAAXNSR0IArs4c6QAABoJJREFUeJzt07ENwCAAwLDS/8+FgY0fWFAk+4IsGWvuD2j6XwcA9wwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYA...
+[I 2024-05-22 14:31:43,956 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 14:31:43,957 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-22 14:31:43,957 minium basenative#29 wrapper] call BaseNative.get_start_up end

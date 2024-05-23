@@ -1,0 +1,89 @@
+{
+    "case_name": "test_work",
+    "run_time": "20240522 13:06:14",
+    "test_type": "baseTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 265, in testPartExecutor\n    yield\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 350, in run\n    self._callTestMethod(testMethod)\n  File \"/usr/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/tests.py\", line 6, in test_work\n    print(self.get_system_info())\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 299, in __getattr__\n    raise AttributeError(f\"'{self.__class__.__name__}' object has no attribute '{name}'\")\nAttributeError: 'baseTest' object has no attribute 'get_system_info'\n",
+    "start_timestamp": 1716397576.6055567,
+    "is_failure": false,
+    "is_error": true,
+    "module": ".home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests",
+    "package": "tests",
+    "failed_line_num": 6,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 504,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "3.4.3",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AttributeError",
+    "error_value": "'baseTest' object has no attribute 'get_system_info'",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/scanqrCode/index",
+            "path": "images/setup.png",
+            "ts": 1716397576,
+            "datetime": "2024-05-22 13:06:16"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1716397577.611572,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_work(self):\n",
+            "        print(self.get_system_info())\n"
+        ],
+        "start": 5
+    },
+    "filename": "result.json"
+}

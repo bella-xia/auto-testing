@@ -1,0 +1,40 @@
+[I 2024-05-22 13:15:00,116 minium minitest#370 _miniSetUp] =========Current case: test_work=========
+[I 2024-05-22 13:15:00,116 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests, case info: baseTest.test_work
+[I 2024-05-22 13:15:00,117 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 13:15:00,117 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 13:15:00,117 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 13:15:00,118 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 13:15:00,118 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-05-22 13:15:00,119 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"94675ce6-ab2d-4ed0-82f2-1355c2074545","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/compre/index"}]}}
+[D 2024-05-22 13:15:00,202 minium.Conn8176 connection#653 __on_message] RECV < {"id":"94675ce6-ab2d-4ed0-82f2-1355c2074545","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-22 13:15:00,203 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 94675ce6-ab2d-4ed0-82f2-1355c2074545
+[I 2024-05-22 13:15:00,205 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 13:15:00,205 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:15:00,206 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"a85a06e5-13d1-45ec-8614-a79bd8b7bbef","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:15:00,329 minium.Conn8176 connection#651 __on_message] RECV < {"id":"a85a06e5-13d1-45ec-8614-a79bd8b7bbef","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAIICAIAAACQEaBhAAAAAXNSR0IArs4c6QAABfZJREFUeJzt00ENACAQwDDAv+fDAx+ypFWwz/bMLKDp/A4A3hkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYA...
+[I 2024-05-22 13:15:00,331 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:15:00,331 minium minitest#424 _miniSetUp] =========case: test_work start=========
+[D 2024-05-22 13:15:00,332 minium minitest#620 _miniTearDown] =========Current case Down: test_work=========
+[I 2024-05-22 13:15:00,333 minium minitest#717 capture] capture teardown.png
+[I 2024-05-22 13:15:00,333 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:15:00,334 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"f9e839a2-3361-4966-864c-a1e0d8caa8c3","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:15:00,412 minium.Conn8176 connection#651 __on_message] RECV < {"id":"f9e839a2-3361-4966-864c-a1e0d8caa8c3","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAIICAIAAACQEaBhAAAAAXNSR0IArs4c6QAABfZJREFUeJzt00ENACAQwDDAv+fDAx+ypFWwz/bMLKDp/A4A3hkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYA...
+[I 2024-05-22 13:15:00,413 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:15:00,413 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-22 13:15:00,414 minium basenative#29 wrapper] call BaseNative.get_start_up end
+[E 2024-05-22 13:15:00,428 minium assertbase#349 _get_stack_info] <bound method baseTest.test_work of <tests.baseTest testMethod=test_work>>
+Traceback (most recent call last):
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 265, in testPartExecutor
+    yield
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/tests.py", line 6, in test_work
+    print(self.get_system_info())
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 299, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'baseTest' object has no attribute 'get_system_info'
+[W 2024-05-22 13:15:00,429 minium assertbase#331 _log_info_when_error] config: {'debug': False, 'base_dir': '/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': '/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': '/home/bella-xia/auto-testing/data/groundtruth/wx940e8bc440dd2eb9', 'dev_tool_path': '/home/bella-xia/wechat-web-devtools-linux/bin/wechat-devtools-cli', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20240522131425', 'case_output': '/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/outputs/20240522131425/test_work/20240522131500115032'}
+[W 2024-05-22 13:15:00,429 minium assertbase#332 _log_info_when_error] build info: {'version': '1.4.6', 'revision': 'b389ff4b1d94cc73bb5363fc602f5823512df292', 'branch': 'master', 'update_at': '2023-08-28 17:46:51'}
+[W 2024-05-22 13:15:00,430 minium minitest#828 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x7fecb4f0f880>

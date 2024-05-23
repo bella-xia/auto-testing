@@ -1,0 +1,44 @@
+[I 2024-05-22 13:15:58,755 minium minitest#370 _miniSetUp] =========Current case: test_work=========
+[I 2024-05-22 13:15:58,755 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests, case info: baseTest.test_work
+[I 2024-05-22 13:15:58,756 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 13:15:58,757 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 13:15:58,758 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 13:15:58,758 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 13:15:58,758 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[I 2024-05-22 13:15:58,759 minium app#731 relaunch] ReLaunch: /pages/index/index
+[D 2024-05-22 13:15:58,760 minium.Conn0080 connection#417 _safely_send] ASYNC_SEND > {"id":"696cf1fc-08c5-407a-8d81-95e902b3ed4d","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 13:15:58,866 minium.Conn0080 connection#653 __on_message] RECV < {"id":"696cf1fc-08c5-407a-8d81-95e902b3ed4d","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2024-05-22 13:15:58,866 minium.Conn0080 connection#697 _handle_async_msg] received async msg: 696cf1fc-08c5-407a-8d81-95e902b3ed4d
+[D 2024-05-22 13:15:58,981 minium.Conn0080 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'openid' of null","stack":"TypeError: Cannot read property 'openid' of null\n    at success (http://127.0.0.1:33038/appservice/pages/index/index.js?t=wechat&s=1716398138481&v=3b9a30d6e17b8cd9caa896ec483c8c66:44:53)\n    at Object.success (http://127.0.0.1:33038/appservice/__dev__/WASubContext.js?t=wechat&s=1716398138481&v=3.4.3:1:140098)\n    at Object.success (http://127.0.0.1:33038/appservice/__dev__/WASubContext.js?t=wechat&s=17...
+[D 2024-05-22 13:15:59,461 minium.Conn0080 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/index/index","query":{},"openType":"reLaunch","__ts__":1716398159439},1716398159443]}}
+[I 2024-05-22 13:15:59,463 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/index/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1716398159439}, 1716398159443]}
+[I 2024-05-22 13:15:59,466 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 13:15:59,466 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:15:59,467 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"00b908fc-fc16-4585-a855-fcd032d8e5c6","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:15:59,733 minium.Conn0080 connection#651 __on_message] RECV < {"id":"00b908fc-fc16-4585-a855-fcd032d8e5c6","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAI4CAIAAACUa6fMAAAAAXNSR0IArs4c6QAAIABJREFUeJzMfXecG8X1+JuZLeq63s/n3m2MK9hgUxyIKQFCJ6GGhEAgCYEAoYQASWihJvReQ3PoHQIGG/eCbdzb+Wxf7zq13Z35/bHSarVNq7tzft/3kc/S1Lez8+aVefMGvV/PAIEl2CQ7Qb5V2KCUZ05NGdOtCluWsUtgdhnmNO0bAsZA0aUYEdD9ZoYvVlX0WQxAxJl0Q5ZFs/osll1LV1ihQHW/nUeMMadcc3WMLLIYADI/vk0XdmWYlu74Ep2y7Mvp3icQbMxiDGi+E1oHdrST9SJMwKU6t6ptk+wEA8B/QM26pV6rxIHgjNxURwAAyFVRW3BfFeUqn4VI+oczdoP7Wu0mFcrCCHQ0noWBA6pM93dA+OVqApmeYW...
+[I 2024-05-22 13:15:59,735 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:15:59,735 minium minitest#424 _miniSetUp] =========case: test_work start=========
+[D 2024-05-22 13:15:59,736 minium minitest#620 _miniTearDown] =========Current case Down: test_work=========
+[I 2024-05-22 13:15:59,736 minium minitest#717 capture] capture teardown.png
+[I 2024-05-22 13:15:59,736 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:15:59,737 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"98a54c95-b7a8-49db-bde4-109fc0d37c6b","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:15:59,941 minium.Conn0080 connection#651 __on_message] RECV < {"id":"98a54c95-b7a8-49db-bde4-109fc0d37c6b","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAI4CAIAAACUa6fMAAAAAXNSR0IArs4c6QAAIABJREFUeJzMfXecG8X1+JuZLeq63s/n3m2MK9hgUxyIKQFCJ6GGhEAgCYEAoYQASWihJvReQ3PoHQIGG/eCbdzb+Wxf7zq13Z35/bHSarVNq7tzft/3kc/S1Lez8+aVefMGvV/PAIEl2CQ7Qb5V2KCUZ05NGdOtCluWsUtgdhnmNO0bAsZA0aUYEdD9ZoYvVlX0WQxAxJl0Q5ZFs/osll1LV1ihQHW/nUeMMadcc3WMLLIYADI/vk0XdmWYlu74Ep2y7Mvp3icQbMxiDGi+E1oHdrST9SJMwKU6t6ptk+wEA8B/QM26pV6rxIHgjNxURwAAyFVRW3BfFeUqn4VI+oczdoP7Wu0mFcrCCHQ0noWBA6pM93dA+OVqApmeYW...
+[I 2024-05-22 13:15:59,944 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:15:59,945 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-22 13:15:59,946 minium basenative#29 wrapper] call BaseNative.get_start_up end
+[E 2024-05-22 13:15:59,958 minium assertbase#349 _get_stack_info] <bound method baseTest.test_work of <tests.baseTest testMethod=test_work>>
+Traceback (most recent call last):
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 265, in testPartExecutor
+    yield
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/tests.py", line 6, in test_work
+    print(self.get_system_info())
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 299, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'baseTest' object has no attribute 'get_system_info'
+[W 2024-05-22 13:15:59,959 minium assertbase#331 _log_info_when_error] config: {'debug': False, 'base_dir': '/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': '/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': '/home/bella-xia/auto-testing/data/groundtruth/wx8b0d722749666d1c', 'dev_tool_path': '/home/bella-xia/wechat-web-devtools-linux/bin/wechat-devtools-cli', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20240522131531', 'case_output': '/home/bella-xia/auto-testing/auto_minium/test7_check_if_id_works/outputs/20240522131531/test_work/20240522131558754237'}
+[W 2024-05-22 13:15:59,960 minium assertbase#332 _log_info_when_error] build info: {'version': '1.4.6', 'revision': 'b389ff4b1d94cc73bb5363fc602f5823512df292', 'branch': 'master', 'update_at': '2023-08-28 17:46:51'}
+[W 2024-05-22 13:15:59,960 minium minitest#828 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x7f0a72f9b880>

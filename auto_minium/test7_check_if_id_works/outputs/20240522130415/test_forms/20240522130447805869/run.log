@@ -1,0 +1,176 @@
+[I 2024-05-22 13:04:47,806 minium minitest#370 _miniSetUp] =========Current case: test_forms=========
+[I 2024-05-22 13:04:47,807 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test5_find_pages_and_inputs.test.test_minium, case info: Minium_Query.test_forms
+[I 2024-05-22 13:04:47,807 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 13:04:47,807 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 13:04:47,808 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 13:04:47,808 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 13:04:47,808 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[I 2024-05-22 13:04:47,809 minium app#731 relaunch] ReLaunch: /pages/scanqrCode/index
+[D 2024-05-22 13:04:47,809 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"1bc07d20-8dc8-4386-b29d-52152c823c63","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/scanqrCode/index"}]}}
+[D 2024-05-22 13:04:47,968 minium.Conn8176 connection#653 __on_message] RECV < {"id":"1bc07d20-8dc8-4386-b29d-52152c823c63","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2024-05-22 13:04:47,969 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 1bc07d20-8dc8-4386-b29d-52152c823c63
+[D 2024-05-22 13:04:48,490 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/scanqrCode/index","query":{},"openType":"reLaunch","__ts__":1716397488463},1716397488466]}}
+[I 2024-05-22 13:04:48,492 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1716397488463}, 1716397488466]}
+[I 2024-05-22 13:04:48,494 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 13:04:48,495 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:04:48,496 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"331b58a0-857f-481c-92c7-15222889954d","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:04:48,797 minium.Conn8176 connection#651 __on_message] RECV < {"id":"331b58a0-857f-481c-92c7-15222889954d","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAH4CAIAAAC0a6PlAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXecHcWVNvyce+9ETZRGmlEaBUACSYCMhAiyyUnGBmds4wCvcVzb33rXu/Z+Xqd919hevMabAK/jsjaOGLwY1mAwYDAgEFkChABJKDEaSaPRzGji7fP+Ud3V1VXVffveyZp6fjDq212pq+upc+rUqSo6c/6X4ODgMDmRGe8CODg4lA5HYAeHSQxH4CkDBni8yzApUFJFMY9P5ebGJVcHh4kLGu8CFIOoBHadtIODxGSgQyCBRUEnUd8z0gUWKhARyQtE9SJxZ+wQvCCP1FuWloqZfaGaVytwoiO5cot5A/99S22WxVaaDB9IYJoc7A0ZNSYFlhU6Ds0xeEFrxsw8RoMuI3ue+FIpPUb8q445j3Ij18OXiO...
+[I 2024-05-22 13:04:48,799 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:04:48,800 minium minitest#424 _miniSetUp] =========case: test_forms start=========
+[D 2024-05-22 13:04:48,801 minium app#433 _evaluate_js] evaluate js file getAllPagesPath [ALL]
+[D 2024-05-22 13:04:48,801 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"e667fa60-e8df-45ae-a296-479d6edec4b6","method":"App.callFunction","params":{"functionDeclaration":"function(){return __wxConfig.pages}","args":[]}}
+[D 2024-05-22 13:04:48,807 minium.Conn8176 connection#651 __on_message] RECV < {"id":"e667fa60-e8df-45ae-a296-479d6edec4b6","result":{"result":["pages/scanqrCode/index","pages/batteryCharge/index","pages/soluteProblem/index","pages/replenishment/replenishment","pages/openLock/openLock","pages/index/index","pages/login/login","pages/music/music","pages/lamplight/lamplight","pages/bluetoothHelp/index","pages/replenishment/out/out","pages/complaint/complaint","pages/commonProblem/index","pages/serviceHelp/index","pages/jumpWeb/index","pages/airConditioning/index","pages/authPage/index...
+[I 2024-05-22 13:04:48,808 minium app#689 navigate_to] NavigateTo: /pages/scanqrCode/index
+[D 2024-05-22 13:04:48,809 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"f943a72a-c7bf-4a8e-8883-257728c340c9","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/scanqrCode/index"}]}}
+[D 2024-05-22 13:04:48,870 minium.Conn8176 connection#653 __on_message] RECV < {"id":"f943a72a-c7bf-4a8e-8883-257728c340c9","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:04:48,871 minium.Conn8176 connection#697 _handle_async_msg] received async msg: f943a72a-c7bf-4a8e-8883-257728c340c9
+[D 2024-05-22 13:04:49,648 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/scanqrCode/index","query":{},"openType":"navigateTo","__ts__":1716397489624},1716397489626]}}
+[I 2024-05-22 13:04:49,650 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716397489624}, 1716397489626]}
+[D 2024-05-22 13:04:54,657 minium page#321 wait_for] waitFor: 5.005108833312988 s
+[I 2024-05-22 13:04:54,658 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:04:54,658 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"d4b7e913-6121-4a53-94bf-697487686cc0","method":"Page.getElements","params":{"selector":"form","pageId":5}}
+[D 2024-05-22 13:04:54,680 minium.Conn8176 connection#653 __on_message] RECV < {"id":"d4b7e913-6121-4a53-94bf-697487686cc0","result":{"elements":[]}}
+[W 2024-05-22 13:04:54,681 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:04:54,682 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"c9c0f487-9c60-4578-95ff-c6d786b5fbe6","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:04:54,687 minium.Conn8176 connection#653 __on_message] RECV < {"id":"c9c0f487-9c60-4578-95ff-c6d786b5fbe6","result":{"pageStack":[{"pageId":4,"path":"pages/scanqrCode/index","query":{}},{"pageId":5,"path":"pages/scanqrCode/index","query":{}}]}}
+[I 2024-05-22 13:04:54,694 minium app#749 navigate_back] NavigateBack from:/pages/scanqrCode/index
+[D 2024-05-22 13:04:54,695 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"739ccc89-74a5-4192-860f-9acfee9e42f8","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-22 13:04:54,800 minium.Conn8176 connection#653 __on_message] RECV < {"id":"739ccc89-74a5-4192-860f-9acfee9e42f8","result":{"result":{}}}
+[D 2024-05-22 13:04:55,122 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/scanqrCode/index","query":{},"openType":"navigateBack","__ts__":1716397495099},1716397495101]}}
+[I 2024-05-22 13:04:55,126 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716397495099}, 1716397495101]}
+[I 2024-05-22 13:04:55,126 minium app#689 navigate_to] NavigateTo: /pages/batteryCharge/index
+[D 2024-05-22 13:04:55,129 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"2122b40b-f10e-4d27-8132-e012c573001e","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/batteryCharge/index"}]}}
+[D 2024-05-22 13:04:55,271 minium.Conn8176 connection#653 __on_message] RECV < {"id":"2122b40b-f10e-4d27-8132-e012c573001e","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:04:55,283 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 2122b40b-f10e-4d27-8132-e012c573001e
+[D 2024-05-22 13:04:55,879 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/batteryCharge/index","query":{},"openType":"navigateTo","__ts__":1716397495857},1716397495860]}}
+[I 2024-05-22 13:04:55,881 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/batteryCharge/index', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716397495857}, 1716397495860]}
+[D 2024-05-22 13:04:56,684 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_before_1716397486004","args":[{"title":"wxc26bf025c84ef3b7 小程序信息不存在","icon":"none","duration":3000,"mask":true},0.07346715594372344]}}
+[D 2024-05-22 13:04:56,686 minium app#1074 super_before] showToast before hook result: [{'title': 'wxc26bf025c84ef3b7 小程序信息不存在', 'icon': 'none', 'duration': 3000, 'mask': True}, 0.07346715594372344]
+[D 2024-05-22 13:04:56,711 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_callback_1716397486004","args":[{"errMsg":"showToast:ok"},0.07346715594372344]}}
+[D 2024-05-22 13:04:56,713 minium app#1096 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.07346715594372344]
+[D 2024-05-22 13:05:00,887 minium page#321 wait_for] waitFor: 5.0053746700286865 s
+[I 2024-05-22 13:05:00,889 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:05:00,890 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"f0db777a-552d-4e74-a119-d023ef06410a","method":"Page.getElements","params":{"selector":"form","pageId":6}}
+[D 2024-05-22 13:05:00,904 minium.Conn8176 connection#653 __on_message] RECV < {"id":"f0db777a-552d-4e74-a119-d023ef06410a","result":{"elements":[]}}
+[W 2024-05-22 13:05:00,906 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:05:00,906 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"4f1930c6-c0bb-4e00-a622-5532dbe20ed4","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:05:00,911 minium.Conn8176 connection#653 __on_message] RECV < {"id":"4f1930c6-c0bb-4e00-a622-5532dbe20ed4","result":{"pageStack":[{"pageId":4,"path":"pages/scanqrCode/index","query":{}},{"pageId":6,"path":"pages/batteryCharge/index","query":{}}]}}
+[I 2024-05-22 13:05:00,913 minium app#749 navigate_back] NavigateBack from:/pages/batteryCharge/index
+[D 2024-05-22 13:05:00,914 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"f47528fb-8194-4d98-ae5c-86e2c060fb6c","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-22 13:05:00,980 minium.Conn8176 connection#653 __on_message] RECV < {"id":"f47528fb-8194-4d98-ae5c-86e2c060fb6c","result":{"result":{}}}
+[D 2024-05-22 13:05:01,349 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/scanqrCode/index","query":{},"openType":"navigateBack","__ts__":1716397501331},1716397501333]}}
+[I 2024-05-22 13:05:01,352 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716397501331}, 1716397501333]}
+[I 2024-05-22 13:05:01,352 minium app#689 navigate_to] NavigateTo: /pages/soluteProblem/index
+[D 2024-05-22 13:05:01,354 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"05769482-a5e0-4f72-8d5c-10067c71f297","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/soluteProblem/index"}]}}
+[D 2024-05-22 13:05:01,465 minium.Conn8176 connection#653 __on_message] RECV < {"id":"05769482-a5e0-4f72-8d5c-10067c71f297","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:05:01,466 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 05769482-a5e0-4f72-8d5c-10067c71f297
+[D 2024-05-22 13:05:01,741 minium.Conn8176 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'includes' of undefined","stack":"TypeError: Cannot read property 'includes' of undefined\n    at yi.onLoad (http://127.0.0.1:34147/appservice/pages/soluteProblem/index.js?t=wechat&s=1716397461700&v=4bf609dd41e9baf63967f9cb1d130b53:18:35)\n    at yi.<anonymous> (http://127.0.0.1:34147/appservice/__dev__/WASubContext.js?t=wechat&s=1716397461700&v=3.4.3:1:478511)\n    at yi.c.__callPageLifeTime__ (http://127.0.0.1:34147/appservice/__...
+[D 2024-05-22 13:05:02,089 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/soluteProblem/index","query":{},"openType":"navigateTo","__ts__":1716397502069},1716397502071]}}
+[I 2024-05-22 13:05:02,090 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/soluteProblem/index', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716397502069}, 1716397502071]}
+[D 2024-05-22 13:05:07,096 minium page#321 wait_for] waitFor: 5.005290269851685 s
+[I 2024-05-22 13:05:07,097 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:05:07,098 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"502b938b-af5b-4411-be86-996dcdaf68d7","method":"Page.getElements","params":{"selector":"form","pageId":7}}
+[D 2024-05-22 13:05:07,109 minium.Conn8176 connection#653 __on_message] RECV < {"id":"502b938b-af5b-4411-be86-996dcdaf68d7","result":{"elements":[]}}
+[W 2024-05-22 13:05:07,110 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:05:07,111 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"81397e00-dbf4-4bea-b992-593ae8d3d100","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:05:07,115 minium.Conn8176 connection#653 __on_message] RECV < {"id":"81397e00-dbf4-4bea-b992-593ae8d3d100","result":{"pageStack":[{"pageId":4,"path":"pages/scanqrCode/index","query":{}},{"pageId":7,"path":"pages/soluteProblem/index","query":{}}]}}
+[I 2024-05-22 13:05:07,117 minium app#749 navigate_back] NavigateBack from:/pages/soluteProblem/index
+[D 2024-05-22 13:05:07,117 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"548ece6b-ea0a-4f7f-8eb4-68fa35ad7a5d","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-22 13:05:07,192 minium.Conn8176 connection#653 __on_message] RECV < {"id":"548ece6b-ea0a-4f7f-8eb4-68fa35ad7a5d","result":{"result":{}}}
+[D 2024-05-22 13:05:07,490 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/scanqrCode/index","query":{},"openType":"navigateBack","__ts__":1716397507464},1716397507467]}}
+[I 2024-05-22 13:05:07,492 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716397507464}, 1716397507467]}
+[I 2024-05-22 13:05:07,493 minium app#689 navigate_to] NavigateTo: /pages/replenishment/replenishment
+[D 2024-05-22 13:05:07,494 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"872eb93a-3d68-4bca-b1bc-f157fd4aa9f6","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/replenishment/replenishment"}]}}
+[D 2024-05-22 13:05:07,640 minium.Conn8176 connection#653 __on_message] RECV < {"id":"872eb93a-3d68-4bca-b1bc-f157fd4aa9f6","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:05:07,641 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 872eb93a-3d68-4bca-b1bc-f157fd4aa9f6
+[D 2024-05-22 13:05:07,891 minium.Conn8176 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'includes' of undefined","stack":"TypeError: Cannot read property 'includes' of undefined\n    at yi.onLoad (http://127.0.0.1:34147/appservice/pages/replenishment/replenishment.js?t=wechat&s=1716397461700&v=5d8638f3c3ff286b61c1fd9d37853bbf:66:43)\n    at yi.<anonymous> (http://127.0.0.1:34147/appservice/__dev__/WASubContext.js?t=wechat&s=1716397461700&v=3.4.3:1:478511)\n    at yi.c.__callPageLifeTime__ (http://127.0.0.1:34147/appse...
+[D 2024-05-22 13:05:08,212 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":8,"path":"pages/replenishment/replenishment","query":{},"openType":"navigateTo","__ts__":1716397508190},1716397508193]}}
+[I 2024-05-22 13:05:08,215 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 8, 'path': 'pages/replenishment/replenishment', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716397508190}, 1716397508193]}
+[D 2024-05-22 13:05:13,222 minium page#321 wait_for] waitFor: 5.005354166030884 s
+[I 2024-05-22 13:05:13,223 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:05:13,223 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"1915b8d7-78b9-4ef2-9481-e145a1b82faf","method":"Page.getElements","params":{"selector":"form","pageId":8}}
+[D 2024-05-22 13:05:13,234 minium.Conn8176 connection#653 __on_message] RECV < {"id":"1915b8d7-78b9-4ef2-9481-e145a1b82faf","result":{"elements":[]}}
+[W 2024-05-22 13:05:13,236 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:05:13,237 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"4ba5a923-3582-4719-a967-cc7af0d26e41","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:05:13,245 minium.Conn8176 connection#653 __on_message] RECV < {"id":"4ba5a923-3582-4719-a967-cc7af0d26e41","result":{"pageStack":[{"pageId":4,"path":"pages/scanqrCode/index","query":{}},{"pageId":8,"path":"pages/replenishment/replenishment","query":{}}]}}
+[I 2024-05-22 13:05:13,247 minium app#749 navigate_back] NavigateBack from:/pages/replenishment/replenishment
+[D 2024-05-22 13:05:13,249 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"51e4bd89-59dc-45c3-a85b-373efa95e4db","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-22 13:05:13,315 minium.Conn8176 connection#653 __on_message] RECV < {"id":"51e4bd89-59dc-45c3-a85b-373efa95e4db","result":{"result":{}}}
+[D 2024-05-22 13:05:13,584 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/scanqrCode/index","query":{},"openType":"navigateBack","__ts__":1716397513564},1716397513565]}}
+[I 2024-05-22 13:05:13,585 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716397513564}, 1716397513565]}
+[I 2024-05-22 13:05:13,586 minium app#689 navigate_to] NavigateTo: /pages/openLock/openLock
+[D 2024-05-22 13:05:13,586 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"96163d5a-8ca3-48fb-8376-949e82ea3dae","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/openLock/openLock"}]}}
+[D 2024-05-22 13:05:13,689 minium.Conn8176 connection#653 __on_message] RECV < {"id":"96163d5a-8ca3-48fb-8376-949e82ea3dae","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:05:13,690 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 96163d5a-8ca3-48fb-8376-949e82ea3dae
+[D 2024-05-22 13:05:14,022 minium.Conn8176 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'includes' of undefined","stack":"TypeError: Cannot read property 'includes' of undefined\n    at yi.onLoad (http://127.0.0.1:34147/appservice/pages/openLock/openLock.js?t=wechat&s=1716397461700&v=1e6f96068bd94cd4a5ec02b84eb52277:45:39)\n    at yi.<anonymous> (http://127.0.0.1:34147/appservice/__dev__/WASubContext.js?t=wechat&s=1716397461700&v=3.4.3:1:478511)\n    at yi.c.__callPageLifeTime__ (http://127.0.0.1:34147/appservice/__de...
+[D 2024-05-22 13:05:14,390 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":9,"path":"pages/openLock/openLock","query":{},"openType":"navigateTo","__ts__":1716397514372},1716397514374]}}
+[I 2024-05-22 13:05:14,391 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 9, 'path': 'pages/openLock/openLock', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716397514372}, 1716397514374]}
+[D 2024-05-22 13:05:19,399 minium page#321 wait_for] waitFor: 5.005113840103149 s
+[I 2024-05-22 13:05:19,399 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:05:19,400 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"e1b64f55-1509-45ac-b881-6b0add37211a","method":"Page.getElements","params":{"selector":"form","pageId":9}}
+[D 2024-05-22 13:05:19,411 minium.Conn8176 connection#653 __on_message] RECV < {"id":"e1b64f55-1509-45ac-b881-6b0add37211a","result":{"elements":[]}}
+[W 2024-05-22 13:05:19,412 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:05:19,413 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"b44780b9-667e-41ca-8796-48e01bf025fe","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:05:19,421 minium.Conn8176 connection#653 __on_message] RECV < {"id":"b44780b9-667e-41ca-8796-48e01bf025fe","result":{"pageStack":[{"pageId":4,"path":"pages/scanqrCode/index","query":{}},{"pageId":9,"path":"pages/openLock/openLock","query":{}}]}}
+[I 2024-05-22 13:05:19,423 minium app#749 navigate_back] NavigateBack from:/pages/openLock/openLock
+[D 2024-05-22 13:05:19,424 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"85325ca0-6134-4f67-a337-4bbd4f640f15","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-22 13:05:19,531 minium.Conn8176 connection#653 __on_message] RECV < {"id":"85325ca0-6134-4f67-a337-4bbd4f640f15","result":{"result":{}}}
+[D 2024-05-22 13:05:19,845 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/scanqrCode/index","query":{},"openType":"navigateBack","__ts__":1716397519822},1716397519829]}}
+[I 2024-05-22 13:05:19,847 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/scanqrCode/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716397519822}, 1716397519829]}
+[I 2024-05-22 13:05:19,848 minium app#689 navigate_to] NavigateTo: /pages/index/index
+[D 2024-05-22 13:05:19,851 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"31f828f8-9a78-4b84-90e9-9df4203a19f1","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 13:05:19,875 minium.Conn8176 connection#653 __on_message] RECV < {"id":"31f828f8-9a78-4b84-90e9-9df4203a19f1","error":{"message":"can not navigateTo a tabbar page"}}
+[E 2024-05-22 13:05:19,876 minium.Conn8176 connection#661 __on_message] [31f828f8-9a78-4b84-90e9-9df4203a19f1]: can not navigateTo a tabbar page
+[I 2024-05-22 13:05:19,876 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 31f828f8-9a78-4b84-90e9-9df4203a19f1
+[D 2024-05-22 13:05:19,882 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"57c67ae4-6950-4683-a250-5777414de6d8","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 13:05:20,074 minium.Conn8176 connection#653 __on_message] RECV < {"id":"57c67ae4-6950-4683-a250-5777414de6d8","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-22 13:05:20,075 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 57c67ae4-6950-4683-a250-5777414de6d8
+[D 2024-05-22 13:05:20,585 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_before_1716397486004","args":[{"title":"请扫描设备二维码进入!","icon":"none","duration":3000,"mask":true},0.7647096653386605]}}
+[D 2024-05-22 13:05:20,586 minium app#1074 super_before] showToast before hook result: [{'title': '请扫描设备二维码进入!', 'icon': 'none', 'duration': 3000, 'mask': True}, 0.7647096653386605]
+[D 2024-05-22 13:05:20,615 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_before_1716397486004","args":[{"title":"请扫描设备二维码进入!","icon":"none","duration":3000,"mask":true},0.33361651396876213]}}
+[D 2024-05-22 13:05:20,616 minium app#1074 super_before] showToast before hook result: [{'title': '请扫描设备二维码进入!', 'icon': 'none', 'duration': 3000, 'mask': True}, 0.33361651396876213]
+[D 2024-05-22 13:05:20,662 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_callback_1716397486004","args":[{"errMsg":"showToast:ok"},0.7647096653386605]}}
+[D 2024-05-22 13:05:20,663 minium app#1096 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.7647096653386605]
+[D 2024-05-22 13:05:20,666 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_callback_1716397486004","args":[{"errMsg":"showToast:ok"},0.33361651396876213]}}
+[D 2024-05-22 13:05:20,673 minium app#1096 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.33361651396876213]
+[D 2024-05-22 13:05:20,878 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":10,"path":"pages/index/index","query":{},"openType":"switchTab","__ts__":1716397520817},1716397520821]}}
+[I 2024-05-22 13:05:20,880 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 10, 'path': 'pages/index/index', 'query': {}, 'openType': 'switchTab', '__ts__': 1716397520817}, 1716397520821]}
+[D 2024-05-22 13:05:25,887 minium page#321 wait_for] waitFor: 5.005147218704224 s
+[I 2024-05-22 13:05:25,888 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:05:25,889 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"ad6e7120-aab7-4f65-95e6-9ed08eba329b","method":"Page.getElements","params":{"selector":"form","pageId":10}}
+[D 2024-05-22 13:05:25,899 minium.Conn8176 connection#653 __on_message] RECV < {"id":"ad6e7120-aab7-4f65-95e6-9ed08eba329b","result":{"elements":[]}}
+[W 2024-05-22 13:05:25,900 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:05:25,901 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"7d793713-591d-4825-97a6-6ff76c303e82","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:05:25,906 minium.Conn8176 connection#653 __on_message] RECV < {"id":"7d793713-591d-4825-97a6-6ff76c303e82","result":{"pageStack":[{"pageId":10,"path":"pages/index/index","query":{}}]}}
+[W 2024-05-22 13:05:25,907 minium app#747 navigate_back] Current page is root, can't navigate back
+[I 2024-05-22 13:05:25,908 minium app#689 navigate_to] NavigateTo: /pages/login/login
+[D 2024-05-22 13:05:25,909 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"9e950a67-1d80-433d-8f40-18272f340ac8","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/login/login"}]}}
+[D 2024-05-22 13:05:26,038 minium.Conn8176 connection#653 __on_message] RECV < {"id":"9e950a67-1d80-433d-8f40-18272f340ac8","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:05:26,038 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 9e950a67-1d80-433d-8f40-18272f340ac8
+[D 2024-05-22 13:05:26,632 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":11,"path":"pages/login/login","query":{},"openType":"navigateTo","__ts__":1716397526612},1716397526614]}}
+[I 2024-05-22 13:05:26,633 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 11, 'path': 'pages/login/login', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716397526612}, 1716397526614]}
+[D 2024-05-22 13:05:31,641 minium page#321 wait_for] waitFor: 5.005350589752197 s
+[I 2024-05-22 13:05:31,642 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-22 13:05:31,642 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"e7a60ff9-f22d-44bc-abb6-1f4d9da2cba2","method":"Page.getElements","params":{"selector":"form","pageId":11}}
+[D 2024-05-22 13:05:31,653 minium.Conn8176 connection#653 __on_message] RECV < {"id":"e7a60ff9-f22d-44bc-abb6-1f4d9da2cba2","result":{"elements":[]}}
+[W 2024-05-22 13:05:31,654 minium page#562 _get_elements_by_css] Could not found any element 'form' you need
+[D 2024-05-22 13:05:31,655 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"186bc891-96cd-4c9f-a49c-7f24191b44db","method":"App.getPageStack","params":{}}
+[D 2024-05-22 13:05:31,660 minium.Conn8176 connection#653 __on_message] RECV < {"id":"186bc891-96cd-4c9f-a49c-7f24191b44db","result":{"pageStack":[{"pageId":10,"path":"pages/index/index","query":{}},{"pageId":11,"path":"pages/login/login","query":{}}]}}
+[I 2024-05-22 13:05:31,661 minium app#749 navigate_back] NavigateBack from:/pages/login/login
+[D 2024-05-22 13:05:31,663 minium.Conn8176 connection#417 _safely_send] SEND > {"id":"4f6fd5f7-d859-4490-b977-1274c2764adc","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-22 13:05:31,739 minium.Conn8176 connection#653 __on_message] RECV < {"id":"4f6fd5f7-d859-4490-b977-1274c2764adc","result":{"result":{}}}
+[D 2024-05-22 13:05:31,741 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_before_1716397486004","args":[{"title":"请扫描设备二维码进入!","icon":"none","duration":3000,"mask":true},0.3423163856963931]}}
+[D 2024-05-22 13:05:31,744 minium app#1074 super_before] showToast before hook result: [{'title': '请扫描设备二维码进入!', 'icon': 'none', 'duration': 3000, 'mask': True}, 0.3423163856963931]
+[D 2024-05-22 13:05:31,786 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_before_1716397486004","args":[{"title":"请扫描设备二维码进入!","icon":"none","duration":3000,"mask":true},0.8519604794614779]}}
+[D 2024-05-22 13:05:31,788 minium app#1074 super_before] showToast before hook result: [{'title': '请扫描设备二维码进入!', 'icon': 'none', 'duration': 3000, 'mask': True}, 0.8519604794614779]
+[D 2024-05-22 13:05:31,808 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_callback_1716397486004","args":[{"errMsg":"showToast:ok"},0.3423163856963931]}}
+[D 2024-05-22 13:05:31,810 minium app#1096 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.3423163856963931]
+[D 2024-05-22 13:05:31,812 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"showToast_callback_1716397486004","args":[{"errMsg":"showToast:ok"},0.8519604794614779]}}
+[D 2024-05-22 13:05:31,814 minium app#1096 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.8519604794614779]
+[D 2024-05-22 13:05:31,899 minium.Conn8176 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":10,"path":"pages/index/index","query":{},"openType":"navigateBack","__ts__":1716397531893},1716397531896]}}
+[I 2024-05-22 13:05:31,901 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 10, 'path': 'pages/index/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716397531893}, 1716397531896]}
+[I 2024-05-22 13:05:31,902 minium app#689 navigate_to] NavigateTo: /pages/music/music
+[D 2024-05-22 13:05:31,905 minium.Conn8176 connection#417 _safely_send] ASYNC_SEND > {"id":"60d404eb-0ebb-45d4-830e-12eab117f635","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/music/music"}]}}
+[D 2024-05-22 13:05:31,993 minium.Conn8176 connection#653 __on_message] RECV < {"id":"60d404eb-0ebb-45d4-830e-12eab117f635","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-22 13:05:31,994 minium.Conn8176 connection#697 _handle_async_msg] received async msg: 60d404eb-0ebb-45d4-830e-12eab117f635
+[D 2024-05-22 13:05:32,305 minium.Conn8176 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'split' of undefined","stack":"TypeError: Cannot read property 'split' of undefined\n    at yi.onLoad (http://127.0.0.1:34147/appservice/pages/music/music.js?t=wechat&s=1716397461700&v=45f1010c912b101307055f9c3d886bf5:42:31)\n    at yi.<anonymous> (http://127.0.0.1:34147/appservice/__dev__/WASubContext.js?t=wechat&s=1716397461700&v=3.4.3:1:478511)\n    at yi.c.__callPageLifeTime__ (http://127.0.0.1:34147/appservice/__dev__/WASubCon...

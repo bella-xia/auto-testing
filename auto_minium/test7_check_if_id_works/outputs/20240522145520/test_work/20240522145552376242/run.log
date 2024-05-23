@@ -1,0 +1,30 @@
+[I 2024-05-22 14:55:52,377 minium minitest#370 _miniSetUp] =========Current case: test_work=========
+[I 2024-05-22 14:55:52,377 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests, case info: baseTest.test_work
+[I 2024-05-22 14:55:52,378 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 14:55:52,378 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 14:55:52,378 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 14:55:52,379 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 14:55:52,379 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[I 2024-05-22 14:55:52,379 minium app#731 relaunch] ReLaunch: /pages/index/index
+[D 2024-05-22 14:55:52,380 minium.Conn3520 connection#417 _safely_send] ASYNC_SEND > {"id":"53a8bb43-de9d-48e2-917a-ec4e2bcf4d36","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 14:55:52,528 minium.Conn3520 connection#653 __on_message] RECV < {"id":"53a8bb43-de9d-48e2-917a-ec4e2bcf4d36","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2024-05-22 14:55:52,528 minium.Conn3520 connection#697 _handle_async_msg] received async msg: 53a8bb43-de9d-48e2-917a-ec4e2bcf4d36
+[D 2024-05-22 14:55:53,621 minium.Conn3520 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/index/index","query":{},"openType":"reLaunch","__ts__":1716404153598},1716404153601]}}
+[I 2024-05-22 14:55:53,623 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/index/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1716404153598}, 1716404153601]}
+[I 2024-05-22 14:55:53,626 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 14:55:53,626 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 14:55:53,627 minium.Conn3520 connection#417 _safely_send] SEND > {"id":"cef1d511-5d46-4f0f-9623-ce038f2cef08","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 14:55:53,767 minium.Conn3520 connection#651 __on_message] RECV < {"id":"cef1d511-5d46-4f0f-9623-ce038f2cef08","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAH4CAIAAAC0a6PlAAAAAXNSR0IArs4c6QAABcpJREFUeJzt0zENACAAwDDAv1ceBOCBhyxpFezZ3PsMoGn9DgDeGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEG...
+[I 2024-05-22 14:55:53,768 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 14:55:53,769 minium minitest#424 _miniSetUp] =========case: test_work start=========
+[D 2024-05-22 14:55:53,770 minium.Conn3520 connection#417 _safely_send] SEND > {"id":"a967ed72-fdd5-4949-90f5-fac0e3b290b6","method":"App.getCurrentPage","params":{}}
+[D 2024-05-22 14:55:53,776 minium.Conn3520 connection#653 __on_message] RECV < {"id":"a967ed72-fdd5-4949-90f5-fac0e3b290b6","result":{"pageId":4,"path":"pages/index/index","query":{}}}
+[I 2024-05-22 14:55:53,777 minium app#689 navigate_to] NavigateTo: Page(id=4, path=/pages/index/index, query={})
+[D 2024-05-22 14:56:03,779 minium minitest#620 _miniTearDown] =========Current case Down: test_work=========
+[I 2024-05-22 14:56:03,781 minium minitest#717 capture] capture teardown.png
+[I 2024-05-22 14:56:03,782 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 14:56:03,785 minium.Conn3520 connection#417 _safely_send] SEND > {"id":"aa6c1198-de96-4a6d-b834-84ec6e4cdf70","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 14:56:03,916 minium.Conn3520 connection#651 __on_message] RECV < {"id":"aa6c1198-de96-4a6d-b834-84ec6e4cdf70","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAH4CAIAAAC0a6PlAAAAAXNSR0IArs4c6QAABcpJREFUeJzt0zENACAAwDDAv1ceBOCBhyxpFezZ3PsMoGn9DgDeGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEG...
+[I 2024-05-22 14:56:03,917 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 14:56:03,918 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-22 14:56:03,918 minium basenative#29 wrapper] call BaseNative.get_start_up end

@@ -1,0 +1,26 @@
+[I 2024-05-22 13:50:02,274 minium minitest#370 _miniSetUp] =========Current case: test_work=========
+[I 2024-05-22 13:50:02,274 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test7_check_if_id_works.tests, case info: baseTest.test_work
+[I 2024-05-22 13:50:02,274 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-22 13:50:02,274 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-22 13:50:02,275 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-22 13:50:02,275 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-22 13:50:02,275 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-05-22 13:50:02,275 minium.Conn5872 connection#417 _safely_send] ASYNC_SEND > {"id":"38975356-ccbc-4c23-bcfd-081f2f4ec189","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-22 13:50:02,367 minium.Conn5872 connection#653 __on_message] RECV < {"id":"38975356-ccbc-4c23-bcfd-081f2f4ec189","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-22 13:50:02,368 minium.Conn5872 connection#697 _handle_async_msg] received async msg: 38975356-ccbc-4c23-bcfd-081f2f4ec189
+[I 2024-05-22 13:50:02,383 minium minitest#717 capture] capture setup.png
+[I 2024-05-22 13:50:02,384 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:50:02,385 minium.Conn5872 connection#417 _safely_send] SEND > {"id":"6c49ef82-0605-49c6-a162-493ecf81ffa9","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:50:02,498 minium.Conn5872 connection#651 __on_message] RECV < {"id":"6c49ef82-0605-49c6-a162-493ecf81ffa9","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAHICAIAAACwEaRIAAAAAXNSR0IArs4c6QAABT9JREFUeJzt00ENACAQwDDAv9szgAc+ZEmrYJ/tmVlA0/kdALwzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzM...
+[I 2024-05-22 13:50:02,499 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:50:02,500 minium minitest#424 _miniSetUp] =========case: test_work start=========
+[D 2024-05-22 13:50:02,500 minium.Conn5872 connection#417 _safely_send] SEND > {"id":"c4b98cf2-df62-4de1-81d7-19d84e09b745","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+[D 2024-05-22 13:50:02,510 minium.Conn5872 connection#651 __on_message] RECV < {"id":"c4b98cf2-df62-4de1-81d7-19d84e09b745","result":{"result":{"model":"iPhone 5","pixelRatio":2,"windowWidth":320,"windowHeight":456,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":320,"screenHeight":568,"SDKVersion":"3.4.3","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":74,"statusBarHeight":20,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":true,"microphone...
+[D 2024-05-22 13:50:02,512 minium minitest#620 _miniTearDown] =========Current case Down: test_work=========
+[I 2024-05-22 13:50:02,513 minium minitest#717 capture] capture teardown.png
+[I 2024-05-22 13:50:02,513 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-22 13:50:02,514 minium.Conn5872 connection#417 _safely_send] SEND > {"id":"ffa96062-24ed-4138-8405-fd8746851d67","method":"App.captureScreenshot","params":{}}
+[D 2024-05-22 13:50:02,593 minium.Conn5872 connection#651 __on_message] RECV < {"id":"ffa96062-24ed-4138-8405-fd8746851d67","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAHICAIAAACwEaRIAAAAAXNSR0IArs4c6QAABT9JREFUeJzt00ENACAQwDDAv9szgAc+ZEmrYJ/tmVlA0/kdALwzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzMAQZmAIMzCEGRjCDAxhBoYwA0OYgSHMwBBmYAgzMIQZGMIMDGEGhjADQ5iBIczAEGZgCDMwhBkYwgwMYQaGMANDmIEhzM...
+[I 2024-05-22 13:50:02,595 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-22 13:50:02,596 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-22 13:50:02,597 minium basenative#29 wrapper] call BaseNative.get_start_up end

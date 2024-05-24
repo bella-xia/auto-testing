@@ -1,0 +1,403 @@
+[I 2024-05-23 17:06:04,862 minium minitest#370 _miniSetUp] =========Current case: test_input_coverage=========
+[I 2024-05-23 17:06:04,862 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test8_check_taint_coverage.minium_tests.mini_taint_test, case info: MiniTaintCoverageTest.test_input_coverage
+[I 2024-05-23 17:06:04,863 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-23 17:06:04,863 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-23 17:06:04,863 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-23 17:06:04,863 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-23 17:06:04,864 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-05-23 17:06:04,864 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"0ed4b94a-d933-457a-8a87-c75b82b755a2","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-23 17:06:04,923 minium.Conn4640 connection#653 __on_message] RECV < {"id":"0ed4b94a-d933-457a-8a87-c75b82b755a2","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 17:06:04,924 minium.Conn4640 connection#697 _handle_async_msg] received async msg: 0ed4b94a-d933-457a-8a87-c75b82b755a2
+[I 2024-05-23 17:06:04,925 minium minitest#717 capture] capture setup.png
+[I 2024-05-23 17:06:04,927 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-23 17:06:04,932 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"3b1d8626-42f0-47f5-939e-3e53386eec32","method":"App.captureScreenshot","params":{}}
+[D 2024-05-23 17:06:05,056 minium.Conn4640 connection#651 __on_message] RECV < {"id":"3b1d8626-42f0-47f5-939e-3e53386eec32","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAIICAIAAACQEaBhAAAAAXNSR0IArs4c6QAABf5JREFUeJzt1bEJwDAQBEHbqP9+P5J7UCIWZiq4ZLl37/0ATd/tAcA5AUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwtbM3N4AHPLAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDG...
+[I 2024-05-23 17:06:05,057 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-23 17:06:05,058 minium minitest#424 _miniSetUp] =========case: test_input_coverage start=========
+[D 2024-05-23 17:06:05,058 minium app#433 _evaluate_js] evaluate js file getAllPagesPath [ALL]
+[D 2024-05-23 17:06:05,059 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"b4a7d393-c3fa-4cac-85bc-ac70501426a6","method":"App.callFunction","params":{"functionDeclaration":"function(){return __wxConfig.pages}","args":[]}}
+[D 2024-05-23 17:06:05,067 minium.Conn4640 connection#651 __on_message] RECV < {"id":"b4a7d393-c3fa-4cac-85bc-ac70501426a6","result":{"result":["pages/index/index","pages/template/template","pages/logs/logs","pages/user/user","pages/basket/basket","pages/category/category","pages/search-page/search-page","pages/delivery-address/delivery-address","pages/editAddress/editAddress","pages/orderList/orderList","pages/order-detail/order-detail","pages/submit-order/submit-order","pages/binding-phone/binding-phone","pages/express-delivery/express-delivery","pages/pay-result/pay-result","pag...
+[I 2024-05-23 17:06:05,069 minium app#689 navigate_to] NavigateTo: /pages/index/index
+[D 2024-05-23 17:06:05,071 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"abc11998-3be0-4e5e-abf2-05a9cb34d3a1","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-23 17:06:05,083 minium.Conn4640 connection#653 __on_message] RECV < {"id":"abc11998-3be0-4e5e-abf2-05a9cb34d3a1","error":{"message":"can not navigateTo a tabbar page"}}
+[E 2024-05-23 17:06:05,084 minium.Conn4640 connection#661 __on_message] [abc11998-3be0-4e5e-abf2-05a9cb34d3a1]: can not navigateTo a tabbar page
+[I 2024-05-23 17:06:05,084 minium.Conn4640 connection#697 _handle_async_msg] received async msg: abc11998-3be0-4e5e-abf2-05a9cb34d3a1
+[D 2024-05-23 17:06:05,086 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"54149337-ec6a-4687-bb77-f4a0e121d677","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-23 17:06:05,129 minium.Conn4640 connection#653 __on_message] RECV < {"id":"54149337-ec6a-4687-bb77-f4a0e121d677","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 17:06:05,130 minium.Conn4640 connection#697 _handle_async_msg] received async msg: 54149337-ec6a-4687-bb77-f4a0e121d677
+[D 2024-05-23 17:06:20,133 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"9399d8e6-bb6f-4258-9bec-1cd23f94eb54","method":"App.getCurrentPage","params":{}}
+[D 2024-05-23 17:06:20,137 minium.Conn4640 connection#653 __on_message] RECV < {"id":"9399d8e6-bb6f-4258-9bec-1cd23f94eb54","result":{"pageId":3,"path":"pages/index/index","query":{}}}
+[D 2024-05-23 17:06:25,145 minium page#321 wait_for] waitFor: 5.006402492523193 s
+[I 2024-05-23 17:06:25,146 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:06:25,146 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"aae304d2-0d76-4122-9d05-93dc476f1caa","method":"Page.getElements","params":{"selector":"input","pageId":3}}
+[D 2024-05-23 17:06:25,180 minium.Conn4640 connection#653 __on_message] RECV < {"id":"aae304d2-0d76-4122-9d05-93dc476f1caa","result":{"elements":[]}}
+[W 2024-05-23 17:06:25,181 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:06:25,182 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"56055f0f-69b1-4a85-9a83-4678d7a805de","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:06:25,189 minium.Conn4640 connection#653 __on_message] RECV < {"id":"56055f0f-69b1-4a85-9a83-4678d7a805de","result":{"pageStack":[{"pageId":3,"path":"pages/index/index","query":{}}]}}
+[W 2024-05-23 17:06:25,190 minium app#747 navigate_back] Current page is root, can't navigate back
+[I 2024-05-23 17:06:25,190 minium app#689 navigate_to] NavigateTo: /pages/template/template
+[D 2024-05-23 17:06:25,191 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"fa2f4700-044f-4013-9f23-3dde2d32b949","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/template/template"}]}}
+[D 2024-05-23 17:06:25,369 minium.Conn4640 connection#653 __on_message] RECV < {"id":"fa2f4700-044f-4013-9f23-3dde2d32b949","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-23 17:06:25,369 minium.Conn4640 connection#697 _handle_async_msg] received async msg: fa2f4700-044f-4013-9f23-3dde2d32b949
+[D 2024-05-23 17:06:26,247 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/template/template","query":{},"openType":"navigateTo","__ts__":1716498386225},1716498386228]}}
+[I 2024-05-23 17:06:26,251 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/template/template', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716498386225}, 1716498386228]}
+[D 2024-05-23 17:06:31,255 minium page#321 wait_for] waitFor: 5.002179384231567 s
+[I 2024-05-23 17:06:31,256 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:06:31,257 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"a62fffdf-6eab-4d4e-9e44-99fc25733ea5","method":"Page.getElements","params":{"selector":"input","pageId":5}}
+[D 2024-05-23 17:06:31,266 minium.Conn4640 connection#653 __on_message] RECV < {"id":"a62fffdf-6eab-4d4e-9e44-99fc25733ea5","result":{"elements":[]}}
+[W 2024-05-23 17:06:31,268 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:06:31,268 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"5d622bae-12c7-491b-8af9-39b4d42a8ba3","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:06:31,271 minium.Conn4640 connection#653 __on_message] RECV < {"id":"5d622bae-12c7-491b-8af9-39b4d42a8ba3","result":{"pageStack":[{"pageId":3,"path":"pages/index/index","query":{}},{"pageId":5,"path":"pages/template/template","query":{}}]}}
+[I 2024-05-23 17:06:31,273 minium app#749 navigate_back] NavigateBack from:/pages/template/template
+[D 2024-05-23 17:06:31,273 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"52a6a356-65f9-40ee-be6c-798e0a98ac5d","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-23 17:06:31,368 minium.Conn4640 connection#653 __on_message] RECV < {"id":"52a6a356-65f9-40ee-be6c-798e0a98ac5d","result":{"result":{}}}
+[D 2024-05-23 17:06:31,509 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":3,"path":"pages/index/index","query":{},"openType":"navigateBack","__ts__":1716498391500},1716498391503]}}
+[I 2024-05-23 17:06:31,511 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 3, 'path': 'pages/index/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716498391500}, 1716498391503]}
+[I 2024-05-23 17:06:31,512 minium app#689 navigate_to] NavigateTo: /pages/logs/logs
+[D 2024-05-23 17:06:31,514 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"e5a68540-aff9-402f-9355-85731d23f188","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/logs/logs"}]}}
+[D 2024-05-23 17:06:31,733 minium.Conn4640 connection#653 __on_message] RECV < {"id":"e5a68540-aff9-402f-9355-85731d23f188","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-23 17:06:31,734 minium.Conn4640 connection#697 _handle_async_msg] received async msg: e5a68540-aff9-402f-9355-85731d23f188
+[D 2024-05-23 17:06:32,328 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/logs/logs","query":{},"openType":"navigateTo","__ts__":1716498392311},1716498392313]}}
+[I 2024-05-23 17:06:32,330 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/logs/logs', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716498392311}, 1716498392313]}
+[D 2024-05-23 17:06:37,337 minium page#321 wait_for] waitFor: 5.005178689956665 s
+[I 2024-05-23 17:06:37,338 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:06:37,339 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"71d6e5fc-05d5-4717-b8fc-ae3fc5564ee8","method":"Page.getElements","params":{"selector":"input","pageId":6}}
+[D 2024-05-23 17:06:37,350 minium.Conn4640 connection#653 __on_message] RECV < {"id":"71d6e5fc-05d5-4717-b8fc-ae3fc5564ee8","result":{"elements":[]}}
+[W 2024-05-23 17:06:37,351 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:06:37,351 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"c4fcb58a-5b94-441c-bd88-746692fe0801","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:06:37,356 minium.Conn4640 connection#653 __on_message] RECV < {"id":"c4fcb58a-5b94-441c-bd88-746692fe0801","result":{"pageStack":[{"pageId":3,"path":"pages/index/index","query":{}},{"pageId":6,"path":"pages/logs/logs","query":{}}]}}
+[I 2024-05-23 17:06:37,357 minium app#749 navigate_back] NavigateBack from:/pages/logs/logs
+[D 2024-05-23 17:06:37,358 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"12c9ebc5-affc-42bf-bb07-a31565f0d79a","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-23 17:06:37,411 minium.Conn4640 connection#653 __on_message] RECV < {"id":"12c9ebc5-affc-42bf-bb07-a31565f0d79a","result":{"result":{}}}
+[D 2024-05-23 17:06:37,587 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":3,"path":"pages/index/index","query":{},"openType":"navigateBack","__ts__":1716498397580},1716498397582]}}
+[I 2024-05-23 17:06:37,588 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 3, 'path': 'pages/index/index', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716498397580}, 1716498397582]}
+[I 2024-05-23 17:06:37,589 minium app#689 navigate_to] NavigateTo: /pages/user/user
+[D 2024-05-23 17:06:37,591 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"b838b926-4846-4933-ba8c-d5320dea1813","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/user/user"}]}}
+[D 2024-05-23 17:06:37,612 minium.Conn4640 connection#653 __on_message] RECV < {"id":"b838b926-4846-4933-ba8c-d5320dea1813","error":{"message":"can not navigateTo a tabbar page"}}
+[E 2024-05-23 17:06:37,613 minium.Conn4640 connection#661 __on_message] [b838b926-4846-4933-ba8c-d5320dea1813]: can not navigateTo a tabbar page
+[I 2024-05-23 17:06:37,613 minium.Conn4640 connection#697 _handle_async_msg] received async msg: b838b926-4846-4933-ba8c-d5320dea1813
+[D 2024-05-23 17:06:37,620 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"aabe9a37-eede-4a3a-ad7d-f00a46350e63","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/user/user"}]}}
+[D 2024-05-23 17:06:37,763 minium.Conn4640 connection#653 __on_message] RECV < {"id":"aabe9a37-eede-4a3a-ad7d-f00a46350e63","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 17:06:37,763 minium.Conn4640 connection#697 _handle_async_msg] received async msg: aabe9a37-eede-4a3a-ad7d-f00a46350e63
+[D 2024-05-23 17:06:38,516 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/user/user","query":{},"openType":"switchTab","__ts__":1716498398452},1716498398455]}}
+[I 2024-05-23 17:06:38,518 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/user/user', 'query': {}, 'openType': 'switchTab', '__ts__': 1716498398452}, 1716498398455]}
+[D 2024-05-23 17:06:43,525 minium page#321 wait_for] waitFor: 5.005340099334717 s
+[I 2024-05-23 17:06:43,527 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:06:43,527 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"d1fb67d8-48e4-4dec-b511-877c9ab34cf5","method":"Page.getElements","params":{"selector":"input","pageId":7}}
+[D 2024-05-23 17:06:43,541 minium.Conn4640 connection#653 __on_message] RECV < {"id":"d1fb67d8-48e4-4dec-b511-877c9ab34cf5","result":{"elements":[]}}
+[W 2024-05-23 17:06:43,545 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:06:43,545 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"671bdfb8-3ca0-44a3-985a-1f81d16c5d1d","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:06:43,550 minium.Conn4640 connection#653 __on_message] RECV < {"id":"671bdfb8-3ca0-44a3-985a-1f81d16c5d1d","result":{"pageStack":[{"pageId":7,"path":"pages/user/user","query":{}}]}}
+[W 2024-05-23 17:06:43,551 minium app#747 navigate_back] Current page is root, can't navigate back
+[I 2024-05-23 17:06:43,552 minium app#689 navigate_to] NavigateTo: /pages/basket/basket
+[D 2024-05-23 17:06:43,552 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"57bda99b-d8c5-4182-bdbf-cc3952959aed","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/basket/basket"}]}}
+[D 2024-05-23 17:06:43,589 minium.Conn4640 connection#653 __on_message] RECV < {"id":"57bda99b-d8c5-4182-bdbf-cc3952959aed","error":{"message":"can not navigateTo a tabbar page"}}
+[E 2024-05-23 17:06:43,589 minium.Conn4640 connection#661 __on_message] [57bda99b-d8c5-4182-bdbf-cc3952959aed]: can not navigateTo a tabbar page
+[I 2024-05-23 17:06:43,589 minium.Conn4640 connection#697 _handle_async_msg] received async msg: 57bda99b-d8c5-4182-bdbf-cc3952959aed
+[D 2024-05-23 17:06:43,596 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"6a5a33e7-092c-45d9-b75f-c3d3bb7e7cad","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/basket/basket"}]}}
+[D 2024-05-23 17:06:43,741 minium.Conn4640 connection#653 __on_message] RECV < {"id":"6a5a33e7-092c-45d9-b75f-c3d3bb7e7cad","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 17:06:43,742 minium.Conn4640 connection#697 _handle_async_msg] received async msg: 6a5a33e7-092c-45d9-b75f-c3d3bb7e7cad
+[D 2024-05-23 17:06:44,481 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":8,"path":"pages/basket/basket","query":{},"openType":"switchTab","__ts__":1716498404397},1716498404401]}}
+[I 2024-05-23 17:06:44,483 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 8, 'path': 'pages/basket/basket', 'query': {}, 'openType': 'switchTab', '__ts__': 1716498404397}, 1716498404401]}
+[D 2024-05-23 17:06:49,491 minium page#321 wait_for] waitFor: 5.0051469802856445 s
+[I 2024-05-23 17:06:49,492 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:06:49,493 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"402115a9-f09e-4382-a580-c8b0d913cf83","method":"Page.getElements","params":{"selector":"input","pageId":8}}
+[D 2024-05-23 17:06:49,504 minium.Conn4640 connection#653 __on_message] RECV < {"id":"402115a9-f09e-4382-a580-c8b0d913cf83","result":{"elements":[]}}
+[W 2024-05-23 17:06:49,505 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:06:49,506 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"4095dbff-36f5-49a2-a51c-14fac30f6ca4","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:06:49,512 minium.Conn4640 connection#653 __on_message] RECV < {"id":"4095dbff-36f5-49a2-a51c-14fac30f6ca4","result":{"pageStack":[{"pageId":8,"path":"pages/basket/basket","query":{}}]}}
+[W 2024-05-23 17:06:49,513 minium app#747 navigate_back] Current page is root, can't navigate back
+[I 2024-05-23 17:06:49,513 minium app#689 navigate_to] NavigateTo: /pages/category/category
+[D 2024-05-23 17:06:49,516 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"53465a76-1087-4253-9ce8-2025fd14ebb4","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/category/category"}]}}
+[D 2024-05-23 17:06:49,587 minium.Conn4640 connection#653 __on_message] RECV < {"id":"53465a76-1087-4253-9ce8-2025fd14ebb4","error":{"message":"can not navigateTo a tabbar page"}}
+[E 2024-05-23 17:06:49,587 minium.Conn4640 connection#661 __on_message] [53465a76-1087-4253-9ce8-2025fd14ebb4]: can not navigateTo a tabbar page
+[I 2024-05-23 17:06:49,588 minium.Conn4640 connection#697 _handle_async_msg] received async msg: 53465a76-1087-4253-9ce8-2025fd14ebb4
+[D 2024-05-23 17:06:49,593 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"0bf28cb9-534a-43f2-9fa9-43bab779973c","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/category/category"}]}}
+[D 2024-05-23 17:06:49,807 minium.Conn4640 connection#653 __on_message] RECV < {"id":"0bf28cb9-534a-43f2-9fa9-43bab779973c","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 17:06:49,810 minium.Conn4640 connection#697 _handle_async_msg] received async msg: 0bf28cb9-534a-43f2-9fa9-43bab779973c
+[D 2024-05-23 17:06:50,191 minium.Conn4640 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'categoryId' of undefined","stack":"TypeError: Cannot read property 'categoryId' of undefined\n    at yi.<anonymous> (http://127.0.0.1:23286/appservice/pages/category/category.js?t=wechat&s=1716498344148&v=9d4a1607453380debbd70cb8f097d932:139:60)\n    at yi.E.t.<computed> [as getProdList] (http://127.0.0.1:23286/appservice/utils/mtj-wx-sdk.js?t=wechat&s=1716498344148&v=13fb2f99914318970773d0acf6607bc2:419:49)\n    at yi.<anonymous>...
+[D 2024-05-23 17:06:50,396 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":9,"path":"pages/category/category","query":{},"openType":"switchTab","__ts__":1716498410338},1716498410341]}}
+[I 2024-05-23 17:06:50,398 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 9, 'path': 'pages/category/category', 'query': {}, 'openType': 'switchTab', '__ts__': 1716498410338}, 1716498410341]}
+[D 2024-05-23 17:06:55,404 minium page#321 wait_for] waitFor: 5.005197048187256 s
+[I 2024-05-23 17:06:55,405 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:06:55,405 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"858a2087-5c79-4a17-a031-0131466590b8","method":"Page.getElements","params":{"selector":"input","pageId":9}}
+[D 2024-05-23 17:06:55,414 minium.Conn4640 connection#653 __on_message] RECV < {"id":"858a2087-5c79-4a17-a031-0131466590b8","result":{"elements":[]}}
+[W 2024-05-23 17:06:55,415 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:06:55,416 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"02be5dd5-f5dd-458b-869a-9b94fd4ebe40","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:06:55,419 minium.Conn4640 connection#653 __on_message] RECV < {"id":"02be5dd5-f5dd-458b-869a-9b94fd4ebe40","result":{"pageStack":[{"pageId":9,"path":"pages/category/category","query":{}}]}}
+[W 2024-05-23 17:06:55,420 minium app#747 navigate_back] Current page is root, can't navigate back
+[I 2024-05-23 17:06:55,420 minium app#689 navigate_to] NavigateTo: /pages/search-page/search-page
+[D 2024-05-23 17:06:55,422 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"ac1b0638-0ce4-46ef-8614-175ba46f76ae","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/search-page/search-page"}]}}
+[D 2024-05-23 17:06:55,600 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ac1b0638-0ce4-46ef-8614-175ba46f76ae","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-23 17:06:55,603 minium.Conn4640 connection#697 _handle_async_msg] received async msg: ac1b0638-0ce4-46ef-8614-175ba46f76ae
+[D 2024-05-23 17:06:56,318 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":10,"path":"pages/search-page/search-page","query":{},"openType":"navigateTo","__ts__":1716498416303},1716498416305]}}
+[I 2024-05-23 17:06:56,321 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 10, 'path': 'pages/search-page/search-page', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716498416303}, 1716498416305]}
+[D 2024-05-23 17:07:01,327 minium page#321 wait_for] waitFor: 5.005121469497681 s
+[I 2024-05-23 17:07:01,328 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:07:01,329 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"1157e584-46e8-4e89-a9a3-12995a55f6b5","method":"Page.getElements","params":{"selector":"input","pageId":10}}
+[D 2024-05-23 17:07:01,342 minium.Conn4640 connection#653 __on_message] RECV < {"id":"1157e584-46e8-4e89-a9a3-12995a55f6b5","result":{"elements":[{"elementId":"d6949ce2-bbaf-4ea7-b5bb-e285fadfc3ad","tagName":"input"}]}}
+[I 2024-05-23 17:07:01,371 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x7effd81c94b0>]
+[D 2024-05-23 17:07:01,372 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"e61debe5-e22c-4955-8fe8-5e71c09b80bf","method":"App.addBinding","params":{"name":"wx.chooseInvoice_callback_1716498421372"}}
+[D 2024-05-23 17:07:01,376 minium.Conn4640 connection#653 __on_message] RECV < {"id":"e61debe5-e22c-4955-8fe8-5e71c09b80bf","result":{}}
+[D 2024-05-23 17:07:01,377 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,398 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"1b42c3ad-0faf-4fed-aa6e-ed0cf0009de6","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoice_callback_1716498421372}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice",1716498421372,true]}}
+[D 2024-05-23 17:07:01,402 minium.Conn4640 connection#653 __on_message] RECV < {"id":"1b42c3ad-0faf-4fed-aa6e-ed0cf0009de6","result":{}}
+[D 2024-05-23 17:07:01,404 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"5994dcaf-871f-449b-84e8-76d13599c85c","method":"App.addBinding","params":{"name":"wx.getUserInfo_callback_1716498421404"}}
+[D 2024-05-23 17:07:01,407 minium.Conn4640 connection#653 __on_message] RECV < {"id":"5994dcaf-871f-449b-84e8-76d13599c85c","result":{}}
+[D 2024-05-23 17:07:01,408 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,409 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ae2f52e7-fe2d-431a-b6b5-6289f618a74f","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.getUserInfo_callback_1716498421404}):global.__minium__.delCall(_,l)}","args":["wx.getUserInfo",1716498421404,true]}}
+[D 2024-05-23 17:07:01,413 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ae2f52e7-fe2d-431a-b6b5-6289f618a74f","result":{}}
+[D 2024-05-23 17:07:01,414 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"512b3068-d00d-41df-9c9f-58fd90f5b5f6","method":"App.addBinding","params":{"name":"wx.chooseInvoiceTitle_callback_1716498421414"}}
+[D 2024-05-23 17:07:01,419 minium.Conn4640 connection#653 __on_message] RECV < {"id":"512b3068-d00d-41df-9c9f-58fd90f5b5f6","result":{}}
+[D 2024-05-23 17:07:01,420 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,420 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"8bca9a3d-8227-4256-ac27-9be38395c05d","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoiceTitle_callback_1716498421414}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle",1716498421414,true]}}
+[D 2024-05-23 17:07:01,431 minium.Conn4640 connection#653 __on_message] RECV < {"id":"8bca9a3d-8227-4256-ac27-9be38395c05d","result":{}}
+[D 2024-05-23 17:07:01,432 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"b23850b2-8d7d-45c0-a949-577d666a1ee0","method":"App.addBinding","params":{"name":"wx.saveImageToPhotosAlbum_callback_1716498421431"}}
+[D 2024-05-23 17:07:01,437 minium.Conn4640 connection#653 __on_message] RECV < {"id":"b23850b2-8d7d-45c0-a949-577d666a1ee0","result":{}}
+[D 2024-05-23 17:07:01,441 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,443 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"759867c3-0666-4ab3-b762-6b8c74b71df4","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.saveImageToPhotosAlbum_callback_1716498421431}):global.__minium__.delCall(_,l)}","args":["wx.saveImageToPhotosAlbum",1716498421431,true]}}
+[D 2024-05-23 17:07:01,448 minium.Conn4640 connection#653 __on_message] RECV < {"id":"759867c3-0666-4ab3-b762-6b8c74b71df4","result":{}}
+[D 2024-05-23 17:07:01,450 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"27350fe7-c940-42e0-882e-9772bb75b53d","method":"App.addBinding","params":{"name":"wx.getLocation_callback_1716498421449"}}
+[D 2024-05-23 17:07:01,461 minium.Conn4640 connection#653 __on_message] RECV < {"id":"27350fe7-c940-42e0-882e-9772bb75b53d","result":{}}
+[D 2024-05-23 17:07:01,462 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,463 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"51f9b00c-71d5-45a9-8849-08645e4ef01f","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.getLocation_callback_1716498421449}):global.__minium__.delCall(_,l)}","args":["wx.getLocation",1716498421449,true]}}
+[D 2024-05-23 17:07:01,467 minium.Conn4640 connection#653 __on_message] RECV < {"id":"51f9b00c-71d5-45a9-8849-08645e4ef01f","result":{}}
+[D 2024-05-23 17:07:01,469 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"c3a8e7ef-c5d2-4431-af54-3436d96c7604","method":"App.addBinding","params":{"name":"wx.chooseImage_callback_1716498421468"}}
+[D 2024-05-23 17:07:01,473 minium.Conn4640 connection#653 __on_message] RECV < {"id":"c3a8e7ef-c5d2-4431-af54-3436d96c7604","result":{}}
+[D 2024-05-23 17:07:01,473 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,474 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ef6ee2cc-fe9e-40f3-82dc-40a0bc61a2d2","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseImage_callback_1716498421468}):global.__minium__.delCall(_,l)}","args":["wx.chooseImage",1716498421468,true]}}
+[D 2024-05-23 17:07:01,480 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ef6ee2cc-fe9e-40f3-82dc-40a0bc61a2d2","result":{}}
+[D 2024-05-23 17:07:01,481 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"58f93f8e-b9bf-4ee5-881a-9be6fb161d03","method":"App.addBinding","params":{"name":"wx.createCameraContext_callback_1716498421481"}}
+[D 2024-05-23 17:07:01,489 minium.Conn4640 connection#653 __on_message] RECV < {"id":"58f93f8e-b9bf-4ee5-881a-9be6fb161d03","result":{}}
+[D 2024-05-23 17:07:01,490 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,490 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ae650199-3db9-4c4f-8564-dab34b8f95a7","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.createCameraContext_callback_1716498421481}):global.__minium__.delCall(_,l)}","args":["wx.createCameraContext",1716498421481,true]}}
+[D 2024-05-23 17:07:01,496 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ae650199-3db9-4c4f-8564-dab34b8f95a7","result":{}}
+[D 2024-05-23 17:07:01,497 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"87911116-a3e5-4dc6-bb3b-44bae083a9db","method":"App.addBinding","params":{"name":"wx.getUserProfile_callback_1716498421497"}}
+[D 2024-05-23 17:07:01,502 minium.Conn4640 connection#653 __on_message] RECV < {"id":"87911116-a3e5-4dc6-bb3b-44bae083a9db","result":{}}
+[D 2024-05-23 17:07:01,503 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,504 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"a52d82f2-bd5e-4a1d-ba1d-97cfabdafaf6","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.getUserProfile_callback_1716498421497}):global.__minium__.delCall(_,l)}","args":["wx.getUserProfile",1716498421497,true]}}
+[D 2024-05-23 17:07:01,510 minium.Conn4640 connection#653 __on_message] RECV < {"id":"a52d82f2-bd5e-4a1d-ba1d-97cfabdafaf6","result":{}}
+[D 2024-05-23 17:07:01,511 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"dafbf4b7-5af5-4816-a277-2a23a97b5d5b","method":"App.addBinding","params":{"name":"wx.chooseLocation_callback_1716498421511"}}
+[D 2024-05-23 17:07:01,517 minium.Conn4640 connection#653 __on_message] RECV < {"id":"dafbf4b7-5af5-4816-a277-2a23a97b5d5b","result":{}}
+[D 2024-05-23 17:07:01,518 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,519 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"96b1e3de-5f9b-4e4a-9ddd-d293f04c0434","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseLocation_callback_1716498421511}):global.__minium__.delCall(_,l)}","args":["wx.chooseLocation",1716498421511,true]}}
+[D 2024-05-23 17:07:01,524 minium.Conn4640 connection#653 __on_message] RECV < {"id":"96b1e3de-5f9b-4e4a-9ddd-d293f04c0434","result":{}}
+[D 2024-05-23 17:07:01,526 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"1c402534-6148-4540-8cbd-bdc85a749e93","method":"App.addBinding","params":{"name":"wx.chooseAddress_callback_1716498421526"}}
+[D 2024-05-23 17:07:01,532 minium.Conn4640 connection#653 __on_message] RECV < {"id":"1c402534-6148-4540-8cbd-bdc85a749e93","result":{}}
+[D 2024-05-23 17:07:01,533 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,534 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"a1e0135a-e1c7-4192-86f0-c0048f4683d2","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseAddress_callback_1716498421526}):global.__minium__.delCall(_,l)}","args":["wx.chooseAddress",1716498421526,true]}}
+[D 2024-05-23 17:07:01,539 minium.Conn4640 connection#653 __on_message] RECV < {"id":"a1e0135a-e1c7-4192-86f0-c0048f4683d2","result":{}}
+[D 2024-05-23 17:07:01,540 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"01a68c63-a199-46ef-ae8b-b08b575b41fa","method":"App.addBinding","params":{"name":"wx.saveVideoToPhotosAlbum_callback_1716498421540"}}
+[D 2024-05-23 17:07:01,544 minium.Conn4640 connection#653 __on_message] RECV < {"id":"01a68c63-a199-46ef-ae8b-b08b575b41fa","result":{}}
+[D 2024-05-23 17:07:01,545 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,546 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"9a66d059-a3b7-44a6-90da-830d1d15e557","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.saveVideoToPhotosAlbum_callback_1716498421540}):global.__minium__.delCall(_,l)}","args":["wx.saveVideoToPhotosAlbum",1716498421540,true]}}
+[D 2024-05-23 17:07:01,550 minium.Conn4640 connection#653 __on_message] RECV < {"id":"9a66d059-a3b7-44a6-90da-830d1d15e557","result":{}}
+[D 2024-05-23 17:07:01,552 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"78c2c8d4-8fd1-4104-b5dc-2064ba22be24","method":"App.addBinding","params":{"name":"wx.chooseInvoice_callback_1716498421551"}}
+[D 2024-05-23 17:07:01,557 minium.Conn4640 connection#653 __on_message] RECV < {"id":"78c2c8d4-8fd1-4104-b5dc-2064ba22be24","result":{}}
+[D 2024-05-23 17:07:01,558 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,559 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"55815248-4566-4387-8294-eee122dfcdcb","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoice_callback_1716498421551}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice",1716498421551,true]}}
+[D 2024-05-23 17:07:01,565 minium.Conn4640 connection#653 __on_message] RECV < {"id":"55815248-4566-4387-8294-eee122dfcdcb","result":{}}
+[D 2024-05-23 17:07:01,566 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"5dd68ba6-f628-443b-8498-53fea7cb5bd2","method":"App.addBinding","params":{"name":"wx.chooseInvoiceTitle_callback_1716498421566"}}
+[D 2024-05-23 17:07:01,571 minium.Conn4640 connection#653 __on_message] RECV < {"id":"5dd68ba6-f628-443b-8498-53fea7cb5bd2","result":{}}
+[D 2024-05-23 17:07:01,572 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:01,572 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"04da444b-369f-46e5-9c01-5a80a3aee751","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoiceTitle_callback_1716498421566}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle",1716498421566,true]}}
+[D 2024-05-23 17:07:01,577 minium.Conn4640 connection#653 __on_message] RECV < {"id":"04da444b-369f-46e5-9c01-5a80a3aee751","result":{}}
+[D 2024-05-23 17:07:01,578 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"b163ab89-aa13-4d60-bcb3-629ec2e5f68c","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"d6949ce2-bbaf-4ea7-b5bb-e285fadfc3ad","pageId":10}}
+[D 2024-05-23 17:07:01,586 minium.Conn4640 connection#653 __on_message] RECV < {"id":"b163ab89-aa13-4d60-bcb3-629ec2e5f68c","result":{}}
+[D 2024-05-23 17:07:11,587 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:11,588 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:11,588 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:11,588 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"6acd4852-8d7b-458f-9055-580d09bd537e","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498421372"]}}
+[D 2024-05-23 17:07:11,594 minium.Conn4640 connection#653 __on_message] RECV < {"id":"6acd4852-8d7b-458f-9055-580d09bd537e","result":{}}
+[D 2024-05-23 17:07:11,595 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:11,596 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"66c2315a-c935-4cd0-9e9b-418c5542e57a","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498421551"]}}
+[D 2024-05-23 17:07:11,602 minium.Conn4640 connection#653 __on_message] RECV < {"id":"66c2315a-c935-4cd0-9e9b-418c5542e57a","result":{}}
+[D 2024-05-23 17:07:21,605 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:21,606 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:21,606 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"38868f3f-33f9-4be5-8b85-55f7b5d3aaa8","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.getUserInfo","1716498421404"]}}
+[D 2024-05-23 17:07:21,614 minium.Conn4640 connection#653 __on_message] RECV < {"id":"38868f3f-33f9-4be5-8b85-55f7b5d3aaa8","result":{}}
+[D 2024-05-23 17:07:31,617 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:31,617 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:31,618 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:31,618 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"810eb145-0b0d-43a5-a7b9-0114fcd88e8d","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle","1716498421566"]}}
+[D 2024-05-23 17:07:31,632 minium.Conn4640 connection#653 __on_message] RECV < {"id":"810eb145-0b0d-43a5-a7b9-0114fcd88e8d","result":{}}
+[D 2024-05-23 17:07:31,633 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:31,633 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"cb7aaff9-d8b3-4944-8def-ef1db371d077","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle","1716498421414"]}}
+[D 2024-05-23 17:07:31,637 minium.Conn4640 connection#653 __on_message] RECV < {"id":"cb7aaff9-d8b3-4944-8def-ef1db371d077","result":{}}
+[D 2024-05-23 17:07:41,640 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:41,640 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:41,641 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"2abd621d-3007-4ee6-8cf7-2ebb7374cae3","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.saveImageToPhotosAlbum","1716498421431"]}}
+[D 2024-05-23 17:07:41,647 minium.Conn4640 connection#653 __on_message] RECV < {"id":"2abd621d-3007-4ee6-8cf7-2ebb7374cae3","result":{}}
+[D 2024-05-23 17:07:51,650 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:07:51,651 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:07:51,652 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"6ce89236-2f36-450b-bb72-069127d4c80b","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.getLocation","1716498421449"]}}
+[D 2024-05-23 17:07:51,657 minium.Conn4640 connection#653 __on_message] RECV < {"id":"6ce89236-2f36-450b-bb72-069127d4c80b","result":{}}
+[D 2024-05-23 17:08:01,659 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:08:01,660 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:08:01,660 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"1642bb7a-9506-4150-900e-ed7c9ed3f215","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseImage","1716498421468"]}}
+[D 2024-05-23 17:08:01,664 minium.Conn4640 connection#653 __on_message] RECV < {"id":"1642bb7a-9506-4150-900e-ed7c9ed3f215","result":{}}
+[D 2024-05-23 17:08:11,666 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:08:11,667 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:08:11,667 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"0e328f49-23fa-4223-b80b-5112ee9236b5","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.createCameraContext","1716498421481"]}}
+[D 2024-05-23 17:08:11,673 minium.Conn4640 connection#653 __on_message] RECV < {"id":"0e328f49-23fa-4223-b80b-5112ee9236b5","result":{}}
+[D 2024-05-23 17:08:21,676 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:08:21,677 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:08:21,677 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ba75c47f-bbf6-4f10-9e18-ca8a4051404c","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.getUserProfile","1716498421497"]}}
+[D 2024-05-23 17:08:21,686 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ba75c47f-bbf6-4f10-9e18-ca8a4051404c","result":{}}
+[D 2024-05-23 17:08:31,689 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:08:31,689 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:08:31,690 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"fad0a400-5c64-4d9c-8acf-2fb0fc436f7c","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseLocation","1716498421511"]}}
+[D 2024-05-23 17:08:31,700 minium.Conn4640 connection#653 __on_message] RECV < {"id":"fad0a400-5c64-4d9c-8acf-2fb0fc436f7c","result":{}}
+[D 2024-05-23 17:08:41,704 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:08:41,705 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:08:41,705 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"61e74507-098a-4d48-a7f4-4ada17e29b90","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseAddress","1716498421526"]}}
+[D 2024-05-23 17:08:41,710 minium.Conn4640 connection#653 __on_message] RECV < {"id":"61e74507-098a-4d48-a7f4-4ada17e29b90","result":{}}
+[D 2024-05-23 17:08:51,712 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:08:51,713 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:08:51,714 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"944ac1b4-6283-4eb6-ba03-e821aea724eb","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.saveVideoToPhotosAlbum","1716498421540"]}}
+[D 2024-05-23 17:08:51,719 minium.Conn4640 connection#653 __on_message] RECV < {"id":"944ac1b4-6283-4eb6-ba03-e821aea724eb","result":{}}
+[D 2024-05-23 17:09:01,721 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:01,722 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:01,722 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:01,723 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"dde2eeaa-031f-482f-9dab-4a051c5acf29","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498421372"]}}
+[D 2024-05-23 17:09:01,741 minium.Conn4640 connection#653 __on_message] RECV < {"id":"dde2eeaa-031f-482f-9dab-4a051c5acf29","result":{}}
+[D 2024-05-23 17:09:01,742 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:01,742 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"2fadfbf4-f0cd-46e7-b41d-3874e1e8223d","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498421551"]}}
+[D 2024-05-23 17:09:01,748 minium.Conn4640 connection#653 __on_message] RECV < {"id":"2fadfbf4-f0cd-46e7-b41d-3874e1e8223d","result":{}}
+[D 2024-05-23 17:09:11,751 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:11,753 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:11,753 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:11,755 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"632e3319-93fb-46c6-8966-ac2e459f0132","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle","1716498421566"]}}
+[D 2024-05-23 17:09:11,761 minium.Conn4640 connection#653 __on_message] RECV < {"id":"632e3319-93fb-46c6-8966-ac2e459f0132","result":{}}
+[D 2024-05-23 17:09:11,762 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:11,763 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"f7c7c8a0-52d6-4f50-a729-b55742990984","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle","1716498421414"]}}
+[D 2024-05-23 17:09:11,767 minium.Conn4640 connection#653 __on_message] RECV < {"id":"f7c7c8a0-52d6-4f50-a729-b55742990984","result":{}}
+[D 2024-05-23 17:09:11,769 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"d3570982-b2b0-4321-a284-c71db62516ed","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:09:11,774 minium.Conn4640 connection#653 __on_message] RECV < {"id":"d3570982-b2b0-4321-a284-c71db62516ed","result":{"pageStack":[{"pageId":9,"path":"pages/category/category","query":{}},{"pageId":10,"path":"pages/search-page/search-page","query":{}}]}}
+[I 2024-05-23 17:09:11,775 minium app#749 navigate_back] NavigateBack from:/pages/search-page/search-page
+[D 2024-05-23 17:09:11,775 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"9e3036fa-7070-4fc1-b03d-d2186a32061c","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-23 17:09:11,917 minium.Conn4640 connection#653 __on_message] RECV < {"id":"9e3036fa-7070-4fc1-b03d-d2186a32061c","result":{"result":{}}}
+[D 2024-05-23 17:09:11,964 minium.Conn4640 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'categoryId' of undefined","stack":"TypeError: Cannot read property 'categoryId' of undefined\n    at yi.<anonymous> (http://127.0.0.1:23286/appservice/pages/category/category.js?t=wechat&s=1716498344148&v=9d4a1607453380debbd70cb8f097d932:139:60)\n    at yi.E.t.<computed> [as getProdList] (http://127.0.0.1:23286/appservice/utils/mtj-wx-sdk.js?t=wechat&s=1716498344148&v=13fb2f99914318970773d0acf6607bc2:419:49)\n    at yi.<anonymous>...
+[D 2024-05-23 17:09:12,071 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":9,"path":"pages/category/category","query":{},"openType":"navigateBack","__ts__":1716498552053},1716498552056]}}
+[I 2024-05-23 17:09:12,073 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 9, 'path': 'pages/category/category', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716498552053}, 1716498552056]}
+[I 2024-05-23 17:09:12,074 minium app#689 navigate_to] NavigateTo: /pages/delivery-address/delivery-address
+[D 2024-05-23 17:09:12,076 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"b9d13262-c57c-49b7-87b9-eeb9924298da","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/delivery-address/delivery-address"}]}}
+[D 2024-05-23 17:09:12,248 minium.Conn4640 connection#653 __on_message] RECV < {"id":"b9d13262-c57c-49b7-87b9-eeb9924298da","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-23 17:09:12,249 minium.Conn4640 connection#697 _handle_async_msg] received async msg: b9d13262-c57c-49b7-87b9-eeb9924298da
+[D 2024-05-23 17:09:13,121 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":11,"path":"pages/delivery-address/delivery-address","query":{},"openType":"navigateTo","__ts__":1716498553100},1716498553105]}}
+[I 2024-05-23 17:09:13,123 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 11, 'path': 'pages/delivery-address/delivery-address', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716498553100}, 1716498553105]}
+[D 2024-05-23 17:09:18,125 minium page#321 wait_for] waitFor: 5.0008323192596436 s
+[I 2024-05-23 17:09:18,126 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:09:18,126 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"4c7bd030-4fd2-4a5d-90a7-1c3f47780673","method":"Page.getElements","params":{"selector":"input","pageId":11}}
+[D 2024-05-23 17:09:18,133 minium.Conn4640 connection#653 __on_message] RECV < {"id":"4c7bd030-4fd2-4a5d-90a7-1c3f47780673","result":{"elements":[]}}
+[W 2024-05-23 17:09:18,134 minium page#562 _get_elements_by_css] Could not found any element 'input' you need
+[D 2024-05-23 17:09:18,134 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ada1dd52-59e0-4841-9b3f-b8a54240d901","method":"App.getPageStack","params":{}}
+[D 2024-05-23 17:09:18,139 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ada1dd52-59e0-4841-9b3f-b8a54240d901","result":{"pageStack":[{"pageId":9,"path":"pages/category/category","query":{}},{"pageId":11,"path":"pages/delivery-address/delivery-address","query":{}}]}}
+[I 2024-05-23 17:09:18,140 minium app#749 navigate_back] NavigateBack from:/pages/delivery-address/delivery-address
+[D 2024-05-23 17:09:18,141 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"92f497f7-d68b-46b7-aa25-cbe239b4243f","method":"App.callWxMethod","params":{"method":"navigateBack","args":[{"delta":1}]}}
+[D 2024-05-23 17:09:18,216 minium.Conn4640 connection#653 __on_message] RECV < {"id":"92f497f7-d68b-46b7-aa25-cbe239b4243f","result":{"result":{}}}
+[D 2024-05-23 17:09:18,266 minium.Conn4640 connection#651 __on_message] RECV < {"method":"App.exceptionThrown","params":{"message":"Cannot read property 'categoryId' of undefined","stack":"TypeError: Cannot read property 'categoryId' of undefined\n    at yi.<anonymous> (http://127.0.0.1:23286/appservice/pages/category/category.js?t=wechat&s=1716498344148&v=9d4a1607453380debbd70cb8f097d932:139:60)\n    at yi.E.t.<computed> [as getProdList] (http://127.0.0.1:23286/appservice/utils/mtj-wx-sdk.js?t=wechat&s=1716498344148&v=13fb2f99914318970773d0acf6607bc2:419:49)\n    at yi.<anonymous>...
+[D 2024-05-23 17:09:18,381 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":9,"path":"pages/category/category","query":{},"openType":"navigateBack","__ts__":1716498558367},1716498558370]}}
+[I 2024-05-23 17:09:18,383 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 9, 'path': 'pages/category/category', 'query': {}, 'openType': 'navigateBack', '__ts__': 1716498558367}, 1716498558370]}
+[I 2024-05-23 17:09:18,387 minium app#689 navigate_to] NavigateTo: /pages/editAddress/editAddress
+[D 2024-05-23 17:09:18,391 minium.Conn4640 connection#417 _safely_send] ASYNC_SEND > {"id":"eb0ec0a9-8a13-4127-ad3a-136e115d2fb3","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/editAddress/editAddress"}]}}
+[D 2024-05-23 17:09:18,661 minium.Conn4640 connection#653 __on_message] RECV < {"id":"eb0ec0a9-8a13-4127-ad3a-136e115d2fb3","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-23 17:09:18,662 minium.Conn4640 connection#697 _handle_async_msg] received async msg: eb0ec0a9-8a13-4127-ad3a-136e115d2fb3
+[D 2024-05-23 17:09:19,554 minium.Conn4640 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":12,"path":"pages/editAddress/editAddress","query":{},"openType":"navigateTo","__ts__":1716498559534},1716498559537]}}
+[I 2024-05-23 17:09:19,555 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 12, 'path': 'pages/editAddress/editAddress', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716498559534}, 1716498559537]}
+[D 2024-05-23 17:09:24,562 minium page#321 wait_for] waitFor: 5.005104064941406 s
+[I 2024-05-23 17:09:24,563 minium page#557 _get_elements_by_css] try to get elements: input
+[D 2024-05-23 17:09:24,563 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"df4f4353-e352-42e8-bef1-18a8f27b3612","method":"Page.getElements","params":{"selector":"input","pageId":12}}
+[D 2024-05-23 17:09:24,575 minium.Conn4640 connection#653 __on_message] RECV < {"id":"df4f4353-e352-42e8-bef1-18a8f27b3612","result":{"elements":[{"elementId":"0569e194-654e-4432-b300-150cc2b22d84","tagName":"input"},{"elementId":"5cbe1735-9ec6-4d18-b509-4655763b5b1d","tagName":"input"},{"elementId":"cd7c8a6f-8d3c-4b01-ae6c-aa0ad441d63c","tagName":"input"}]}}
+[I 2024-05-23 17:09:24,577 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x7effd8b772e0>, <minium.miniprogram.base_driver.element.FormElement object at 0x7effd8b77a30>, <minium.miniprogram.base_driver.element.FormElement object at 0x7effd81ca110>]
+[D 2024-05-23 17:09:24,579 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"e5c7432c-9698-490d-8cac-6607f966c841","method":"App.addBinding","params":{"name":"wx.chooseInvoice_callback_1716498564579"}}
+[D 2024-05-23 17:09:24,584 minium.Conn4640 connection#653 __on_message] RECV < {"id":"e5c7432c-9698-490d-8cac-6607f966c841","result":{}}
+[D 2024-05-23 17:09:24,585 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,585 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"c995fefa-2a9c-41a7-b711-d8f51ca2e38f","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoice_callback_1716498564579}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice",1716498564579,true]}}
+[D 2024-05-23 17:09:24,589 minium.Conn4640 connection#653 __on_message] RECV < {"id":"c995fefa-2a9c-41a7-b711-d8f51ca2e38f","result":{}}
+[D 2024-05-23 17:09:24,590 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"6c74daf7-cba9-40c0-a723-3c3455e1eaef","method":"App.addBinding","params":{"name":"wx.getUserInfo_callback_1716498564590"}}
+[D 2024-05-23 17:09:24,608 minium.Conn4640 connection#653 __on_message] RECV < {"id":"6c74daf7-cba9-40c0-a723-3c3455e1eaef","result":{}}
+[D 2024-05-23 17:09:24,609 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,609 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"9d11f14e-1891-45f0-a77c-2e4897513697","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.getUserInfo_callback_1716498564590}):global.__minium__.delCall(_,l)}","args":["wx.getUserInfo",1716498564590,true]}}
+[D 2024-05-23 17:09:24,613 minium.Conn4640 connection#653 __on_message] RECV < {"id":"9d11f14e-1891-45f0-a77c-2e4897513697","result":{}}
+[D 2024-05-23 17:09:24,614 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"46275d55-54fe-4d57-b7c4-960ffec66de6","method":"App.addBinding","params":{"name":"wx.chooseInvoiceTitle_callback_1716498564614"}}
+[D 2024-05-23 17:09:24,616 minium.Conn4640 connection#653 __on_message] RECV < {"id":"46275d55-54fe-4d57-b7c4-960ffec66de6","result":{}}
+[D 2024-05-23 17:09:24,617 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,618 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"9266ea6e-59d3-4956-84d3-3602c989081f","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoiceTitle_callback_1716498564614}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle",1716498564614,true]}}
+[D 2024-05-23 17:09:24,622 minium.Conn4640 connection#653 __on_message] RECV < {"id":"9266ea6e-59d3-4956-84d3-3602c989081f","result":{}}
+[D 2024-05-23 17:09:24,623 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"bbcc79fa-61cb-404f-949d-463797e0d353","method":"App.addBinding","params":{"name":"wx.saveImageToPhotosAlbum_callback_1716498564623"}}
+[D 2024-05-23 17:09:24,626 minium.Conn4640 connection#653 __on_message] RECV < {"id":"bbcc79fa-61cb-404f-949d-463797e0d353","result":{}}
+[D 2024-05-23 17:09:24,627 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,628 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"f9d32f89-f06d-43d0-acd9-54b2468bec23","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.saveImageToPhotosAlbum_callback_1716498564623}):global.__minium__.delCall(_,l)}","args":["wx.saveImageToPhotosAlbum",1716498564623,true]}}
+[D 2024-05-23 17:09:24,636 minium.Conn4640 connection#653 __on_message] RECV < {"id":"f9d32f89-f06d-43d0-acd9-54b2468bec23","result":{}}
+[D 2024-05-23 17:09:24,637 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"a9c08583-813b-4cc4-9750-08802844e0bd","method":"App.addBinding","params":{"name":"wx.getLocation_callback_1716498564637"}}
+[D 2024-05-23 17:09:24,641 minium.Conn4640 connection#653 __on_message] RECV < {"id":"a9c08583-813b-4cc4-9750-08802844e0bd","result":{}}
+[D 2024-05-23 17:09:24,641 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,642 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"60c1f5c7-51e8-4682-9c66-08e84f656bfb","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.getLocation_callback_1716498564637}):global.__minium__.delCall(_,l)}","args":["wx.getLocation",1716498564637,true]}}
+[D 2024-05-23 17:09:24,646 minium.Conn4640 connection#653 __on_message] RECV < {"id":"60c1f5c7-51e8-4682-9c66-08e84f656bfb","result":{}}
+[D 2024-05-23 17:09:24,647 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"9271b2a1-8fec-4295-b6f9-341d9e3e4425","method":"App.addBinding","params":{"name":"wx.chooseImage_callback_1716498564647"}}
+[D 2024-05-23 17:09:24,651 minium.Conn4640 connection#653 __on_message] RECV < {"id":"9271b2a1-8fec-4295-b6f9-341d9e3e4425","result":{}}
+[D 2024-05-23 17:09:24,651 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,652 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"d7d67c16-2372-4057-aa41-fee35b502e96","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseImage_callback_1716498564647}):global.__minium__.delCall(_,l)}","args":["wx.chooseImage",1716498564647,true]}}
+[D 2024-05-23 17:09:24,657 minium.Conn4640 connection#653 __on_message] RECV < {"id":"d7d67c16-2372-4057-aa41-fee35b502e96","result":{}}
+[D 2024-05-23 17:09:24,658 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"955d5ec7-c133-4779-8660-18bbb5835a2d","method":"App.addBinding","params":{"name":"wx.createCameraContext_callback_1716498564658"}}
+[D 2024-05-23 17:09:24,662 minium.Conn4640 connection#653 __on_message] RECV < {"id":"955d5ec7-c133-4779-8660-18bbb5835a2d","result":{}}
+[D 2024-05-23 17:09:24,662 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,663 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"8aa1c393-d387-4e5a-a19b-c4dda3202ab4","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.createCameraContext_callback_1716498564658}):global.__minium__.delCall(_,l)}","args":["wx.createCameraContext",1716498564658,true]}}
+[D 2024-05-23 17:09:24,671 minium.Conn4640 connection#653 __on_message] RECV < {"id":"8aa1c393-d387-4e5a-a19b-c4dda3202ab4","result":{}}
+[D 2024-05-23 17:09:24,672 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"54beb40d-93cc-4224-9d38-faa76d270256","method":"App.addBinding","params":{"name":"wx.getUserProfile_callback_1716498564672"}}
+[D 2024-05-23 17:09:24,677 minium.Conn4640 connection#653 __on_message] RECV < {"id":"54beb40d-93cc-4224-9d38-faa76d270256","result":{}}
+[D 2024-05-23 17:09:24,678 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,679 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"a6897280-e2bf-4f34-bec5-bab0a6fef5ac","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.getUserProfile_callback_1716498564672}):global.__minium__.delCall(_,l)}","args":["wx.getUserProfile",1716498564672,true]}}
+[D 2024-05-23 17:09:24,686 minium.Conn4640 connection#653 __on_message] RECV < {"id":"a6897280-e2bf-4f34-bec5-bab0a6fef5ac","result":{}}
+[D 2024-05-23 17:09:24,687 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"775d661e-c6fd-4920-bdd4-ca26bb3dbd53","method":"App.addBinding","params":{"name":"wx.chooseLocation_callback_1716498564687"}}
+[D 2024-05-23 17:09:24,694 minium.Conn4640 connection#653 __on_message] RECV < {"id":"775d661e-c6fd-4920-bdd4-ca26bb3dbd53","result":{}}
+[D 2024-05-23 17:09:24,696 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,696 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"55fdf7e3-77a3-4b7c-b621-b376c72882bc","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseLocation_callback_1716498564687}):global.__minium__.delCall(_,l)}","args":["wx.chooseLocation",1716498564687,true]}}
+[D 2024-05-23 17:09:24,700 minium.Conn4640 connection#653 __on_message] RECV < {"id":"55fdf7e3-77a3-4b7c-b621-b376c72882bc","result":{}}
+[D 2024-05-23 17:09:24,701 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"e403471d-1ef0-46f8-b442-042d7f66d25e","method":"App.addBinding","params":{"name":"wx.chooseAddress_callback_1716498564701"}}
+[D 2024-05-23 17:09:24,709 minium.Conn4640 connection#653 __on_message] RECV < {"id":"e403471d-1ef0-46f8-b442-042d7f66d25e","result":{}}
+[D 2024-05-23 17:09:24,709 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,710 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ca591b88-ae19-4d51-81e3-909f8b239279","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseAddress_callback_1716498564701}):global.__minium__.delCall(_,l)}","args":["wx.chooseAddress",1716498564701,true]}}
+[D 2024-05-23 17:09:24,715 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ca591b88-ae19-4d51-81e3-909f8b239279","result":{}}
+[D 2024-05-23 17:09:24,717 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"c98d7dfa-49da-430a-9f66-b8b0b4ae5546","method":"App.addBinding","params":{"name":"wx.saveVideoToPhotosAlbum_callback_1716498564717"}}
+[D 2024-05-23 17:09:24,723 minium.Conn4640 connection#653 __on_message] RECV < {"id":"c98d7dfa-49da-430a-9f66-b8b0b4ae5546","result":{}}
+[D 2024-05-23 17:09:24,724 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,724 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ba231ca0-90b3-4456-bf4b-9c496027bebf","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.saveVideoToPhotosAlbum_callback_1716498564717}):global.__minium__.delCall(_,l)}","args":["wx.saveVideoToPhotosAlbum",1716498564717,true]}}
+[D 2024-05-23 17:09:24,730 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ba231ca0-90b3-4456-bf4b-9c496027bebf","result":{}}
+[D 2024-05-23 17:09:24,731 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"32e3ced9-43ae-45cd-83b2-e06e1e90ae3b","method":"App.addBinding","params":{"name":"wx.chooseInvoice_callback_1716498564731"}}
+[D 2024-05-23 17:09:24,735 minium.Conn4640 connection#653 __on_message] RECV < {"id":"32e3ced9-43ae-45cd-83b2-e06e1e90ae3b","result":{}}
+[D 2024-05-23 17:09:24,736 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,737 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"6b1d2e73-a565-4202-b47d-df075dcf0104","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoice_callback_1716498564731}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice",1716498564731,true]}}
+[D 2024-05-23 17:09:24,745 minium.Conn4640 connection#653 __on_message] RECV < {"id":"6b1d2e73-a565-4202-b47d-df075dcf0104","result":{}}
+[D 2024-05-23 17:09:24,746 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"2b14cbbf-58e0-4649-aef0-9ed83ac7a941","method":"App.addBinding","params":{"name":"wx.chooseInvoiceTitle_callback_1716498564746"}}
+[D 2024-05-23 17:09:24,750 minium.Conn4640 connection#653 __on_message] RECV < {"id":"2b14cbbf-58e0-4649-aef0-9ed83ac7a941","result":{}}
+[D 2024-05-23 17:09:24,751 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:24,752 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"a8ed31fc-2d16-41e6-ad42-05e8759e3f20","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:wx.chooseInvoiceTitle_callback_1716498564746}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoiceTitle",1716498564746,true]}}
+[D 2024-05-23 17:09:24,758 minium.Conn4640 connection#653 __on_message] RECV < {"id":"a8ed31fc-2d16-41e6-ad42-05e8759e3f20","result":{}}
+[D 2024-05-23 17:09:24,760 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"09e34ad3-80ae-4989-b19d-74a454e5e4e3","method":"Element.triggerEvent","params":{"type":"change","detail":{"value":"string"},"elementId":"0569e194-654e-4432-b300-150cc2b22d84","pageId":12}}
+[D 2024-05-23 17:09:24,769 minium.Conn4640 connection#653 __on_message] RECV < {"id":"09e34ad3-80ae-4989-b19d-74a454e5e4e3","result":{}}
+[D 2024-05-23 17:09:34,771 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:34,772 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:34,772 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:34,772 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:34,773 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:34,773 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"94a230d4-23b1-44a3-a04c-bd466c4bb2e6","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498421372"]}}
+[D 2024-05-23 17:09:34,778 minium.Conn4640 connection#653 __on_message] RECV < {"id":"94a230d4-23b1-44a3-a04c-bd466c4bb2e6","result":{}}
+[D 2024-05-23 17:09:34,779 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:34,780 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"ec3d0ea5-8f0d-4ded-9507-ff707d5dc9db","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498421551"]}}
+[D 2024-05-23 17:09:34,784 minium.Conn4640 connection#653 __on_message] RECV < {"id":"ec3d0ea5-8f0d-4ded-9507-ff707d5dc9db","result":{}}
+[D 2024-05-23 17:09:34,785 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:34,786 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"48372835-6f38-4f7f-bd77-239a1c66df55","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498564579"]}}
+[D 2024-05-23 17:09:34,789 minium.Conn4640 connection#653 __on_message] RECV < {"id":"48372835-6f38-4f7f-bd77-239a1c66df55","result":{}}
+[D 2024-05-23 17:09:34,790 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:34,791 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"f0dfddc7-c4aa-4082-b72d-ea37e984b8bf","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.chooseInvoice","1716498564731"]}}
+[D 2024-05-23 17:09:34,794 minium.Conn4640 connection#653 __on_message] RECV < {"id":"f0dfddc7-c4aa-4082-b72d-ea37e984b8bf","result":{}}
+[D 2024-05-23 17:09:44,796 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:44,796 minium.Conn4640 connection#283 remove] remove key which is not in observers
+[D 2024-05-23 17:09:44,796 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:44,797 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"300d8acc-ea56-44a8-9afc-196e50bf3c69","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.getUserInfo","1716498421404"]}}
+[D 2024-05-23 17:09:44,803 minium.Conn4640 connection#653 __on_message] RECV < {"id":"300d8acc-ea56-44a8-9afc-196e50bf3c69","result":{}}
+[D 2024-05-23 17:09:44,804 minium app#433 _evaluate_js] evaluate js file hookWxMethod [ALL]
+[D 2024-05-23 17:09:44,805 minium.Conn4640 connection#417 _safely_send] SEND > {"id":"bac67520-fb8e-4724-b68a-ee843773c933","method":"App.callFunction","params":{"functionDeclaration":"function hookWxMethod(_,l,o){if(!global.__minium__.canHook)throw new Error(\"hook\u65b9\u6cd5\u672a\u5b9e\u73b0\");o?global.__minium__.setCall(_,l,{before:undefined,after:undefined,callback:undefined}):global.__minium__.delCall(_,l)}","args":["wx.getUserInfo","1716498564590"]}}
+[D 2024-05-23 17:09:44,809 minium.Conn4640 connection#653 __on_message] RECV < {"id":"bac67520-fb8e-4724-b68a-ee843773c933","result":{}}

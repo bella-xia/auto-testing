@@ -1,0 +1,38 @@
+[I 2024-05-23 23:44:54,237 minium minitest#370 _miniSetUp] =========Current case: test_enter_page=========
+[I 2024-05-23 23:44:54,237 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test9_check_miniprogram_coverage_specifics.minium_tests.page_checker, case info: PageChecker.test_enter_page
+[I 2024-05-23 23:44:54,237 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-23 23:44:54,237 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-23 23:44:54,237 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-23 23:44:54,238 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-23 23:44:54,238 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-05-23 23:44:54,238 minium.Conn0080 connection#417 _safely_send] ASYNC_SEND > {"id":"430420ba-75e0-498d-81e2-db70f860b4c1","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-23 23:44:54,288 minium.Conn0080 connection#653 __on_message] RECV < {"id":"430420ba-75e0-498d-81e2-db70f860b4c1","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 23:44:54,289 minium.Conn0080 connection#697 _handle_async_msg] received async msg: 430420ba-75e0-498d-81e2-db70f860b4c1
+[I 2024-05-23 23:44:54,290 minium minitest#717 capture] capture setup.png
+[I 2024-05-23 23:44:54,290 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-23 23:44:54,290 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"be54c430-6149-4b0c-ac53-cf361518f1bb","method":"App.captureScreenshot","params":{}}
+[D 2024-05-23 23:44:54,393 minium.Conn0080 connection#651 __on_message] RECV < {"id":"be54c430-6149-4b0c-ac53-cf361518f1bb","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAIICAIAAACQEaBhAAAAAXNSR0IArs4c6QAABf5JREFUeJzt1bEJwDAQBEHbqP9+P5J7UCIWZiq4ZLl37/0ATd/tAcA5AUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwtbM3N4AHPLAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDG...
+[I 2024-05-23 23:44:54,394 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-23 23:44:54,394 minium minitest#424 _miniSetUp] =========case: test_enter_page start=========
+[I 2024-05-23 23:44:54,394 minium app#689 navigate_to] NavigateTo: /pages/bill/apply/apply
+[D 2024-05-23 23:44:54,395 minium.Conn0080 connection#417 _safely_send] ASYNC_SEND > {"id":"c1b3c4fc-d91f-4c91-a784-dcbccadca852","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/bill/apply/apply"}]}}
+[D 2024-05-23 23:44:54,481 minium.Conn0080 connection#653 __on_message] RECV < {"id":"c1b3c4fc-d91f-4c91-a784-dcbccadca852","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+[I 2024-05-23 23:44:54,481 minium.Conn0080 connection#697 _handle_async_msg] received async msg: c1b3c4fc-d91f-4c91-a784-dcbccadca852
+[D 2024-05-23 23:44:55,090 minium.Conn0080 connection#653 __on_message] RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/bill/apply/apply","query":{},"openType":"navigateTo","__ts__":1716522295074},1716522295076]}}
+[I 2024-05-23 23:44:55,091 minium app#960 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/bill/apply/apply', 'query': {}, 'openType': 'navigateTo', '__ts__': 1716522295074}, 1716522295076]}
+[I 2024-05-23 23:44:55,093 minium page#557 _get_elements_by_css] try to get elements: form
+[D 2024-05-23 23:44:55,094 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"07deea0f-a837-4b35-a331-031198404ddc","method":"Page.getElements","params":{"selector":"form","pageId":5}}
+[D 2024-05-23 23:44:55,124 minium.Conn0080 connection#653 __on_message] RECV < {"id":"07deea0f-a837-4b35-a331-031198404ddc","result":{"elements":[{"elementId":"423399b4-6fa4-421c-96f9-c6a18dc00a95","tagName":"form"}]}}
+[I 2024-05-23 23:44:55,124 minium page#564 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x7ffa6d120c10>]
+[D 2024-05-23 23:44:55,125 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"0f124a11-5aee-409a-bb99-e3f425cfa4c3","method":"Element.getWXML","params":{"type":"inner","elementId":"423399b4-6fa4-421c-96f9-c6a18dc00a95","pageId":5}}
+[D 2024-05-23 23:44:55,144 minium.Conn0080 connection#651 __on_message] RECV < {"id":"0f124a11-5aee-409a-bb99-e3f425cfa4c3","result":{"wxml":"<view class=\"page-container\"><view class=\"main-content white-bg\"><view class=\"info-title\"><view class=\"title\">发票详情</view><view class=\"alert\">\t\t\t\t\t开票金额：<text>￥</text></view></view><view class=\"info-content\"><view class=\"info-line\"><view class=\"title\">发票类型</view><view class=\"detail\"><radio-group class=\"radio-group\" role=\"radiogroup\"><view class=\"radio\"><radio color=\"#eb2443\" value=\"ITT01\" role=\"radio\" aria-dis...
+[D 2024-05-23 23:44:55,146 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"85e1e7f3-b9d2-453b-894d-555548170fef","method":"Element.getWXML","params":{"type":"outer","elementId":"423399b4-6fa4-421c-96f9-c6a18dc00a95","pageId":5}}
+[D 2024-05-23 23:44:55,162 minium.Conn0080 connection#651 __on_message] RECV < {"id":"85e1e7f3-b9d2-453b-894d-555548170fef","result":{"wxml":"<form><view class=\"page-container\"><view class=\"main-content white-bg\"><view class=\"info-title\"><view class=\"title\">发票详情</view><view class=\"alert\">\t\t\t\t\t开票金额：<text>￥</text></view></view><view class=\"info-content\"><view class=\"info-line\"><view class=\"title\">发票类型</view><view class=\"detail\"><radio-group class=\"radio-group\" role=\"radiogroup\"><view class=\"radio\"><radio color=\"#eb2443\" value=\"ITT01\" role=\"radio\" ar...
+[D 2024-05-23 23:44:55,162 minium minitest#620 _miniTearDown] =========Current case Down: test_enter_page=========
+[I 2024-05-23 23:44:55,163 minium minitest#717 capture] capture teardown.png
+[I 2024-05-23 23:44:55,164 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-23 23:44:55,164 minium.Conn0080 connection#417 _safely_send] SEND > {"id":"d7d02ac8-bf43-4ad3-b435-c40212272c01","method":"App.captureScreenshot","params":{}}
+[D 2024-05-23 23:44:55,246 minium.Conn0080 connection#651 __on_message] RECV < {"id":"d7d02ac8-bf43-4ad3-b435-c40212272c01","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAH4CAIAAAC0a6PlAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XdYFNcaB+BvK8vSexVBiiBS7KDYa9TYjbFdG5rEGrsmxpaoscWCMbHEEjUxGlti7F2RXgWl113asrDL9jr3j4l7udgWwcTR73188szOnJk5M+G3Z8rOHBpBEIAQoib6v10BhNDrwwAjRGEYYIQoDAOMEIVhgBGiMAwwQhSGAUaIwjDACFEYBhghCsMAI0RhGGCEKAwDjBCFYYARojCmkeUEVVUKudzD0/PPs2cL8vMXLF165+bNVt7eHp6eAFBSVHTr+vWXzD589Gi1Wu3k7AwACXFxHh4eTi4uAHD7+vU2QUHk+LTkZCaTGRgcTM5y/84dOp3erUePpmweQv8AqUSSkpTUvVevf37VxgZ4X1TU7Rs3bj...
+[I 2024-05-23 23:44:55,247 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-23 23:44:55,248 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-23 23:44:55,248 minium basenative#29 wrapper] call BaseNative.get_start_up end

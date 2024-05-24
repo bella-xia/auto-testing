@@ -1,0 +1,107 @@
+{
+    "case_name": "test_submit_coverage",
+    "run_time": "20240523 17:03:47",
+    "test_type": "MiniTaintCoverageTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 265, in testPartExecutor\n    yield\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 350, in run\n    self._callTestMethod(testMethod)\n  File \"/usr/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/home/bella-xia/auto-testing/auto_minium/test8_check_taint_coverage/minium_tests/mini_taint_test.py\", line 57, in test_submit_coverage\n    pages = self.find_all_pages()\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 299, in __getattr__\n    raise AttributeError(f\"'{self.__class__.__name__}' object has no attribute '{name}'\")\nAttributeError: 'MiniTaintCoverageTest' object has no attribute 'find_all_pages'\n",
+    "start_timestamp": 1716498287.7874453,
+    "is_failure": false,
+    "is_error": true,
+    "module": ".home.bella-xia.auto-testing.auto_minium.test8_check_taint_coverage.minium_tests.mini_taint_test",
+    "package": "minium_tests",
+    "failed_line_num": 57,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 520,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "3.4.3",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 64,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AttributeError",
+    "error_value": "'MiniTaintCoverageTest' object has no attribute 'find_all_pages'",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "teardown",
+            "url": "/pages/index/index",
+            "path": "images/teardown.png",
+            "ts": 1716498287,
+            "datetime": "2024-05-23 17:04:47"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1716498287.9224055,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_submit_coverage(self):\n",
+            "        text_input = \"string\"\n",
+            "        pages = self.find_all_pages()\n",
+            "\n",
+            "        for page in pages:\n",
+            "            self.open_route(\"/\" + page)\n",
+            "            self.page.wait_for(5)\n",
+            "            forms = self.page.get_elements(\"form\")\n",
+            "            form_method_calls = []\n",
+            "            print(f\"there are {len(forms)} elements on page {page}\")\n",
+            "            for form_block in forms:\n",
+            "                try:\n",
+            "                    form_call_result = self.hook_wx_methods_with_formelement_binds(form_block, text_input, self.wx_methods, is_form=True)\n",
+            "                    form_method_calls.append(form_call_result)\n",
+            "                except Exception as e:\n",
+            "                    print(f'encountering error during form query: {e}')\n",
+            "            self.coverage.append({'page': page,\n",
+            "                                  'method': \"bindsubmit\",\n",
+            "                                  'callback results': form_method_calls})\n",
+            "            self.app.navigate_back()\n"
+        ],
+        "start": 55
+    },
+    "filename": "result.json"
+}

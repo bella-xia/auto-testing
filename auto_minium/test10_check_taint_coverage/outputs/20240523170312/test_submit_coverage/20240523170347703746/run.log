@@ -1,0 +1,41 @@
+[I 2024-05-23 17:03:47,705 minium minitest#370 _miniSetUp] =========Current case: test_submit_coverage=========
+[I 2024-05-23 17:03:47,705 minium minitest#373 _miniSetUp] package info: .home.bella-xia.auto-testing.auto_minium.test8_check_taint_coverage.minium_tests.mini_taint_test, case info: MiniTaintCoverageTest.test_submit_coverage
+[I 2024-05-23 17:03:47,705 minium basenative#25 wrapper] call BaseNative.check_connection
+[I 2024-05-23 17:03:47,706 minium basenative#29 wrapper] call BaseNative.check_connection end
+[I 2024-05-23 17:03:47,706 minium basenative#25 wrapper] call BaseNative.back_to_miniprogram
+[I 2024-05-23 17:03:47,706 minium basenative#595 back_to_miniprogram] try back_to_miniprogram 3
+[I 2024-05-23 17:03:47,706 minium basenative#29 wrapper] call BaseNative.back_to_miniprogram end
+[D 2024-05-23 17:03:47,707 minium.Conn3952 connection#417 _safely_send] ASYNC_SEND > {"id":"5ce1421e-62d8-4825-b55d-f3a311531ebd","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+[D 2024-05-23 17:03:47,779 minium.Conn3952 connection#653 __on_message] RECV < {"id":"5ce1421e-62d8-4825-b55d-f3a311531ebd","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2024-05-23 17:03:47,780 minium.Conn3952 connection#697 _handle_async_msg] received async msg: 5ce1421e-62d8-4825-b55d-f3a311531ebd
+[I 2024-05-23 17:03:47,782 minium minitest#717 capture] capture setup.png
+[I 2024-05-23 17:03:47,782 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-23 17:03:47,783 minium.Conn3952 connection#417 _safely_send] SEND > {"id":"d5034e8d-552a-4304-abcc-977ab6c521e0","method":"App.captureScreenshot","params":{}}
+[W 2024-05-23 17:04:47,784 minium app#497 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[I 2024-05-23 17:04:47,785 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[W 2024-05-23 17:04:47,785 minium minitest#728 capture] /home/bella-xia/auto-testing/auto_minium/test8_check_taint_coverage/outputs/20240523170312/test_submit_coverage/20240523170347703746/images/setup.png not exists
+[I 2024-05-23 17:04:47,787 minium minitest#424 _miniSetUp] =========case: test_submit_coverage start=========
+[D 2024-05-23 17:04:47,789 minium minitest#620 _miniTearDown] =========Current case Down: test_submit_coverage=========
+[I 2024-05-23 17:04:47,790 minium minitest#717 capture] capture teardown.png
+[I 2024-05-23 17:04:47,790 minium basenative#25 wrapper] call IdeNative.screen_shot
+[D 2024-05-23 17:04:47,790 minium.Conn3952 connection#417 _safely_send] SEND > {"id":"c7260c4d-e398-4f7c-8aef-a325beb7f2a6","method":"App.captureScreenshot","params":{}}
+[D 2024-05-23 17:04:47,919 minium.Conn3952 connection#651 __on_message] RECV < {"id":"c7260c4d-e398-4f7c-8aef-a325beb7f2a6","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAIICAIAAACQEaBhAAAAAXNSR0IArs4c6QAABf5JREFUeJzt1bEJwDAQBEHbqP9+P5J7UCIWZiq4ZLl37/0ATd/tAcA5AUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwtbM3N4AHPLAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDG...
+[I 2024-05-23 17:04:47,920 minium basenative#29 wrapper] call IdeNative.screen_shot end
+[I 2024-05-23 17:04:47,921 minium basenative#25 wrapper] call BaseNative.get_start_up
+[I 2024-05-23 17:04:47,921 minium basenative#29 wrapper] call BaseNative.get_start_up end
+[E 2024-05-23 17:04:47,923 minium assertbase#349 _get_stack_info] <bound method MiniTaintCoverageTest.test_submit_coverage of <minium_tests.mini_taint_test.MiniTaintCoverageTest testMethod=test_submit_coverage>>
+Traceback (most recent call last):
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 265, in testPartExecutor
+    yield
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/home/bella-xia/auto-testing/auto_minium/test8_check_taint_coverage/minium_tests/mini_taint_test.py", line 57, in test_submit_coverage
+    pages = self.find_all_pages()
+  File "/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 299, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'MiniTaintCoverageTest' object has no attribute 'find_all_pages'
+[W 2024-05-23 17:04:47,923 minium assertbase#331 _log_info_when_error] config: {'debug': False, 'base_dir': '/home/bella-xia/auto-testing/auto_minium/test8_check_taint_coverage', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': '/home/bella-xia/auto-testing/auto_minium/test8_check_taint_coverage/outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': '/home/bella-xia/auto-testing/data/0_passing_groundtruth/wxad2e9789b5076244', 'dev_tool_path': '/home/bella-xia/wechat-web-devtools-linux/bin/wechat-devtools-cli', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20240523170312', 'case_output': '/home/bella-xia/auto-testing/auto_minium/test8_check_taint_coverage/outputs/20240523170312/test_submit_coverage/20240523170347703746'}
+[W 2024-05-23 17:04:47,924 minium assertbase#332 _log_info_when_error] build info: {'version': '1.4.6', 'revision': 'b389ff4b1d94cc73bb5363fc602f5823512df292', 'branch': 'master', 'update_at': '2023-08-28 17:46:51'}
+[W 2024-05-23 17:04:47,924 minium minitest#828 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x7f496aaefdc0>

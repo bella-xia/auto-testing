@@ -1,0 +1,105 @@
+{
+    "case_name": "test_enter_page",
+    "run_time": "20240523 23:29:45",
+    "test_type": "PageChecker",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 265, in testPartExecutor\n    yield\n  File \"/home/bella-xia/.local/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 350, in run\n    self._callTestMethod(testMethod)\n  File \"/usr/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/home/bella-xia/auto-testing/auto_minium/test9_check_miniprogram_coverage_specifics/minium_tests/page_checker.py\", line 23, in test_enter_page\n    json_data =[{{'page': PAGE,\nTypeError: unhashable type: 'dict'\n",
+    "start_timestamp": 1716521385.2986138,
+    "is_failure": false,
+    "is_error": true,
+    "module": ".home.bella-xia.auto-testing.auto_minium.test9_check_miniprogram_coverage_specifics.minium_tests.page_checker",
+    "package": "minium_tests",
+    "failed_line_num": 23,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 520,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "3.4.3",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 21,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "TypeError",
+    "error_value": "unhashable type: 'dict'",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/index/index",
+            "path": "images/setup.png",
+            "ts": 1716521385,
+            "datetime": "2024-05-23 23:29:45"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/bill/apply/apply",
+            "path": "images/teardown.png",
+            "ts": 1716521396,
+            "datetime": "2024-05-23 23:29:56"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1716521396.9416597,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_enter_page(self):\n",
+            "        PAGE = 'pages/bill/apply/apply'\n",
+            "        self.open_route('/' + PAGE)\n",
+            "        form_ele = self.page.get_element('form')\n",
+            "        form_submit_result = self.hook_wx_methods_with_formelement_binds(form_ele, 'string', ['chooseInvoice', 'getUserInfo'], is_form=True)\n",
+            "        json_data =[{{'page': PAGE,\n",
+            "                      'method': \"bindsubmit\",\n",
+            "                      'callback results': form_submit_result}}]\n",
+            "        JSON_DIR = '/home/bella-xia/auto-testing/data/_auxiliary_data/page_checker.json'\n",
+            "        with open(JSON_DIR, 'w', encoding='utf-8') as file:\n",
+            "            json.dump(json_data, file, indent=4)\n"
+        ],
+        "start": 18
+    },
+    "filename": "result.json"
+}

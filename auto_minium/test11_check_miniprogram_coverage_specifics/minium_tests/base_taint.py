@@ -78,29 +78,29 @@ class BaseTaint(base_case.BaseCase):
         wx_methods: List[str]
     ) -> Dict[str, any]:
         
-        called = threading.Semaphore(0)  # 信号量
-        callback_args = None
+        # called = threading.Semaphore(0)  # 信号量
+        # callback_args = None
 
-        def callback(args):
-            nonlocal callback_args
-            called.release()
-            callback_args = args
+        # def callback(args):
+        #     nonlocal callback_args
+        #     called.release()
+        #     callback_args = args
         
-        # callback_arr = {}
-        # return_arr = {}
-        # for wx_method in wx_methods:
-        #     callback_arr[wx_method] = {}
-        #     callback_arr[wx_method]['before'] = minium.Callback()
-        #     callback_arr[wx_method]['after'] = minium.Callback()
-        #     callback_arr[wx_method]['callback'] = minium.Callback()
-        #     print('callback identified')
-        #     print(callback_arr[wx_method]['before'], callback_arr[wx_method]['after'],  callback_arr[wx_method]['callback'])
-        #     self.app.hook_wx_method(wx_method, 
-        #                             before=callback_arr[wx_method]['before'],
-        #                             after=callback_arr[wx_method]['after'],
-        #                             callback=callback_arr[wx_method]['callback'])
+        callback_arr = {}
+        return_arr = {}
+        for wx_method in wx_methods:
+            # callback_arr[wx_method] = {}
+            # callback_arr[wx_method]['before'] = minium.Callback()
+            # callback_arr[wx_method]['after'] = minium.Callback()
+            callback_arr[wx_method] = minium.Callback()
+            # print('callback identified')
+            # print(callback_arr[wx_method]['before'], callback_arr[wx_method]['after'],  callback_arr[wx_method]['callback'])
+            self.app.hook_wx_method(wx_method, 
+                                    # before=callback_arr[wx_method]['before'],
+                                    # after=callback_arr[wx_method]['after'],
+                                    callback=callback_arr[wx_method])
         # callback = minium.Callback()
-        self.app.hook_wx_method('chooseInvoiceTitle', callback=callback)
+        # self.app.hook_wx_method('chooseInvoiceTitle', callback=callback)
         element.tap()
 
         # self.app.call_wx_method('chooseInvoiceTitle', args={"success": None})
@@ -112,15 +112,59 @@ class BaseTaint(base_case.BaseCase):
         #     return_arr = None
         #     print('not very workinggggg')
 
-        # for wx_method in wx_methods:
+        for wx_method in wx_methods:
         #     if callback_arr[wx_method]['before'].wait_called(timeout=10) is True and callback_arr[wx_method]['after'].wait_called(timeout=10) is True and callback_arr[wx_method]['callback'].wait_called(timeout=10) is True:
-        #         return_arr[wx_method] = callback_arr[wx_method].get_callback_result()
-        #     else:
-        #         return_arr[wx_method] = None
-        is_called = called.acquire(timeout=10)
-        self.app.release_hook_wx_method('chooseInvoiceTitle')
+            if callback_arr[wx_method].wait_called(timeout=10) is True:
+                return_arr[wx_method] = callback_arr[wx_method].get_callback_result()
+            else:
+                return_arr[wx_method] = None
+        # is_called = called.acquire(timeout=10)
+            self.app.release_hook_wx_method(wx_method)
 
-        return is_called, callback_args
+        return return_arr
+
+    def hook_wx_methods_with_page_defined_method_call(
+        self,
+        wx_methods: List[str],
+        page_defined_method: str,
+        method_args: Dict[str, any]
+    ) -> Dict[str, any]:
+        
+        callback_arr = {}
+        return_arr = {}
+        for wx_method in wx_methods:
+            # callback_arr[wx_method] = {}
+            # callback_arr[wx_method]['before'] = minium.Callback()
+            # callback_arr[wx_method]['after'] = minium.Callback()
+            callback_arr[wx_method] = minium.Callback()
+            # print('callback identified')
+            # print(callback_arr[wx_method]['before'], callback_arr[wx_method]['after'],  callback_arr[wx_method]['callback'])
+            self.app.hook_wx_method(wx_method, callback=callback_arr[wx_method])
+        # callback = minium.Callback()
+        # self.app.hook_wx_method('chooseInvoiceTitle', callback=callback)
+        # element.tap()
+        self.app.current_page.call_method(page_defined_method, [method_args])
+
+        # self.app.call_wx_method('chooseInvoiceTitle', args={"success": None})
+
+        # if callback.wait_called(timeout=10) is True:
+        #     return_arr = callback.get_callback_result()
+        #     print('got it!')
+        # else: 
+        #     return_arr = None
+        #     print('not very workinggggg')
+
+        for wx_method in wx_methods:
+            # if callback_arr[wx_method]['before'].wait_called(timeout=10) is True and callback_arr[wx_method]['after'].wait_called(timeout=10) is True and callback_arr[wx_method]['callback'].wait_called(timeout=10) is True:
+            if callback_arr[wx_method].wait_called(timeout=10) is True:
+                return_arr[wx_method] = callback_arr[wx_method].get_callback_result()
+            else:
+                return_arr[wx_method] = None
+            self.app.release_hook_wx_method(wx_method)
+        # is_called = called.acquire(timeout=10)
+        # self.app.release_hook_wx_method('chooseInvoiceTitle')
+
+        return return_arr
 
 
     def hook_multi_wx_method_via_method_base(

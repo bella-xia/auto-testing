@@ -1,0 +1,247 @@
+#root {depth: 0}
+
+  element{view} {depth: 1}
+    attribute{class}
+    attribute{style}
+    attribute{wx:if}
+
+    element{view} {depth: 2}
+      attribute{class}
+      attribute{style}
+      attribute{wx:if}
+
+      element{image} {depth: 3}
+        attribute{src}
+
+      element{view} {depth: 3}
+        attribute{class}
+        scriptdata{userInfo.name}
+
+      element{view} {depth: 3}
+        attribute{class}
+        attribute{wx:if}
+        data{已实名认证}
+
+      element{view} {depth: 3}
+        attribute{bindtap}
+        attribute{style}
+        attribute{wx:if}
+        data{体育消费券}
+
+    element{view} {depth: 2}
+      attribute{class}
+      attribute{wx:if}
+
+      element{image} {depth: 3}
+        attribute{src}
+
+      element{view} {depth: 3}
+        attribute{class}
+        data{实名认证更多优惠}
+
+      element{navigator} {depth: 3}
+        attribute{class}
+        attribute{hoverclass}
+        attribute{url}
+        attribute{wx:if}
+        data{马上认证 >}
+
+      element{button} {depth: 3}
+        attribute{bindgetuserinfo}
+        attribute{class}
+        attribute{data-auth}
+        attribute{data-idcard}
+        attribute{data-name}
+        attribute{opentype}
+        attribute{wx:else}
+        data{马上认证 >}
+
+  element{view} {depth: 1}
+    attribute{bindtap}
+    attribute{catchtouchmove}
+    attribute{class}
+    attribute{style}
+    attribute{wx:if}
+
+    element{include} {depth: 2}
+      attribute{src}
+
+  element{view} {depth: 1}
+    attribute{class}
+
+    element{view} {depth: 2}
+      attribute{class}
+
+      element{view} {depth: 3}
+        attribute{bindtap}
+        attribute{class}
+        attribute{data-type}
+        data{冰雪}
+
+      element{view} {depth: 3}
+        attribute{bindtap}
+        attribute{class}
+        attribute{data-type}
+        data{通用}
+
+    element{view} {depth: 2}
+      attribute{bindtap}
+      attribute{class}
+      data{查看规则}
+
+  element{view} {depth: 1}
+    attribute{class}
+    attribute{wx:if}
+
+    element{image} {depth: 2}
+      attribute{class}
+      attribute{src}
+
+    element{view} {depth: 2}
+      data{敬请期待。}
+
+  element{view} {depth: 1}
+    attribute{wx:for}
+    attribute{wx:key}
+
+    element{view} {depth: 2}
+      attribute{class}
+
+      element{view} {depth: 3}
+        attribute{class}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{wx:if}
+
+          element{text} {depth: 5}
+            attribute{style}
+            data{¥ }
+          scriptdata{item.couponPrice}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{wx:elif}
+
+          element{text} {depth: 5}
+            attribute{style}
+            data{¥ }
+          scriptdata{item.couponPrice}
+
+        element{view} {depth: 4}
+          attribute{wx:else}
+
+          element{text} {depth: 5}
+            attribute{style}
+            data{¥ }
+          scriptdata{item.couponPrice}
+
+        element{view} {depth: 4}
+          attribute{class}
+          data{满}
+          scriptdata{item.requiredPrice}
+          data{元可用}
+
+      element{view} {depth: 3}
+        attribute{class}
+
+        element{view} {depth: 4}
+          scriptdata{item.description}
+
+      element{view} {depth: 3}
+        attribute{class}
+
+        element{view} {depth: 4}
+          attribute{class}
+
+        element{view} {depth: 4}
+          attribute{class}
+
+        element{view} {depth: 4}
+          attribute{class}
+
+      element{view} {depth: 3}
+        attribute{class}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{data-couponid}
+          attribute{style}
+          attribute{wx:if}
+          data{已领完
+			}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{data-couponid}
+          attribute{style}
+          attribute{wx:elif}
+          data{已领取
+			}
+
+        element{view} {depth: 4}
+          attribute{bindtap}
+          attribute{class}
+          attribute{data-couponamount}
+          attribute{data-couponcount}
+          attribute{data-couponid}
+          attribute{wx:elif}
+          data{立即领取
+			}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{data-couponid}
+          attribute{style}
+          attribute{wx:if}
+          data{已领完
+			}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{data-couponid}
+          attribute{style}
+          attribute{wx:elif}
+          data{已领取
+			}
+
+        element{button} {depth: 4}
+          attribute{bindgetuserinfo}
+          attribute{class}
+          attribute{data-couponamount}
+          attribute{data-couponcount}
+          attribute{data-couponid}
+          attribute{data-idcard}
+          attribute{data-name}
+          attribute{opentype}
+          attribute{wx:elif}
+          data{立即领取}
+
+        element{view} {depth: 4}
+          attribute{class}
+          attribute{data-couponid}
+          attribute{style}
+          attribute{wx:elif}
+          data{已领完
+			}
+
+        element{button} {depth: 4}
+          attribute{bindgetuserinfo}
+          attribute{class}
+          attribute{data-couponamount}
+          attribute{data-couponcount}
+          attribute{data-couponid}
+          attribute{data-idcard}
+          attribute{data-name}
+          attribute{opentype}
+          attribute{style}
+          attribute{wx:elif}
+          data{立即领取}
+
+  element{view} {depth: 1}
+    attribute{class}
+    data{惠美官方客服电话: 13051957939}
+
+  element{view} {depth: 1}
+    attribute{class}
+    data{版本号: v3.1}

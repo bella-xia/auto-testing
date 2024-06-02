@@ -132,4 +132,28 @@ namespace Web
         return segments;
     }
 
+    void print_bind_elements(Node *node,
+                             std::vector<std::tuple<std::string, std::string, Node *>> *storage,
+                             bool print_flag)
+    {
+        if (node->get_num_bind() > 0)
+        {
+            assert(node->type() == NodeType::ELEMENT_NODE);
+            for (size_t idx = 0; idx < node->get_num_bind(); idx++)
+            {
+                std::tuple<std::string, std::string> bind_info = node->get_bind_info(idx);
+                if (print_flag)
+                {
+                    std::cout << std::endl
+                              << "Element #" << storage->size() << std::endl;
+                    std::cout << "Bind method: " << std::get<0>(bind_info) << " Function call: " << std::get<1>(bind_info) << std::endl;
+                    print_ast(node);
+                }
+                storage->push_back(std::tuple(std::get<0>(bind_info), std::get<1>(bind_info), node));
+            }
+        }
+        for (unsigned long int idx = 0; idx < node->get_num_children(); ++idx)
+            print_bind_elements(node->get_children(idx), storage, print_flag);
+    }
+
 }

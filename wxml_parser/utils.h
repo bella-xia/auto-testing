@@ -201,6 +201,9 @@ namespace Web
     // used to print out auxiliary data
     void print_per_char_string(const std::string utf8_string);
     void print_ast(Node *node, int depth = 0);
+    void print_bind_elements(Node *node,
+                             std::vector<std::tuple<std::string, std::string, Node *>> *storage,
+                             bool print_flag = false);
 
     // used to split script data and non-script data
     std::vector<std::tuple<std::string, bool>> segment_string(const std::string &text);

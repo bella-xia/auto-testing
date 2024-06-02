@@ -1,11 +1,10 @@
 #include "WXMLDocumentParser.h"
 
-// #define PARSER_DEBUG_TOKEN
-
 namespace Web
 {
 
-    WXMLDocumentParser::WXMLDocumentParser() : m_root(new RootNode()), m_stack_of_open_elements(std::stack<RootNode *>())
+    WXMLDocumentParser::WXMLDocumentParser() : m_root(new RootNode()), m_stack_of_open_elements(std::stack<RootNode *>()),
+                                               m_bind_storage(std::vector<std::tuple<std::string, std::string, Node *>>())
     {
     }
 
@@ -14,8 +13,9 @@ namespace Web
         m_tokenizer.insert_input_text(input);
     }
 
-    void WXMLDocumentParser::run()
+    void WXMLDocumentParser::run(bool print_ast_flag)
     {
+        assert(!m_ran_through);
         HTMLToken token = HTMLToken();
         bool loop_flag = true;
         m_stack_of_open_elements.push(m_root);
@@ -43,9 +43,7 @@ namespace Web
             break;
             case (HTMLToken::Type::EndTag):
             {
-                std::stringstream ss;
-                ss << "element{" << token.m_tag.tag_name << "}";
-                assert(ss.str() == m_stack_of_open_elements.top()->tag_name());
+                assert(token.m_tag.tag_name == m_stack_of_open_elements.top()->get_name());
                 for (Attribute attr : token.m_tag.attributes)
                 {
                     m_stack_of_open_elements.top()->add_child(new AttributeNode(attr.name(), attr.value()));
@@ -83,6 +81,22 @@ namespace Web
         m_stack_of_open_elements.pop();
         assert(m_stack_of_open_elements.empty());
 
-        print_ast(m_root);
+        m_ran_through = true;
+        m_tokenizer.restore();
+
+        if (print_ast_flag)
+            print_ast(m_root);
+    }
+
+    void WXMLDocumentParser::print_tokens()
+    {
+        HTMLToken token = HTMLToken();
+        m_stack_of_open_elements.push(m_root);
+        do
+        {
+            token = m_tokenizer.next_token();
+            std::cout << " EMIT: " << token.to_string() << std::endl;
+        } while (token.m_type != HTMLToken::Type::EndOfFile);
+        m_tokenizer.restore();
     }
 }

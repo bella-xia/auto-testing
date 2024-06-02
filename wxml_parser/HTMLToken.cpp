@@ -81,9 +81,32 @@ namespace Web
         }
         return builder;
     }
+
     std::tuple<std::string, bool> HTMLToken::get_tag_meta_info() const
     {
         assert((m_type == Type::StartTag) || (m_type == Type::EndTag));
         return std::tuple(m_tag.tag_name, m_tag.self_closing);
+    }
+
+    bool HTMLToken::is_tag() const
+    {
+        /*
+#define __ENUMERATE_COMPONENT(x)                           \
+    {                                                      \
+        if (m_tag.tag_name == comp_name(ComponentsTag::x)) \
+            return true;                                   \
+    }
+
+        ENUMERATE_COMPONENTS
+
+#undef __ENUMERATE_COMPONENT
+        return false;
+        */
+        for (char tag_char : m_tag.tag_name)
+        {
+            if (!std::islower(tag_char) && !(tag_char == '-') && !(tag_char == '_'))
+                return false;
+        }
+        return true;
     }
 }

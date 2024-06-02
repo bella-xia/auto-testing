@@ -5,7 +5,8 @@
             "intelliSenseMode": "clang-x64",
             "compilerPath": "/usr/bin/gcc",
             "includePath": [
-                "${workspaceRoot}"
+                "${workspaceRoot}",
+                "/home/bella-xia/vcpkg/installed/x64-linux/include"
             ],
             "defines": [
                 "__linux__",
@@ -14,7 +15,8 @@
             ],
             "browse": {
                 "path": [
-                    "${workspaceRoot}"
+                    "${workspaceRoot}",
+                    "/home/bella-xia/vcpkg/installed/x64-linux/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

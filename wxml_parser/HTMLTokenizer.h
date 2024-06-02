@@ -2,20 +2,10 @@
 #define HTMLTOKENIZER_H
 
 #include <cuchar>
-#include <cctype>
 #include <optional>
-#include <stdexcept>
-#include <iostream>
-#include <cassert>
 
 #include "HTMLToken.h"
 #include "utils.h"
-
-#define ASSERT_NOT_REACHED() \
-    throw std::runtime_error("Token Type not reached.");
-
-#define ERROREOUS_END_TAG() \
-    throw std::runtime_error("Erroreous end tag.");
 
 #define ENUMERATE_TOKENIZER_STATES                                        \
     __ENUMERATE_TOKENIZER_STATE(Data)                                     \
@@ -115,6 +105,7 @@ namespace Web
         void insert_input_text(const std::u32string &input);
 
         HTMLToken next_token();
+        void restore() { m_cursor = 0; }
 
     private:
         // checking next character

@@ -23,27 +23,29 @@ namespace Web
 
     class Node
     {
+        friend class RootNode;
+        friend class ElementWrapperNode;
+        friend class AttributeNode;
+        friend class DataNode;
+
     public:
         // Constructor
-        Node() : m_children(std::vector<Node *>()) {}
+        Node() : m_children(std::vector<Node *>()),
+                 m_bind_info(std::vector<std::tuple<std::string, std::string>>()) {}
 
         virtual ~Node()
         {
-            // std::cout << "default destructor called" << std::endl;
             for (Node *child_node : m_children)
-            {
                 delete child_node;
-            }
         }
 
         // Add a child node
-        void add_child(Node *child)
-        {
-            // child->m_parent = Node *(this);
-            m_children.push_back(child);
-        }
+        void add_child(Node *child) { m_children.push_back(child); }
 
         size_t get_num_children() { return m_children.size(); }
+        size_t get_num_bind() { return m_bind_info.size(); }
+        std::string get_auxiliary_data() const { return m_auxiliary_data; }
+        std::string get_name() const { return m_name; }
 
         Node *get_children(long unsigned int idx)
         {
@@ -51,17 +53,26 @@ namespace Web
                                             : nullptr);
         }
 
-        virtual std::string tag_name() const = 0;
+        std::tuple<std::string, std::string> get_bind_info(long unsigned int idx)
+        {
+            return (idx < m_bind_info.size() ? m_bind_info[idx]
+                                             : std::tuple("", ""));
+        }
+
         virtual NodeType type() const = 0;
         virtual std::string to_string() const = 0;
 
-    protected:
-        // Node * m_parent;                // Pointer to the parent node
+    private:
+        std::string m_name;
         std::vector<Node *> m_children; // Children nodes
+        std::vector<std::tuple<std::string, std::string>> m_bind_info;
+        std::string m_auxiliary_data;
     };
 
     class RootNode : public Node
     {
+        friend class ElementWrapperNode;
+
     public:
         // Constructor
         RootNode() : Node() {}
@@ -70,22 +81,17 @@ namespace Web
         {
         }
 
-        virtual std::string tag_name() const override { return "#root {depth: 0}"; }
         virtual NodeType type() const override { return NodeType::ROOT_NODE; }
-        virtual std::string to_string() const override { return tag_name(); }
+        virtual std::string to_string() const override { return "#root {depth: 0}"; }
+
+        // void set_depth(int depth) { m_depth = depth; }
+        int get_depth() const { return m_depth; }
 
         void add_root_child(RootNode *child)
         {
             Node::add_child(child);
-            child->set_depth(m_depth + 1);
-        }
-
-        int get_depth() const { return m_depth; }
-        void set_depth(int depth)
-        {
-            // ensure it is not root node, otherwise should not set depth
-            assert(tag_name() != "#root");
-            m_depth = depth;
+            assert(child->type() == NodeType::ELEMENT_NODE);
+            child->m_depth = m_depth + 1;
         }
 
     private:
@@ -96,21 +102,24 @@ namespace Web
     {
     public:
         // Constructor
-        ElementWrapperNode(const std::tuple<std::string, bool> &tag_meta_info) : RootNode(),
-                                                                                 m_tag_name(std::get<0>(tag_meta_info)),
-                                                                                 m_has_end_tag(!(std::get<1>(tag_meta_info)))
+        ElementWrapperNode(const std::tuple<std::string, bool> &tag_meta_info) : RootNode()
         {
+            m_name = std::get<0>(tag_meta_info);
+            m_auxiliary_data = std::get<1>(tag_meta_info) ? "false" : "true";
         }
 
         ~ElementWrapperNode()
         {
         }
 
-        virtual std::string tag_name() const override
+        void add_child(Node *child)
         {
-            std::stringstream ss;
-            ss << "element{" << m_tag_name << "}";
-            return ss.str();
+            RootNode::add_child(child);
+            if (child->type() == NodeType::ATTRIBUTE_NODE &&
+                (child->m_name).substr(0, 4) == "bind")
+            {
+                m_bind_info.push_back(std::tuple(child->m_name, child->m_auxiliary_data));
+            }
         }
 
         virtual NodeType type() const override { return NodeType::ELEMENT_NODE; }
@@ -118,71 +127,58 @@ namespace Web
         virtual std::string to_string() const override
         {
             std::stringstream ss;
-            ss << "element{" << m_tag_name << "} {depth: " << get_depth() << "}";
+            ss << "#element{" << m_name << "} {depth: " << m_depth << "}";
             return ss.str();
         }
 
-        bool has_end_tag() const { return m_has_end_tag; }
-        std::string orig_tag_name() const { return m_tag_name; }
-
-    private:
-        std::string m_tag_name;
-        bool m_has_end_tag;
+        bool has_end_tag() const { return m_auxiliary_data == "true"; }
     };
 
     class AttributeNode : public Node
     {
     public:
-        AttributeNode(std::string attribute_name, std::string attribute_value = "") : Node(), m_name(attribute_name), m_value(attribute_value) {}
+        AttributeNode(std::string attribute_name, std::string attribute_value = "") : Node()
+        {
+            m_name = attribute_name;
+            m_auxiliary_data = attribute_value;
+        }
 
         ~AttributeNode()
         {
         }
 
-        virtual std::string tag_name() const override
+        virtual NodeType type() const override { return NodeType::ATTRIBUTE_NODE; }
+
+        virtual std::string to_string() const override
         {
             std::stringstream ss;
-            ss << "attribute{" << m_name << "}";
+            ss << "#attribute{" << m_name << ": " << m_auxiliary_data << "}";
             return ss.str();
         }
-
-        virtual NodeType type() const override { return NodeType::ATTRIBUTE_NODE; }
-        virtual std::string to_string() const override { return tag_name(); }
-
-        std::string get_attribute_name() const { return m_name; }
-        std::string get_attribute_values() const { return m_value; }
-
-    private:
-        std::string m_name;
-        std::string m_value;
     };
 
     class DataNode : public Node
     {
     public:
-        DataNode(std::string data, bool is_script = false) : Node(), m_data(data), m_is_script(is_script) {}
+        DataNode(std::string data, bool is_script = false) : Node()
+        {
+            m_name = data;
+            m_auxiliary_data = is_script ? "true" : "false";
+        }
 
         ~DataNode()
         {
         }
 
-        virtual std::string tag_name() const override
+        virtual NodeType type() const override { return NodeType::DATA_NODE; }
+        virtual std::string to_string() const override
         {
             std::stringstream ss;
-            if (m_is_script)
+            if (m_auxiliary_data == "true")
                 ss << "script";
-            ss << "data{" << m_data << "}";
+            ss << "data{" << m_name << "}";
             return ss.str();
         }
-
-        virtual NodeType type() const override { return NodeType::DATA_NODE; }
-        virtual std::string to_string() const override { return tag_name(); }
-
-        std::string get_data() const { return m_data; }
-
-    private:
-        std::string m_data;
-        bool m_is_script;
     };
 }
 #endif // NODE_H

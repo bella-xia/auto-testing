@@ -1,7 +1,7 @@
 #include "HTMLTokenizer.h"
 
 // #define TOKENIZER_DEBUG_STATES
-// #define TOKENIZER_DEBUG_TAGS
+#define TOKENIZER_DEBUG_TAGS
 
 #define __ENUMERATE_TOKENIZER_STATE(x) \
     case State::x:                     \
@@ -211,6 +211,7 @@ namespace Web
                     ON_ASCII_ALPHA
                     {
                         CREATE_NEW_TOKEN_AND_RECONSUME(StartTag, TagName);
+                        m_current_token.m_comment_or_character.data.append(char32ToString(LESS_THAN));
                     }
                     ON(QUESTION_MARK)
                     {
@@ -256,11 +257,30 @@ namespace Web
                 {
                     ON_WHITESPACE
                     {
+
+                        // if (m_current_token.is_tag())
+                        //{
                         GOTO_WITH_SWITCH(BeforeAttributeName);
+                        /*
+                   }
+                   else
+                   {
+
+                   m_current_token.m_type = HTMLToken::Type::Character;
+                   GOTO_WITH_SWITCH(Data);
+                   } */
                     }
                     ON(GREATER_THAN)
                     {
                         SWITCH_TO(Data);
+                        if (!m_current_token.is_tag())
+                        {
+                            std::stringstream ss;
+                            ss << (m_current_token.m_type == HTMLToken::Type::StartTag ? "<" : "</")
+                               << m_current_token.m_tag.tag_name << ">";
+                            m_current_token.m_comment_or_character.data.append(ss.str());
+                            m_current_token.m_type = HTMLToken::Type::Character;
+                        }
                         return emit_current_token();
                     }
                     ON_ASCII_ALPHA
@@ -963,23 +983,21 @@ namespace Web
                         // wx:else is an attribute in tag that does not require any attriute value
                         // it seems to also happen in other cases, not sure if it is a
                         // decript error or default format
-                        SWITCH_TO(Data);
                         if (m_attribute_buf.name() == "wx:else")
                         {
 #ifdef TOKENIZER_DEBUG_STATES
                             std::cout << "getting here! wx:else causing problem " << std::endl;
 #endif
-                            m_current_token.m_tag.attributes.push_back(m_attribute_buf);
-                            return emit_current_token();
                         }
                         else
                         {
 #ifdef TOKENIZER_DEBUG_STATES
                             std::cout << "nonstandard format attribute name " << m_attribute_buf.name() << std::endl;
 #endif
-                            m_current_token.m_tag.attributes.push_back(m_attribute_buf);
-                            return emit_current_token();
                         }
+                        SWITCH_TO(Data);
+                        m_current_token.m_tag.attributes.push_back(m_attribute_buf);
+                        return emit_current_token();
                     }
                     ON_EOF
                     {

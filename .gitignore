@@ -1,0 +1,8 @@
+new_data
+error_data
+jest_wechat_miniprogram/node_modules
+jest_wechat_miniprogram/miniprogram-demo-test2/screenshots
+jest_wechat_miniprogram/miniprogram-demo-test3/screenshots
+auto_minium/outputs
+data/groundtruth*
+data/*groundtruth

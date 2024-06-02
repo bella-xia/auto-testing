@@ -16,7 +16,7 @@ def get_wxml_scripts(miniprogram_path):
 
 def move_designate_wxml_script(miniprogram_path, script_relative_path):
     os.makedirs(os.path.join(DEST_DIR, miniprogram_path), exist_ok=True)
-    subprocess.run(['mv', os.path.join(ROOT_DIR, miniprogram_path, script_relative_path), os.path.join(DEST_DIR, miniprogram_path)])
+    subprocess.run(['cp', os.path.join(ROOT_DIR, miniprogram_path, script_relative_path), os.path.join(DEST_DIR, miniprogram_path)])
 
 if __name__ == '__main__':
     all_miniprograms = os.listdir(ROOT_DIR)

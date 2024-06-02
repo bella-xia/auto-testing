@@ -1,5 +1,6 @@
-there are a total of 19miniprograms
+this is #3 out of the 19 miniprograms
 surveying miniprogram /home/bella-xia/auto-testing/data/0_passing_groundtruth/wx7c544dd972e54c8e
+
 pages/index/index
 
 Element #0
@@ -15051,6 +15052,440 @@ Bind method: bindtap Function call: close
 
 
 pages/seckilling/submitorder/submitorder
+
+Element #0
+Bind method: bindsubmit Function call: sendFormId
+#element{form} {depth: 1}
+  #attribute{bindsubmit: sendFormId}
+  #attribute{reportsubmit: true}
+  #element{button} {depth: 2}
+    #attribute{class: sendformid-btn}
+    #attribute{formtype: submit}
+    #element{template} {depth: 3}
+      #attribute{is: close}
+      #attribute{wx:if: {{isClose}}}
+    #element{view} {depth: 3}
+      #attribute{wx:if: {{loadComplete}}}
+      #element{view} {depth: 4}
+        #attribute{class: probation-tips}
+        #attribute{wx:if: {{isProbationShop===0&&storeExpired===0}}}
+        data{试用店铺,请勿购买任何商品}
+      #element{view} {depth: 4}
+        #attribute{class: probation-tips}
+        #attribute{wx:if: {{storeExpired===1}}}
+        data{店铺歇业中，暂停下单}
+      #element{view} {depth: 4}
+        #attribute{bindtap: addNewAddress}
+        #attribute{class: order-address text-center}
+        #attribute{wx:if: {{!isAuthAddress}}}
+        #element{label} {depth: 5}
+          data{+}
+        #element{text} {depth: 5}
+          data{新建收货地址}
+      #element{view} {depth: 4}
+        #attribute{bindtap: goAddressList}
+        #attribute{class: order-address}
+        #attribute{wx:if: {{isAuthAddress}}}
+        #element{text} {depth: 5}
+          #attribute{class: font-32}
+          scriptdata{regionInfo.regionMemberName}
+          data{ }
+          scriptdata{regionInfo.regionCellPhone}
+        #element{view} {depth: 5}
+          #attribute{class: address}
+          #element{text} {depth: 6}
+            scriptdata{regionInfo.regionProvince}
+            data{ }
+            scriptdata{regionInfo.regionCity}
+            data{ }
+            scriptdata{regionInfo.regionCounty}
+            data{ }
+            scriptdata{regionInfo.regionStreet}
+            data{ }
+            scriptdata{regionInfo.regionAddress}
+          #element{label} {depth: 6}
+            #attribute{class: address-icon}
+          #element{label} {depth: 6}
+            #attribute{class: right-icon}
+      #element{view} {depth: 4}
+        #attribute{class: shop-panel margin-b-24}
+        #element{view} {depth: 5}
+          #attribute{class: shop-cell}
+          data{商品详情}
+        #element{view} {depth: 5}
+          #attribute{class: shop-detail clearfix}
+          #element{view} {depth: 6}
+            #attribute{class: shop-detail-img pull-left}
+            #element{image} {depth: 7}
+              #attribute{mode: aspectFill}
+              #attribute{src: {{seckillingOrderList.ProductImg}}}
+          #element{view} {depth: 6}
+            #attribute{class: shop-detail-content}
+            #element{view} {depth: 7}
+              #attribute{class: shop-name text-ellipsis font-28}
+              #element{text} {depth: 8}
+                #attribute{class: activity-tag}
+                scriptdata{ActivityTag}
+              scriptdata{seckillingOrderList.ProductName}
+            #element{view} {depth: 7}
+              #attribute{class: shop-specification font-24 text-ellipsis}
+              #element{text} {depth: 8}
+                #attribute{wx:for: {{seckillingOrderList.skus}}}
+                #attribute{wx:key: *this}
+                scriptdata{item}
+                data{{{index}
+                data{<seckillingorderlist.skus.length-1?';':''}}}
+            #element{view} {depth: 7}
+              #attribute{class: shop-price}
+              #element{text} {depth: 8}
+                #attribute{class: font-28}
+                #element{text} {depth: 9}
+                  #attribute{class: font-24}
+                  data{￥}
+                scriptdata{seckillingOrderList.killPrice}
+              #element{text} {depth: 8}
+                data{x}
+                scriptdata{seckillingOrderList.ProductNum}
+        #element{view} {depth: 5}
+          #attribute{bindtap: selectDeliveryType}
+          #attribute{class: shop-cell line padding-r-24}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-left color-74}
+            data{配送方式}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-center text-right}
+            #attribute{style: padding-right:0}
+            scriptdata{shipText}
+          #element{view} {depth: 6}
+            #attribute{class: right-icon select-delivery-icon margin-l-24}
+            #attribute{wx:if: {{templateId!=0||blIsPick}}}
+        #element{view} {depth: 5}
+          #attribute{bindtap: showPickupPopup}
+          #attribute{class: pickup-info line}
+          #attribute{wx:if: {{currentPickup}}}
+          #element{view} {depth: 6}
+            #attribute{class: title}
+            data{自提点}
+          #element{view} {depth: 6}
+            #attribute{class: pikup-info-address}
+            #element{text} {depth: 7}
+              #attribute{class: name}
+              scriptdata{currentPickup.PickUpName}
+            #element{text} {depth: 7}
+              #attribute{class: address}
+              scriptdata{currentPickup.MaxAddress}
+              scriptdata{currentPickup.Address}
+          #element{label} {depth: 6}
+            #attribute{class: right-icon}
+            #attribute{wx:if: {{IsExpress}}}
+        #element{view} {depth: 5}
+          #attribute{class: shop-cell font-28}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-left color-74}
+            data{备注}
+          #element{input} {depth: 6}
+            #attribute{bindinput: remarkinput}
+            #attribute{class: shop-cell-center}
+            #attribute{placeholder: 选填：给商家留言,30字以内}
+            #attribute{placeholderstyle: color: #bdbdbd;}
+            #attribute{value: {{Remark}}}
+      #element{view} {depth: 4}
+        #attribute{class: price-detail line}
+        #element{view} {depth: 5}
+          #attribute{class: shop-cell-small}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-left color-74}
+            data{商品金额}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-center text-right}
+            data{￥}
+            scriptdata{seckillingOrderList.total}
+        #element{view} {depth: 5}
+          #attribute{class: shop-cell-small}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-left color-74}
+            data{运费}
+          #element{text} {depth: 6}
+            #attribute{class: shop-cell-center text-right}
+            data{￥}
+            scriptdata{freight}
+      #element{view} {depth: 4}
+        #attribute{class: shop-cell bg-white margin-b-24}
+        #element{text} {depth: 5}
+          #attribute{class: shop-cell-center text-right font-28}
+          data{应付金额：}
+          #element{text} {depth: 6}
+            #attribute{class: font-32}
+            data{￥}
+            scriptdata{AmountPayable}
+      #element{view} {depth: 4}
+        #attribute{class: nav-footer bg-white}
+        #element{text} {depth: 5}
+          #attribute{class: pay-price font-28}
+          data{应付金额：}
+          #element{text} {depth: 6}
+            #attribute{class: price}
+            data{￥ }
+            #element{text} {depth: 7}
+              #attribute{class: font-32}
+              scriptdata{AmountPayable}
+        #element{button} {depth: 5}
+          #attribute{bindtap: submitOrder}
+          #attribute{class: pay-btn}
+          data{提交}
+      #element{view} {depth: 4}
+        #attribute{bindtap: closePopup}
+        #attribute{class: mark {{isPopupShow}}}
+      #element{view} {depth: 4}
+        #attribute{class: popup-bottom {{isPopupShow}}}
+        #element{view} {depth: 5}
+          #attribute{class: popup-delivery-mode}
+          #element{view} {depth: 6}
+            #attribute{bindtap: selectDeliveryMode}
+            #attribute{class: delivery-mode-item}
+            #attribute{data-index: {{idx}}}
+            #attribute{data-key: {{item.Key}}}
+            #attribute{data-value: {{item.Value}}}
+            #attribute{wx:for: {{deliveryList}}}
+            #attribute{wx:for-index: idx}
+            #element{label} {depth: 7}
+              #attribute{class: checkbox-box}
+              #attribute{data-index: {{idx}}}
+              #element{view} {depth: 8}
+                #attribute{class: checkbox {{item.isChecked}}}
+                #attribute{data-index: {{idx}}}
+              scriptdata{item.Key}
+              data{
+                        }
+        #element{view} {depth: 5}
+          #attribute{class: popup-btn}
+          #element{button} {depth: 6}
+            #attribute{bindtap: closePopup}
+            #attribute{hoverclass: popup-bottom-btn-hover}
+            data{关闭}
+      #element{view} {depth: 4}
+        #attribute{bindtap: closePicUpPopup}
+        #attribute{class: mask {{isPickUpPopupShow}}}
+      #element{view} {depth: 4}
+        #attribute{class: popup {{isPickUpPopupShow}}}
+        #element{view} {depth: 5}
+          #attribute{class: popup-header padding-l-24 line}
+          #attribute{style: text-align:left;}
+          #element{text} {depth: 6}
+            data{选择自提点}
+          #element{icon} {depth: 6}
+            #attribute{bindtap: closePicUpPopup}
+            #attribute{class: cancel pull-right}
+            #attribute{color: #757575}
+            #attribute{size: 22}
+            #attribute{type: cancel}
+        #element{view} {depth: 5}
+          #attribute{class: distribution-list pickup-list}
+          #element{view} {depth: 6}
+            #attribute{bindtap: selectPickup}
+            #attribute{class: distribution-item line {{pickUpId==item.Id?'active':''}}}
+            #attribute{data-id: {{item.Id}}}
+            #attribute{wx:for: {{pickUpList}}}
+            #attribute{wx:key: {{item.Id}}}
+            #element{view} {depth: 7}
+              #attribute{class: distribution-item-icon}
+              #element{icon} {depth: 8}
+                #attribute{color: #00A699}
+                #attribute{size: 20}
+                #attribute{type: success}
+                #attribute{wx:if: {{pickUpId==item.Id}}}
+            #element{view} {depth: 7}
+              #attribute{class: distribution-item-info}
+              #element{text} {depth: 8}
+                #attribute{class: distribution-title font-28}
+                scriptdata{item.PickUpName}
+              #element{text} {depth: 8}
+                #attribute{class: pickup-address font-28}
+                scriptdata{item.MaxAddress}
+                scriptdata{item.Address}
+      #element{template} {depth: 4}
+        #attribute{is: copyright}
+        #attribute{data: {{copyright:copyright,getLink:getLink}}}
+        #attribute{wx:if: {{copyright.isOpenCopyRight!=0}}}
+    #element{view} {depth: 3}
+      #attribute{class: load-prompt}
+      #attribute{wx:else: }
+      #element{template} {depth: 4}
+        #attribute{is: loadPrompt}
+        #attribute{data: }
+    #element{view} {depth: 3}
+      #attribute{wx:if: {{isShowToast}}}
+      #element{template} {depth: 4}
+        #attribute{is: toast}
+        #attribute{data: {{...toastText}}}
+
+Element #1
+Bind method: bindtap Function call: addNewAddress
+#element{view} {depth: 4}
+  #attribute{bindtap: addNewAddress}
+  #attribute{class: order-address text-center}
+  #attribute{wx:if: {{!isAuthAddress}}}
+  #element{label} {depth: 5}
+    data{+}
+  #element{text} {depth: 5}
+    data{新建收货地址}
+
+Element #2
+Bind method: bindtap Function call: goAddressList
+#element{view} {depth: 4}
+  #attribute{bindtap: goAddressList}
+  #attribute{class: order-address}
+  #attribute{wx:if: {{isAuthAddress}}}
+  #element{text} {depth: 5}
+    #attribute{class: font-32}
+    scriptdata{regionInfo.regionMemberName}
+    data{ }
+    scriptdata{regionInfo.regionCellPhone}
+  #element{view} {depth: 5}
+    #attribute{class: address}
+    #element{text} {depth: 6}
+      scriptdata{regionInfo.regionProvince}
+      data{ }
+      scriptdata{regionInfo.regionCity}
+      data{ }
+      scriptdata{regionInfo.regionCounty}
+      data{ }
+      scriptdata{regionInfo.regionStreet}
+      data{ }
+      scriptdata{regionInfo.regionAddress}
+    #element{label} {depth: 6}
+      #attribute{class: address-icon}
+    #element{label} {depth: 6}
+      #attribute{class: right-icon}
+
+Element #3
+Bind method: bindtap Function call: selectDeliveryType
+#element{view} {depth: 5}
+  #attribute{bindtap: selectDeliveryType}
+  #attribute{class: shop-cell line padding-r-24}
+  #element{text} {depth: 6}
+    #attribute{class: shop-cell-left color-74}
+    data{配送方式}
+  #element{text} {depth: 6}
+    #attribute{class: shop-cell-center text-right}
+    #attribute{style: padding-right:0}
+    scriptdata{shipText}
+  #element{view} {depth: 6}
+    #attribute{class: right-icon select-delivery-icon margin-l-24}
+    #attribute{wx:if: {{templateId!=0||blIsPick}}}
+
+Element #4
+Bind method: bindtap Function call: showPickupPopup
+#element{view} {depth: 5}
+  #attribute{bindtap: showPickupPopup}
+  #attribute{class: pickup-info line}
+  #attribute{wx:if: {{currentPickup}}}
+  #element{view} {depth: 6}
+    #attribute{class: title}
+    data{自提点}
+  #element{view} {depth: 6}
+    #attribute{class: pikup-info-address}
+    #element{text} {depth: 7}
+      #attribute{class: name}
+      scriptdata{currentPickup.PickUpName}
+    #element{text} {depth: 7}
+      #attribute{class: address}
+      scriptdata{currentPickup.MaxAddress}
+      scriptdata{currentPickup.Address}
+  #element{label} {depth: 6}
+    #attribute{class: right-icon}
+    #attribute{wx:if: {{IsExpress}}}
+
+Element #5
+Bind method: bindinput Function call: remarkinput
+#element{input} {depth: 6}
+  #attribute{bindinput: remarkinput}
+  #attribute{class: shop-cell-center}
+  #attribute{placeholder: 选填：给商家留言,30字以内}
+  #attribute{placeholderstyle: color: #bdbdbd;}
+  #attribute{value: {{Remark}}}
+
+Element #6
+Bind method: bindtap Function call: submitOrder
+#element{button} {depth: 5}
+  #attribute{bindtap: submitOrder}
+  #attribute{class: pay-btn}
+  data{提交}
+
+Element #7
+Bind method: bindtap Function call: closePopup
+#element{view} {depth: 4}
+  #attribute{bindtap: closePopup}
+  #attribute{class: mark {{isPopupShow}}}
+
+Element #8
+Bind method: bindtap Function call: selectDeliveryMode
+#element{view} {depth: 6}
+  #attribute{bindtap: selectDeliveryMode}
+  #attribute{class: delivery-mode-item}
+  #attribute{data-index: {{idx}}}
+  #attribute{data-key: {{item.Key}}}
+  #attribute{data-value: {{item.Value}}}
+  #attribute{wx:for: {{deliveryList}}}
+  #attribute{wx:for-index: idx}
+  #element{label} {depth: 7}
+    #attribute{class: checkbox-box}
+    #attribute{data-index: {{idx}}}
+    #element{view} {depth: 8}
+      #attribute{class: checkbox {{item.isChecked}}}
+      #attribute{data-index: {{idx}}}
+    scriptdata{item.Key}
+    data{
+                        }
+
+Element #9
+Bind method: bindtap Function call: closePopup
+#element{button} {depth: 6}
+  #attribute{bindtap: closePopup}
+  #attribute{hoverclass: popup-bottom-btn-hover}
+  data{关闭}
+
+Element #10
+Bind method: bindtap Function call: closePicUpPopup
+#element{view} {depth: 4}
+  #attribute{bindtap: closePicUpPopup}
+  #attribute{class: mask {{isPickUpPopupShow}}}
+
+Element #11
+Bind method: bindtap Function call: closePicUpPopup
+#element{icon} {depth: 6}
+  #attribute{bindtap: closePicUpPopup}
+  #attribute{class: cancel pull-right}
+  #attribute{color: #757575}
+  #attribute{size: 22}
+  #attribute{type: cancel}
+
+Element #12
+Bind method: bindtap Function call: selectPickup
+#element{view} {depth: 6}
+  #attribute{bindtap: selectPickup}
+  #attribute{class: distribution-item line {{pickUpId==item.Id?'active':''}}}
+  #attribute{data-id: {{item.Id}}}
+  #attribute{wx:for: {{pickUpList}}}
+  #attribute{wx:key: {{item.Id}}}
+  #element{view} {depth: 7}
+    #attribute{class: distribution-item-icon}
+    #element{icon} {depth: 8}
+      #attribute{color: #00A699}
+      #attribute{size: 20}
+      #attribute{type: success}
+      #attribute{wx:if: {{pickUpId==item.Id}}}
+  #element{view} {depth: 7}
+    #attribute{class: distribution-item-info}
+    #element{text} {depth: 8}
+      #attribute{class: distribution-title font-28}
+      scriptdata{item.PickUpName}
+    #element{text} {depth: 8}
+      #attribute{class: pickup-address font-28}
+      scriptdata{item.MaxAddress}
+      scriptdata{item.Address}
+
+
 pages/seckilling/confirmorder/confirmorder
 
 Element #0

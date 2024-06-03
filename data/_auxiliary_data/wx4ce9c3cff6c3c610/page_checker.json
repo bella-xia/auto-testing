@@ -1,0 +1,70 @@
+[
+  {
+    "page": "pages/index/index",
+    "method": "handleSubtraction",
+    "callback results": {
+      "getUserInfo": null,
+      "chooseInvoice": null,
+      "saveImageToPhotosAlbum": null,
+      "chooseAddress": null,
+      "saveVideoToPhotosAlbum": null
+    }
+  },
+  {
+    "page": "pages/index/index",
+    "method": "clear",
+    "callback results": {
+      "getUserInfo": null,
+      "chooseInvoice": null,
+      "saveImageToPhotosAlbum": null,
+      "chooseAddress": null,
+      "saveVideoToPhotosAlbum": null
+    }
+  },
+  {
+    "page": "pages/index/index",
+    "method": "handleBtnClick",
+    "callback results": {
+      "getUserInfo": null,
+      "chooseInvoice": null,
+      "saveImageToPhotosAlbum": null,
+      "chooseAddress": null,
+      "saveVideoToPhotosAlbum": null
+    }
+  },
+  {
+    "page": "pages/index/index",
+    "method": "handleSubtraction",
+    "callback results": {
+      "getUserInfo": null,
+      "chooseInvoice": null,
+      "saveImageToPhotosAlbum": null,
+      "chooseAddress": null,
+      "saveVideoToPhotosAlbum": null
+    }
+  },
+  {
+    "page": "pages/index/index",
+    "method": "clear",
+    "callback results": {
+      "getUserInfo": null,
+      "chooseInvoice": null,
+      "saveImageToPhotosAlbum": null,
+      "chooseAddress": null,
+      "saveVideoToPhotosAlbum": null
+    }
+  },
+  {
+    "page": "pages/index/index",
+    "method": "handleBtnClick",
+    "callback results": {
+      "getUserInfo": null,
+      "chooseInvoice": null,
+      "saveImageToPhotosAlbum": null,
+      "chooseAddress": null,
+      "saveVideoToPhotosAlbum": {
+        "errMsg": "saveVideoToPhotosAlbum:ok"
+      }
+    }
+  }
+]

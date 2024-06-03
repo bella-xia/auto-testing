@@ -1,12 +1,33 @@
 import minium_tests.base_case as base_case
-import minium, threading
+import minium
+from collections import namedtuple
 from typing import Dict, List
 
+'''
+PS: selector 仅支持下列语法:
+
+ID选择器: #the-id
+class选择器(可以连续指定多个): .a-class.another-class
+标签选择器: view
+子元素选择器: .the-parent > .the-child
+后代选择器: .the-ancestor .the-descendant
+跨自定义组件的后代选择器: custom-element1>>>.custom-element2>>>.the-descendant
+custom-element1 和 .custom-element2必须是自定义组件标签或者能获取到自定义组件的选择器
+多选择器的并集：#a-node, .some-other-nodes
+xpath: 可以在真机调试的wxml pannel选择节点->右键->copy->copy full xpath获取，暂不支持[text()='xxx']这类xpath条件
+'''
+SelectorInfo = namedtuple('SelectorInfo', ['selector', 'inner_text', 'text_contains', 'value'])
 
 class BaseTaint(base_case.BaseCase):
     """
     封装公用页面基础操作方法
     """
+    def get_element_using_selector(self, selector_info):
+        return self.page.get_element(
+            selector=selector_info.selector, 
+            inner_text=selector_info.inner_text, 
+            text_contains=selector_info.text_contains, 
+            value=selector_info.value)
 
     def input_text_helper(self, default_text, class_name):
         POTENTIAL_IDENTIFIER_AND_INPUT = {'电话' : '13880000000',

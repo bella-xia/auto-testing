@@ -1,0 +1,12 @@
+[
+  {
+    "MiniApp": "wx4ce9c3cff6c3c610",
+    "API": "wx.saveVideoToPhotosAlbum",
+    "GroundTruth": 1,
+    "MiniDroid": 1,
+    "TaintMini": 0,
+    "GroundTruth_Pages": ["pages/index/index"],
+    "MiniDroid_Pages": ["pages/index/index"],
+    "TaintMini_Pages": []
+  }
+]

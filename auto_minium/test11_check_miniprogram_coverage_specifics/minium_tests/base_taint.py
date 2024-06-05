@@ -1,5 +1,5 @@
 import minium_tests.base_case as base_case
-import minium
+import minium, json
 from collections import namedtuple
 from typing import Dict, List
 
@@ -22,12 +22,18 @@ class BaseTaint(base_case.BaseCase):
     """
     封装公用页面基础操作方法
     """
+    
     def get_element_using_selector(self, selector_info):
         return self.page.get_element(
             selector=selector_info.selector, 
             inner_text=selector_info.inner_text, 
             text_contains=selector_info.text_contains, 
             value=selector_info.value)
+
+    def get_json_data(file_path):
+        with open(file_path, 'r', encoding='utf-8') as file:
+            json_data = file.read()
+        return json.loads(json_data)
 
     def input_text_helper(self, default_text, class_name):
         POTENTIAL_IDENTIFIER_AND_INPUT = {'电话' : '13880000000',

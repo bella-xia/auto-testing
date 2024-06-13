@@ -1,0 +1,189 @@
+{
+  "pages/address/address": [
+    {
+      "method": "hideCitySelected",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    }
+  ],
+  "pages/index/index": [
+    {
+      "method": "groupno",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "addPrize",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "addImg",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "copyJump",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "recommend",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "numreduce",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "numplus",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "advjump",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "layerclose",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "confirm",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    }
+  ],
+  "pages/set/set": [
+    {
+      "method": "close",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "playVoice",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    }
+  ],
+  "pages/shareImg/shareImg": [
+    {
+      "method": "prese",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    }
+  ],
+  "pages/qrvoucher/qrvoucher": [],
+  "pages/scanning/scanning": [
+    {
+      "method": "onGenQrc",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    },
+    {
+      "method": "writeOrder",
+      "callback results": {
+        "getUserInfo": null,
+        "chooseInvoice": null,
+        "chooseImage": null,
+        "chooseAddress": null,
+        "getLocation": null,
+        "saveImageToPhotosAlbum": null
+      }
+    }
+  ]
+}

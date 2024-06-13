@@ -1,0 +1,121 @@
+surveying miniprogram /home/bella-xia/auto-testing/wxml_parser/alternative_trial_results/log_3_wx7c544dd972e54c8e.json
+surveying page pages/index/index
+surveying page pages/category/category
+surveying page pages/shopcart/shopcart
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/membercenter/membercenter
+surveying page pages/detail/detail
+Elementvideo bind function bindended not yet implemented
+Elementvideo bind function bindplay not yet implemented
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/confirmorder/confirmorder
+surveying page pages/order/orderlist
+surveying page pages/orderdetail/orderdetail
+surveying page pages/guide/guide
+surveying page pages/productlist/productlist
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/address/address
+Elementview bind function bindchange not yet implemented
+Elementpicker bind function bindchange not yet implemented
+Elementpicker bind function bindchange not yet implemented
+Elementpicker bind function bindchange not yet implemented
+Elementpicker bind function bindchange not yet implemented
+Elementswitch bind function bindchange not yet implemented
+surveying page pages/myaddress/myaddress
+surveying page pages/addresslist/addresslist
+surveying page pages/binduser/binduser
+surveying page pages/userset/userset
+surveying page pages/logisticsdetail/logisticsdetail
+surveying page pages/setdetail/setdetail
+surveying page pages/applyservice/applyservice
+surveying page pages/servicedetail/servicedetail
+surveying page pages/balance/balance
+surveying page pages/balancerecharge/balancerecharge
+surveying page pages/depositrequest/depositrequest
+Elementtextarea bind function bindinput not yet implemented
+surveying page pages/balancerecord/balancerecord
+surveying page pages/balancedetail/balancedetail
+surveying page pages/mycoupon/mycoupon
+surveying page pages/mypoints/mypoints
+surveying page pages/refundexpress/refundexpress
+Elementinput bind function bindconfirm not yet implemented
+Elementinput bind function bindconfirm not yet implemented
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/distributor/mycommission/mycommission
+surveying page pages/distributor/storeorder/storeorder
+surveying page pages/distributor/submember/submember
+surveying page pages/distributor/storeinfo/storeinfo
+surveying page pages/distributor/storesetting/storesetting
+Elementtextarea bind function bindinput not yet implemented
+surveying page pages/distributor/storerank/storerank
+surveying page pages/distributor/storecard/storecard
+surveying page pages/distributor/commissiontobalance/commissiontobalance
+surveying page pages/distributor/commissionwithdraw/commissionwithdraw
+Elementtextarea bind function bindinput not yet implemented
+surveying page pages/distributor/commissiondetail/commissiondetail
+surveying page pages/distributor/distributordescription/distributordescription
+surveying page pages/distributor/distributorexplain/distributorexplain
+surveying page pages/distributor/distributorcenter/distributorcenter
+surveying page pages/emptypage/emptypage
+surveying page pages/pintuan/index/index
+surveying page pages/pintuan/detail/detail
+Elementvideo bind function bindended not yet implemented
+Elementvideo bind function bindplay not yet implemented
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/pintuan/confirmorder/confirmorder
+surveying page pages/pintuan/activitylist/activitylist
+surveying page pages/pintuan/paymentok/paymentok
+surveying page pages/pintuan/mySpellGroup/mySepllGroup
+surveying page pages/pintuan/spellGroupDetail/spellGroupDetail
+surveying page pages/seckilling/mySeckilling/mySeckilling
+surveying page pages/seckilling/seckillingDetail/seckillingDetail
+Elementvideo bind function bindended not yet implemented
+Elementvideo bind function bindplay not yet implemented
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/seckilling/submitorder/submitorder
+surveying page pages/seckilling/confirmorder/confirmorder
+surveying page pages/seckilling/paystatus/paystatus
+surveying page pages/seckilling/activitylist/activitylist
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/reduceauction/reduceauctiondetail/reduceauctiondetail
+Elementvideo bind function bindended not yet implemented
+Elementvideo bind function bindplay not yet implemented
+surveying page pages/reduceauction/confirmorder/confirmorder
+surveying page pages/reduceauction/auctionsuccess/auctionsuccess
+surveying page pages/reduceauction/auctionfail/auctionfail
+surveying page pages/reduceauction/myauctionlist/myauctionlist
+surveying page pages/reduceauction/myauctiondetail/myauctiondetail
+surveying page pages/stairgroup/activitydetail/activitydetail
+Elementvideo bind function bindended not yet implemented
+Elementvideo bind function bindplay not yet implemented
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/stairgroup/confirmorder/confirmorder
+surveying page pages/stairgroup/mygrouplist/mygrouplist
+surveying page pages/stairgroup/groupsuccess/groupsuccess
+surveying page pages/stairgroup/groupfail/groupfail
+surveying page pages/stairgroup/mygroupdetail/mygroupdetail
+surveying page pages/stairgroup/cashbackrecord/cashbackrecord
+surveying page pages/comment/comment
+surveying page pages/toComment/toComment
+surveying page pages/evaluation/evaluation
+Elementtextarea bind function bindinput not yet implemented
+surveying page pages/transitionpage/transitionpage
+surveying page pages/error/error
+surveying page pages/batchpurchase/batchpurchase
+surveying page pages/unauthorized/unauthorized
+surveying page pages/Activeaggregatepage/Activeaggregatepage
+surveying page pages/cusNav1/cusNav1
+surveying page pages/cusNav2/cusNav2
+surveying page pages/cusNav3/cusNav3
+surveying page pages/custom/custom
+surveying page pages/cusNav4/cusNav4
+surveying page pages/cusNav5/cusNav5
+surveying page pages/cate/category
+surveying page pages/couponcenter/couponcenter
+surveying page pages/supportvalueservice/supportvalueservice
+surveying page pages/supportvalueapply/supportvalueapply
+surveying page pages/withdrawrecord/withdrawrecord
+surveying page pages/index/go
+surveying page pages/index/login
+surveying page pages/authentication/authentication
+surveying page pages/alipaycomplaint/alipaycomplaint

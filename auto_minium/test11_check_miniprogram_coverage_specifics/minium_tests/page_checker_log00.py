@@ -82,39 +82,28 @@ class PageChecker(base_taint.BaseTaint):
         a little problematic: need to know what makes saveVideoToImageAlbum able to run
         '''
         JSON_DIR = "/home/bella-xia/auto-testing/wxml_parser/json_results/log_0_wx4ce9c3cff6c3c610.json"
-        page_bind_infos = self.get_json_data(JSON_DIR)
         PAGE = "pages/index/index"
+        json_data = {}
+        json_data[PAGE] = []
+        page_bind_infos = (self.get_json_data(JSON_DIR)).get(PAGE)
         self.open_route("/" + PAGE)
         
         for bind_info in page_bind_infos:
             if bind_info.get('bind_method') == 'bindtap':
                 try:
-                    selector_info = base_taint.SelectorInfo(
-                        selector=bind_info.get('element_tag') + ", ." + 
-                        bind_info.get('attribute').get('class'),
-                        inner_text=None,
-                        text_contains=bind_info.get('data'),
-                        value=None
-                    )
-                    tapable_ele = self.get_element_using_selector(
-                        selector_info=selector_info)
-                    
-                    return_args = self.hook_wx_methods_with_element_tap(
-                        element=tapable_ele,
-                        wx_methods=['getUserInfo', 'chooseInvoice', 
-                                    'saveImageToPhotosAlbum', 'chooseAddress',
-                                    'saveVideoToPhotosAlbum']
-                    )
+                    return_args = self.hook_wx_methods_with_page_defined_method_call(page=PAGE, 
+                    wx_methods=['getUserInfo', 'chooseInvoice',  'saveImageToPhotosAlbum','chooseAddress', 'saveVideoToPhotosAlbum'],
+                        page_defined_method=bind_info.get("function_call"), method_args={})
 
-                    json_data =[{'page': PAGE,
-                                 'method': bind_info.get('function_call'),
-                                 'callback results': return_args}]
-                    JSON_DIR = '/home/bella-xia/auto-testing/data/_auxiliary_data/wx4ce9c3cff6c3c610/page_checker.json'
-                    with open(JSON_DIR, 'a', encoding='utf-8') as file:
-                        json.dump(json_data, file, indent=4)
+                    json_data[PAGE].append({'method': bind_info.get('function_call'),
+                                            'callback results': return_args})
 
                 except Exception as e:
                     print(f"running into error when testing bindtap function {bind_info.get('function_call')}: ", e)
                     continue
+        
+        JSON_DIR = '/home/bella-xia/auto-testing/data/_auxiliary_data/wx4ce9c3cff6c3c610/page_checker.json'
+        with open(JSON_DIR, 'a', encoding='utf-8') as file:
+                json.dump(json_data, file, indent=4)
                 
 

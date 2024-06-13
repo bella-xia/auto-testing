@@ -1,0 +1,72 @@
+surveying miniprogram /home/bella-xia/auto-testing/wxml_parser/alternative_trial_results/log_12_wxad2e9789b5076244.json
+surveying page pages/index/index
+Elementpage-template bind function bindchange not yet implemented
+surveying page pages/template/template
+Elementpage-template bind function bindchange not yet implemented
+surveying page pages/logs/logs
+surveying page pages/user/user
+surveying page pages/basket/basket
+Elementadd-cart bind function bindchange not yet implemented
+surveying page pages/category/category
+surveying page pages/search-page/search-page
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/delivery-address/delivery-address
+Elementradio-group bind function bindchange not yet implemented
+surveying page pages/editAddress/editAddress
+Elementpicker-view bind function bindchange not yet implemented
+surveying page pages/orderList/orderList
+surveying page pages/order-detail/order-detail
+surveying page pages/submit-order/submit-order
+Elementinput bind function bindchange not yet implemented
+surveying page pages/binding-phone/binding-phone
+surveying page pages/express-delivery/express-delivery
+surveying page pages/pay-result/pay-result
+surveying page pages/search-prod-show/search-prod-show
+Elementinput bind function bindconfirm not yet implemented
+surveying page pages/prod/prod
+surveying page pages/login/login
+surveying page pages/prod-classify/prod-classify
+surveying page pages/recent-news/recent-news
+surveying page pages/news-detail/news-detail
+surveying page pages/coupon/coupon
+surveying page pages/coupon-center/coupon-center
+surveying page pages/shop/shop
+surveying page pages/apply-refund/apply-refund
+Elementinput bind function bindchange not yet implemented
+Elementmp-uploader bind function bindsuccess not yet implemented
+Elementradio-group bind function bindchange not yet implemented
+Elementradio-group bind function bindchange not yet implemented
+Elementradio-group bind function bindchange not yet implemented
+surveying page pages/seckill/seckill
+surveying page pages/refund-order/refund-order
+surveying page pages/refund-detail/refund-detail
+surveying page pages/comment/comment
+Elementtextarea bind function bindinput not yet implemented
+Elementmp-uploader bind function bindsuccess not yet implemented
+surveying page pages/history/history
+surveying page pages/share-code/share-code
+surveying page pages/upgrade/upgrade
+surveying page pages/apply-refund/delivery/delivery
+Elementradio-group bind function bindchange not yet implemented
+surveying page components/template/spreadsharecode/spreadsharecode
+surveying page pages/spread-share-code/spread-share-code
+surveying page pages/bill/apply/apply
+Elementradio-group bind function bindchange not yet implemented
+surveying page pages/bill/view/view
+surveying page pages/bill/apply-success/apply-success
+surveying page pages/nearby-shop/nearby-shop
+surveying page pages/nearby-shop/switchcity/switchcity
+surveying page pages/saler-code/saler-code
+surveying page pages/choose-gift/choose-gift
+Elementadd-number bind function bindchange not yet implemented
+surveying page pages/sale-list/list/list
+surveying page pages/sale-list/view/view
+surveying page pages/submit-group-order/submit-group-order
+surveying page pages/gift-coupon/gift-coupon
+surveying page pages/gift-coupon/address/address
+Elementpicker-view bind function bindchange not yet implemented
+surveying page pages/gift-coupon/gift-success/gift-success
+surveying page pages/sale-list/apply-refund/apply-refund
+Elementinput bind function bindchange not yet implemented
+Elementradio-group bind function bindchange not yet implemented
+surveying page pages/sale-list/apply-success/apply-success

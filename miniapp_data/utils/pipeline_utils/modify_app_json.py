@@ -1,113 +1,136 @@
 import os, json
 
+
 def read_json_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        json_data = file.read()
-    return json.loads(json_data)
+    with open(file_path, "r", encoding="utf-8") as file:
+        return json.load(file)
+
 
 def write_json_file(file_path, json_data):
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         json.dump(json_data, file, indent=4)
 
-def check_dirs(root_addr, dir_list):
-    COMP_SET = {".js", ".json", ".wxml", ".wxss"}
+
+def check_dirs(root_addr, root_dir, dir_list, logger=None):
+    COMP_SET = {
+        ".js",
+        ".wxml",
+        # ".json",  ".wxss" <-- these two might not be completely necessary?
+    }
     exist_list = []
     missing_list = []
 
     for dir_name in dir_list:
         exist_bool = True
         for comp in COMP_SET:
-            comp_dir = os.path.join(root_addr, (dir_name + comp))
+
+            comp_dir = (
+                os.path.join(root_addr, (dir_name + comp))
+                if root_dir is None
+                else os.path.join(root_addr, root_dir, (dir_name + comp))
+            )
             normalized_path = os.path.normpath(comp_dir)
-            if (os.path.exists(normalized_path) == False):
+            if not os.path.exists(normalized_path):
                 missing_list.append(dir_name)
                 exist_bool = False
                 break
         if exist_bool:
             exist_list.append(dir_name)
-    
-    return {'exist': exist_list, 'miss': missing_list}
+    return_val = {"exist": exist_list, "miss": missing_list}
+    print(return_val)
+    if logger is not None:
+        logger.info(return_val)
+    return return_val
 
-
-        
-def process_subpackage_info(subpackage_data, root_dir):
-    all_subpackage_pages_dir = []
-    for item in subpackage_data:
-        root_dir = item['root']
-        pages_dir = item['pages']
-        all_subpackage_pages_dir.extend([os.path.join(root_dir, page_dir) for page_dir in pages_dir])
-    return check_dirs(root_dir, all_subpackage_pages_dir)
-
-def process_page_info(pages_data, root_dir):
-    all_pages_dir = []
-    all_plugins_dir = []
-    for page_data in pages_data:
-        if page_data.split('/')[0] == '__plugin__':
-            all_plugins_dir.append(page_data)
-        else:
-            all_pages_dir.append(page_data)
-    return check_dirs(root_dir, all_pages_dir), check_dirs(root_dir, all_plugins_dir)
 
 def check_borderStyle(json_data):
-    if json_data.get('tabBar') is not None:
-        if json_data['tabBar'].get("borderStyle") is not None:
-            color_str = json_data['tabBar']['borderStyle']
+    if json_data.get("tabBar") is not None:
+        if json_data["tabBar"].get("borderStyle") is not None:
+            color_str = json_data["tabBar"]["borderStyle"]
             if color_str != "black" and color_str != "white":
                 return False
     return True
 
-def check_all_paths(root_path, miniprogram_name, app_json_path=None):
+
+def check_all_paths(root_path, miniprogram_name, app_json_path=None, logger=None):
     MINIRPOGRAM_PATH = os.path.join(root_path, miniprogram_name)
-    APP_JSON_PATH = app_json_path if app_json_path else os.path.join(MINIRPOGRAM_PATH, 'app.json')
-    
+    APP_JSON_PATH = (
+        app_json_path if app_json_path else os.path.join(MINIRPOGRAM_PATH, "app.json")
+    )
+
     json_data = read_json_file(APP_JSON_PATH)
 
-    if check_borderStyle(json_data) is False:
-        json_data['tabBar']['borderStyle'] = 'white'
+    if json_data.get("subPackages", None) is not None:
+        new_subPackages = []
 
-    all_subpackage_pages = process_subpackage_info(json_data['subPackages'], MINIRPOGRAM_PATH ) if json_data.get('subPackages') is not None else {'exist': [], 'miss': []}
-    all_pages, all_plugins= process_page_info(json_data['pages'], MINIRPOGRAM_PATH )
+        total_hit: int = 0
+        total_miss: int = 0
 
-    print(f"In total, there are {len(all_pages['exist'])} complete pages and {len(all_pages['miss'])} missing pages")
-    print(f"there are {len(all_plugins['exist'])} complete plugin pages and {len(all_plugins['miss'])} missing plugin pages")
-    print(f"In total, there are {len(all_plugins['exist'])} complete sub-pages and {len(all_plugins['miss'])} missing sub-pages")
-    if len(all_plugins['exist']) == 0:
-        json_data.pop('plugins', None)
+        all_pages = check_dirs(MINIRPOGRAM_PATH, None, json_data["pages"])
+        f_data = f"In total, there are {len(all_pages['exist'])} complete pages and {len(all_pages['miss'])} missing pages"
+        print(f_data)
+        if logger is not None:
+            logger.info(f_data)
+        pages_set = set(all_pages["exist"])
 
-    missed_page = all_pages['miss']
-    missed_page.extend(all_plugins['miss'])
-    missed_subpackges = all_subpackage_pages['miss']
-    modified_pages = []
+        for subpackage in json_data["subPackages"]:
+            subpackage_data = check_dirs(
+                os.path.join(
+                    MINIRPOGRAM_PATH,
+                ),
+                subpackage["root"],
+                subpackage["pages"],
+                logger=logger,
+            )
 
-    for page in json_data['pages']:
-        if page not in missed_page:
-            modified_pages.append(page)
-        
-    json_data['pages'] = modified_pages
-    
-    if len(all_subpackage_pages['exist'])== 0:
-        json_data.pop('subPackages', None)
-    else:
-        temp_arr = []
-        for root in json_data['pages']:
-            root_dir = root['root']
-            page_dirs = root['pages']
-            temp_list = []
-            for page in page_dirs:
-                print(os.path.join(root_dir, page))
-            
-                if os.path.join(root_dir, page) not in missed_subpackges:
-                    temp_list.append(page)
-            temp_arr.append({'root': root, 'pages': temp_list})
-        json_data['subPackages'] = temp_arr
-    
+            existing_pages = []
+            for subpackage_page in subpackage_data["exist"]:
+                if subpackage["root"] + subpackage_page in pages_set:
+                    pages_set.remove(subpackage["root"] + subpackage_page)
+                    f_data = f"subPackage {subpackage['root']} page {subpackage_page} already in pages"
+                    print(f_data)
+                    if logger is not None:
+                        logger.info(f_data)
+
+                existing_pages.append(subpackage_page)
+
+            if len(existing_pages) > 0:
+                new_subPackages.append(
+                    {"root": subpackage["root"], "pages": existing_pages}
+                )
+                total_hit += 1
+            else:
+                f_data = f"unable to find subPackage {subpackage['root']}. reducing from app.json"
+                print(f_data)
+                if logger is not None:
+                    logger.info(f_data)
+                total_miss += 1
+        f_data = f"there are a total of {len(json_data['subPackages'])} subPackages, of which {total_miss} do not have corresponding files, and {total_hit} has"
+        print(f_data)
+        if logger is not None:
+            logger.info(f_data)
+        json_data["subPackages"] = new_subPackages
+        json_data["pages"] = list(pages_set)
+
+    plugins_data = None
+    if json_data.get("plugins", None) is not None:
+        with open(os.path.join(MINIRPOGRAM_PATH, "__plugins__.json"), "w") as f:
+            json.dump(json_data["plugins"], f, indent=4)
+        plugins_data = json_data["plugins"]
+        del json_data["plugins"]
+
+    # for now
+    if json_data.get("preloadRule", None) is not None:
+        del json_data["preloadRule"]
+
     write_json_file(APP_JSON_PATH, json_data)
+    return plugins_data
 
 
 if __name__ == "__main__":
 
-    ROOT_PATH = "C:/Users/zhiha/OneDrive/Desktop/miniapp_data/unpacked_data_unveilr"
-    APP_JSON_PATH = 'C:/Users/zhiha/OneDrive/Desktop/miniapp_data/utils/app-mod.json'
-    MINIRPOGRAM_NAME = "wx00bed543a3e9e5f7-pc"
-    check_all_paths(ROOT_PATH, MINIRPOGRAM_NAME, APP_JSON_PATH)
-    
+    ROOT_PATH = "C:/Users/zhiha/OneDrive/Desktop/auto-testing/miniapp_data/top50_data"
+    MINIRPOGRAM_NAME = "wx23d8d7ea22039466_班级小管家"
+
+    MINIPROGRAM_DIR = os.path.join(ROOT_PATH, MINIRPOGRAM_NAME)
+    check_all_paths(MINIPROGRAM_DIR)
